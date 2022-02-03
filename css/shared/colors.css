@@ -1,5 +1,13 @@
 /* text colors */
 
+.text-white {
+  color: white;
+}
+
+.text-black {
+  color: black;
+}
+
 /* pink text colors */
 .text-pink-100 {
   color: var(--pink-100);
@@ -586,6 +594,14 @@
 /* br */
 
 /* background colors */
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-black {
+  background-color: black;
+}
 
 /* pink background colors */
 .bg-pink-100 {
@@ -1174,6 +1190,14 @@
 
 /* text hover colors */
 
+.text-hover-white:hover {
+  color: white;
+}
+
+.text-hover-black:hover {
+  color: black;
+}
+
 /* pink text hover colors */
 .text-hover-pink-100:hover {
   color: var(--pink-100);
@@ -1760,6 +1784,14 @@
 /* br */
 
 /* background hover colors */
+
+.bg-hover-white:hover {
+  background-color: white;
+}
+
+.bg-hover-black:hover {
+  background-color: black;
+}
 
 /* pink background hover colors */
 .bg-hover-pink-100:hover {
