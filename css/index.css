@@ -5,5 +5,7 @@
 @import "./shared//colors.css";
 @import "./shared/variables.css";
 @import "./shared/typography.css";
+@import "./shared/spacing.css";
+@import "./shared/layout.css";
 
 /* components */
