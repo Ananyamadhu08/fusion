@@ -12,3 +12,5 @@
 @import "./shared/borders.css";
 
 /* components */
+@import "./avatar.css";
+@import "./badge.css";
