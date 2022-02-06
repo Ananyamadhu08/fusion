@@ -267,3 +267,20 @@
   text-transform: uppercase;
   display: block;
 }
+
+/* text alignment */
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
