@@ -1,9 +1,14 @@
 .btn {
   font-size: 1rem;
-  border: 0.5px solid var(--slate-200);
+  font-weight: lighter;
+  border: 0.5px solid var(--slate-300);
   width: max-content;
   height: max-content;
   padding: 0.7rem 1rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-square-solid {
@@ -55,7 +60,6 @@
 }
 
 /* button sizes */
-/* padding: 0.7rem 1.3rem; */
 
 .btn-sm {
   padding: 0.3rem 0.6rem;
