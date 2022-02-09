@@ -1,0 +1,64 @@
+.input {
+  width: 100%;
+  padding: 0.8rem;
+  display: block;
+  box-sizing: border-box;
+}
+
+.input-outlined {
+  border: 1px solid black;
+  border-radius: 0.3rem;
+}
+
+.input-filled {
+  border: 0;
+  border-bottom: 1px solid black;
+  border-top-right-radius: 0.3rem;
+  border-top-left-radius: 0.3rem;
+  background-color: lightgrey;
+}
+
+.input-standard {
+  border: 0;
+  border-bottom: 1px solid black;
+}
+
+/* error inputs */
+
+.input-outlined-error {
+  border: 1px solid red;
+  border-radius: 0.3rem;
+}
+
+.input-filled-error {
+  border: 0;
+  border-bottom: 1px solid red;
+  border-top-right-radius: 0.3rem;
+  border-top-left-radius: 0.3rem;
+  background-color: lightgrey;
+}
+
+.input-standard-error {
+  border: 0;
+  border-bottom: 1px solid red;
+}
+
+/* box with input and text box */
+
+.text-input-box {
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.text-input-box textarea {
+  width: 100%;
+  padding: 0.8rem;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 0.3rem;
+}
