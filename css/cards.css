@@ -1,0 +1,13 @@
+.card {
+  border-radius: 0.4rem;
+  padding: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+.card-badge {
+  z-index: 1;
+  position: absolute;
+  top: 2rem;
+  width: min-content;
+  box-sizing: border-box;
+}
