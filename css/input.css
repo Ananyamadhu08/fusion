@@ -1,64 +1,496 @@
+.input-container {
+  position: relative;
+  width: 100%;
+  height: 3rem;
+}
 .input {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding: 0.8rem;
-  display: block;
-  box-sizing: border-box;
+  height: 100%;
+  border: 2px solid var(--grey-500);
+  border-radius: 0.5rem;
+  /* color: white; */
+  outline: none;
+  padding: 1.25rem;
+  background: none;
 }
 
-.input-outlined {
-  border: 1px solid black;
-  border-radius: 0.3rem;
+/* Change border when input focus*/
+
+.input-rose:focus {
+  border-color: var(--rose-500);
 }
 
-.input-filled {
-  border: 0;
-  border-bottom: 1px solid black;
-  border-top-right-radius: 0.3rem;
-  border-top-left-radius: 0.3rem;
-  background-color: lightgrey;
+.input-label {
+  position: absolute;
+  left: 1rem;
+  top: 0.8rem;
+  padding: 0 0.5rem;
+  cursor: text;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
 }
 
-.input-standard {
-  border: 0;
-  border-bottom: 1px solid black;
+/* 
+1. When the input is in the focus state
+reduce the size of the label and move upwards 
+
+2. Keep label state when content is in input field 
+*/
+
+.input:focus ~ .input-label,
+.input:not(:placeholder-shown).input:not(:focus) ~ .input-label {
+  top: -0.5rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
 }
 
-/* error inputs */
-
-.input-outlined-error {
-  border: 1px solid red;
-  border-radius: 0.3rem;
+.error {
+  position: relative;
+  top: 3rem;
+  left: 6px;
 }
 
-.input-filled-error {
-  border: 0;
-  border-bottom: 1px solid red;
-  border-top-right-radius: 0.3rem;
-  border-top-left-radius: 0.3rem;
-  background-color: lightgrey;
+/* border color variations for inputs */
+.input-white {
+  border-color: var(--white);
 }
 
-.input-standard-error {
-  border: 0;
-  border-bottom: 1px solid red;
+.input-black {
+  border-color: var(--black);
 }
 
-/* box with input and text box */
-
-.text-input-box {
-  border: 1px solid black;
-  border-radius: 0.3rem;
-  box-sizing: border-box;
-  padding: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+.input-pink {
+  border-color: var(--pink-500);
 }
 
-.text-input-box textarea {
-  width: 100%;
-  padding: 0.8rem;
-  display: block;
-  box-sizing: border-box;
-  border-radius: 0.3rem;
+.input-rose {
+  border-color: var(--rose-500);
+}
+
+.input-fuchsia {
+  border-color: var(--fuchsia-500);
+}
+
+.input-purple {
+  border-color: var(--purple-500);
+}
+
+.input-violet {
+  border-color: var(--violet-500);
+}
+
+.input-indigo {
+  border-color: var(--indigo-500);
+}
+
+.input-blue {
+  border-color: var(--blue-500);
+}
+
+.input-sky {
+  border-color: var(--sky-500);
+}
+
+.input-cyan {
+  border-color: var(--cyan-500);
+}
+
+.input-teal {
+  border-color: var(--teal-500);
+}
+
+.input-emerald {
+  border-color: var(--emerald-500);
+}
+
+.input-green {
+  border-color: var(--green-500);
+}
+
+.input-lime {
+  border-color: var(--lime-500);
+}
+
+.input-yellow {
+  border-color: var(--yellow-500);
+}
+
+.input-amber {
+  border-color: var(--amber-500);
+}
+
+.input-orange {
+  border-color: var(--orange-500);
+}
+
+.input-red {
+  border-color: var(--red-500);
+}
+
+.input-stone {
+  border-color: var(--stone-500);
+}
+
+.input-grey {
+  border-color: var(--grey-500);
+}
+
+.input-slate {
+  border-color: var(--slate-500);
+}
+
+/* background color variations for inputs */
+.input-white-fill {
+  background-color: var(--white);
+}
+
+.input-black-fill {
+  background-color: var(--black);
+}
+
+/* light variations */
+
+.input-pink-fill-light {
+  background-color: var(--pink-200);
+}
+
+.input-rose-fill-light {
+  background-color: var(--rose-200);
+}
+
+.input-fuchsia-fill-light {
+  background-color: var(--fuchsia-200);
+}
+
+.input-purple-fill-light {
+  background-color: var(--purple-200);
+}
+
+.input-violet-fill-light {
+  background-color: var(--violet-200);
+}
+
+.input-indigo-fill-light {
+  background-color: var(--indigo-200);
+}
+
+.input-blue-fill-light {
+  background-color: var(--blue-200);
+}
+
+.input-sky-fill-light {
+  background-color: var(--sky-200);
+}
+
+.input-cyan-fill-light {
+  background-color: var(--cyan-200);
+}
+
+.input-teal-fill-light {
+  background-color: var(--teal-200);
+}
+
+.input-emerald-fill-light {
+  background-color: var(--emerald-200);
+}
+
+.input-green-fill-light {
+  background-color: var(--green-200);
+}
+
+.input-lime-fill-light {
+  background-color: var(--lime-200);
+}
+
+.input-yellow-fill-light {
+  background-color: var(--yellow-200);
+}
+
+.input-amber-fill-light {
+  background-color: var(--amber-200);
+}
+
+.input-orange-fill-light {
+  background-color: var(--orange-200);
+}
+
+.input-red-fill-light {
+  background-color: var(--red-200);
+}
+
+.input-stone-fill-light {
+  background-color: var(--stone-200);
+}
+
+.input-grey-fill-light {
+  background-color: var(--grey-200);
+}
+
+.input-slate-fill-light {
+  background-color: var(--slate-200);
+}
+
+/* dark variations */
+
+.input-pink-fill-dark {
+  background-color: var(--pink-700);
+}
+
+.input-rose-fill-dark {
+  background-color: var(--rose-700);
+}
+
+.input-fuchsia-fill-dark {
+  background-color: var(--fuchsia-700);
+}
+
+.input-purple-fill-dark {
+  background-color: var(--purple-700);
+}
+
+.input-violet-fill-dark {
+  background-color: var(--violet-700);
+}
+
+.input-indigo-fill-dark {
+  background-color: var(--indigo-700);
+}
+
+.input-blue-fill-dark {
+  background-color: var(--blue-700);
+}
+
+.input-sky-fill-dark {
+  background-color: var(--sky-700);
+}
+
+.input-cyan-fill-dark {
+  background-color: var(--cyan-700);
+}
+
+.input-teal-fill-dark {
+  background-color: var(--teal-700);
+}
+
+.input-emerald-fill-dark {
+  background-color: var(--emerald-700);
+}
+
+.input-green-fill-dark {
+  background-color: var(--green-700);
+}
+
+.input-lime-fill-dark {
+  background-color: var(--lime-700);
+}
+
+.input-yellow-fill-dark {
+  background-color: var(--yellow-700);
+}
+
+.input-amber-fill-dark {
+  background-color: var(--amber-700);
+}
+
+.input-orange-fill-dark {
+  background-color: var(--orange-700);
+}
+
+.input-red-fill-dark {
+  background-color: var(--red-700);
+}
+
+.input-stone-fill-dark {
+  background-color: var(--stone-700);
+}
+
+.input-grey-fill-dark {
+  background-color: var(--grey-700);
+}
+
+.input-slate-fill-dark {
+  background-color: var(--slate-700);
+}
+
+/* color variations for hover classes */
+
+.input-white-hover:hover {
+  border-color: var(--white);
+}
+
+.input-black-hover:hover {
+  border-color: var(--black);
+}
+
+.input-pink-hover:hover {
+  border-color: var(--pink-500);
+}
+
+.input-rose-hover:hover {
+  border-color: var(--rose-500);
+}
+
+.input-fuchsia-hover:hover {
+  border-color: var(--fuchsia-500);
+}
+
+.input-purple-hover:hover {
+  border-color: var(--purple-500);
+}
+
+.input-violet-hover:hover {
+  border-color: var(--violet-500);
+}
+
+.input-indigo-hover:hover {
+  border-color: var(--indigo-500);
+}
+
+.input-blue-hover:hover {
+  border-color: var(--blue-500);
+}
+
+.input-sky-hover:hover {
+  border-color: var(--sky-500);
+}
+
+.input-cyan-hover:hover {
+  border-color: var(--cyan-500);
+}
+
+.input-teal-hover:hover {
+  border-color: var(--teal-500);
+}
+
+.input-emerald-hover:hover {
+  border-color: var(--emerald-500);
+}
+
+.input-green-hover:hover {
+  border-color: var(--green-500);
+}
+
+.input-lime-hover:hover {
+  border-color: var(--lime-500);
+}
+
+.input-yellow-hover:hover {
+  border-color: var(--yellow-500);
+}
+
+.input-amber-hover:hover {
+  border-color: var(--amber-500);
+}
+
+.input-orange-hover:hover {
+  border-color: var(--orange-500);
+}
+
+.input-red-hover:hover {
+  border-color: var(--red-500);
+}
+
+.input-stone-hover:hover {
+  border-color: var(--stone-500);
+}
+
+.input-grey-hover:hover {
+  border-color: var(--grey-500);
+}
+
+.input-slate-hover:hover {
+  border-color: var(--slate-500);
+}
+
+/* color variations for focus classes */
+
+.input-white-focus:focus {
+  border-color: var(--white);
+}
+
+.input-black-focus:focus {
+  border-color: var(--black);
+}
+
+.input-pink-focus:focus {
+  border-color: var(--pink-500);
+}
+
+.input-rose-focus:focus {
+  border-color: var(--rose-500);
+}
+
+.input-fuchsia-focus:focus {
+  border-color: var(--fuchsia-500);
+}
+
+.input-purple-focus:focus {
+  border-color: var(--purple-500);
+}
+
+.input-violet-focus:focus {
+  border-color: var(--violet-500);
+}
+
+.input-indigo-focus:focus {
+  border-color: var(--indigo-500);
+}
+
+.input-blue-focus:focus {
+  border-color: var(--blue-500);
+}
+
+.input-sky-focus:focus {
+  border-color: var(--sky-500);
+}
+
+.input-cyan-focus:focus {
+  border-color: var(--cyan-500);
+}
+
+.input-teal-focus:focus {
+  border-color: var(--teal-500);
+}
+
+.input-emerald-focus:focus {
+  border-color: var(--emerald-500);
+}
+
+.input-green-focus:focus {
+  border-color: var(--green-500);
+}
+
+.input-lime-focus:focus {
+  border-color: var(--lime-500);
+}
+
+.input-yellow-focus:focus {
+  border-color: var(--yellow-500);
+}
+
+.input-amber-focus:focus {
+  border-color: var(--amber-500);
+}
+
+.input-orange-focus:focus {
+  border-color: var(--orange-500);
+}
+
+.input-red-focus:focus {
+  border-color: var(--red-500);
+}
+
+.input-stone-focus:focus {
+  border-color: var(--stone-500);
+}
+
+.input-grey-focus:focus {
+  border-color: var(--grey-500);
+}
+
+.input-slate-focus:focus {
+  border-color: var(--slate-500);
 }

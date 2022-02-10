@@ -12,29 +12,45 @@
     <title>Fusion</title>
   </head>
   <body>
-    <div class="hi">
-      <h2>Inputs</h2>
-      <input class="input input-outlined" placeholder="outlined" />
+    <div class="m-10 p-5">
+      <div class="input-container">
+        <input
+          type="text"
+          id="email"
+          class="input input-lime-hover input-blue-focus"
+          autocomplete="off"
+          placeholder=" "
+        />
+        <label for="email" class="input-label text-grey-700 bg-white"
+          >input outlined</label
+        >
+      </div>
       <br />
-      <input class="input input-filled" placeholder="filled" />
+      <div class="input-container">
+        <input
+          type="text"
+          id="email"
+          class="input input-grey-fill-light input-lime-hover input-blue-focus"
+          autocomplete="off"
+          placeholder=" "
+        />
+        <label for="email" class="input-label text-black bg-grey-200"
+          >input filled</label
+        >
+      </div>
       <br />
-      <input class="input input-standard" placeholder="standard" />
-      <br />
-      <h2>Error Inputs</h2>
-      <br />
-      <input class="input input-outlined-error" placeholder="outlined error" />
-      <br />
-      <input class="input input-filled-error" placeholder="filled error text" />
-      <br />
-      <input
-        class="input input-standard-error"
-        placeholder="standard error text"
-      />
-      <br />
-      <h2>box with input and text area</h2>
-      <div class="text-input-box">
-        <input class="input input-outlined" type="text" />
-        <textarea></textarea>
+      <div class="input-container">
+        <input
+          type="text"
+          id="email"
+          class="input input-red input-red-focus"
+          autocomplete="off"
+          placeholder=" "
+        />
+        <label for="email" class="input-label text-red-500 bg-white"
+          >input error</label
+        >
+        <small class="error text-red-500 text-sm">error message</small>
       </div>
     </div>
   </body>
