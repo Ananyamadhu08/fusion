@@ -95,3 +95,119 @@
 .rounded-full {
   border-radius: 9999px;
 }
+
+/* border radius top left */
+.rounded-none-tl {
+  border-top-left-radius: 0px;
+}
+.rounded-sm-tl {
+  border-top-left-radius: 0.125rem;
+}
+.rounded-tl {
+  border-top-left-radius: 0.25rem;
+}
+.rounded-md-tl {
+  border-top-left-radius: 0.375rem;
+}
+.rounded-lg-tl {
+  border-top-left-radius: 0.5rem;
+}
+.rounded-xl-tl {
+  border-top-left-radius: 0.75rem;
+}
+.rounded-2xl-tl {
+  border-top-left-radius: 1rem;
+}
+.rounded-3xl-tl {
+  border-top-left-radius: 1.5rem;
+}
+.rounded-full-tl {
+  border-top-left-radius: 9999px;
+}
+
+/* border radius top right */
+.rounded-none-tr {
+  border-top-right-radius: 0px;
+}
+.rounded-sm-tr {
+  border-top-right-radius: 0.125rem;
+}
+.rounded-tr {
+  border-top-right-radius: 0.25rem;
+}
+.rounded-md-tr {
+  border-top-right-radius: 0.375rem;
+}
+.rounded-lg-tr {
+  border-top-right-radius: 0.5rem;
+}
+.rounded-xl-tr {
+  border-top-right-radius: 0.75rem;
+}
+.rounded-2xl-tr {
+  border-top-right-radius: 1rem;
+}
+.rounded-3xl-tr {
+  border-top-right-radius: 1.5rem;
+}
+.rounded-full-tr {
+  border-top-right-radius: 9999px;
+}
+
+/* border radius bottom left */
+.rounded-none-bl {
+  border-bottom-left-radius: 0px;
+}
+.rounded-sm-bl {
+  border-bottom-left-radius: 0.125rem;
+}
+.rounded-bl {
+  border-bottom-left-radius: 0.25rem;
+}
+.rounded-md-bl {
+  border-bottom-left-radius: 0.375rem;
+}
+.rounded-lg-bl {
+  border-bottom-left-radius: 0.5rem;
+}
+.rounded-xl-bl {
+  border-bottom-left-radius: 0.75rem;
+}
+.rounded-2xl-bl {
+  border-bottom-left-radius: 1rem;
+}
+.rounded-3xl-bl {
+  border-bottom-left-radius: 1.5rem;
+}
+.rounded-full-bl {
+  border-bottom-left-radius: 9999px;
+}
+
+/* border radius bottom right */
+.rounded-none-br {
+  border-bottom-right-radius: 0px;
+}
+.rounded-sm-br {
+  border-bottom-right-radius: 0.125rem;
+}
+.rounded-br {
+  border-bottom-right-radius: 0.25rem;
+}
+.rounded-md-br {
+  border-bottom-right-radius: 0.375rem;
+}
+.rounded-lg-br {
+  border-bottom-right-radius: 0.5rem;
+}
+.rounded-xl-br {
+  border-bottom-right-radius: 0.75rem;
+}
+.rounded-2xl-br {
+  border-bottom-right-radius: 1rem;
+}
+.rounded-3xl-br {
+  border-bottom-right-radius: 1.5rem;
+}
+.rounded-full-br {
+  border-bottom-right-radius: 9999px;
+}
