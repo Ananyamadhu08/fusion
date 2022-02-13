@@ -41,7 +41,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .top-navbar .links {
     position: fixed;
     left: 0;
@@ -64,7 +64,7 @@
 
   .top-navbar .icon-burger {
     position: relative;
-    left: 2rem;
+    left: 1rem;
     display: block;
   }
 
