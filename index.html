@@ -13,44 +13,16 @@
   </head>
   <body>
     <!-- top nav bar -->
-    <!-- <nav
-      class="h-20 top-navbar flex justify-between bg-cyan-600 align-items-center rounded-3xl-br"
-    >
-      <div class="flex gap-2 align-items-center">
-        <span class="pl-4 text-2xl fas fa-code"></span>
-        <h1>FusionCSS</h1>
-      </div>
-      <ul class="flex gap-4 pr-5">
-        <li>Github</li>
-        <li>Twitter</li>
-        <li>LinkedIn</li>
-      </ul>
-    </nav> -->
 
-    <!-- side nav bar -->
-    <!-- <nav class="w-max p-4 side-navbar bg-cyan-600">
-      <div class="mb-9 flex align-items-center gap-2">
-        <span class="text-2xl fas fa-code"></span>
-        <h1>FusionCSS</h1>
-      </div>
-      <ul class="flex flex-col gap-14">
-        <li class="bg-cyan-700 p-2 rounded">Github</li>
-        <li class="bg-cyan-700 p-2 rounded">Twitter</li>
-        <li class="bg-cyan-700 p-2 rounded">LinkedIn</li>
-      </ul>
-    </nav> -->
-
-    <header>
-      <nav
-        class="top-navbar flex align-items-center justify-between bg-cyan-900"
-      >
-        <input id="top-navbar-toggle" type="checkbox" />
+    <!-- <header>
+      <nav class="top-nav flex align-items-center justify-between bg-cyan-900">
+        <input id="top-nav-toggle" type="checkbox" />
         <a class="text-white text-lg flex gap-3">
           <span class="fas fa-code text-2xl"></span>
           <h2>Fusion<span class="text-cyan-400">CSS</span></h2>
         </a>
 
-        <ul class="links gap-5">
+        <ul class="links gap-8">
           <li>
             <a
               class="text-white flex justify-center align-items-center text-hover-cyan-400 text-lg"
@@ -88,12 +60,56 @@
           </li>
         </ul>
 
-        <label for="top-navbar-toggle" class="icon-burger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
+        <label for="top-nav-toggle" class="icon-burger">
+          <div class="line bg-white"></div>
+          <div class="line bg-white"></div>
+          <div class="line bg-white"></div>
         </label>
       </nav>
-    </header>
+    </header> -->
+
+    <!-- side bar -->
+
+    <nav id="side-navbar" class="side-nav bg-cyan-900">
+      <span class="fas fa-times close-btn text-white" onclick="closeNav()">
+      </span>
+      <ul class="links text-slate-300">
+        <li>
+          <a class="" href="#">
+            <i class="fab fa-twitter mr-2"></i>
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a class="" href="#">
+            <i class="fab fa-github mr-2"></i>
+            Github
+          </a>
+        </li>
+        <li>
+          <a class="" href="#">
+            <i class="fab fa-linkedin mr-2"></i>
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a class="" href="#"> Documentation </a>
+        </li>
+      </ul>
+    </nav>
+
+    <button class="btn btn-transparent" onclick="openNav()">
+      <span class="fas fa-bars text-2xl"></span>
+    </button>
+
+    <script>
+      function closeNav() {
+        document.getElementById("side-navbar").style.width = "0";
+      }
+
+      function openNav() {
+        document.getElementById("side-navbar").style.width = "250px";
+      }
+    </script>
   </body>
 </html>

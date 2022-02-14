@@ -78,6 +78,13 @@
   font-size: 1.5rem;
 }
 
+/* transparent btn (used with icons) */
+
+.btn-transparent {
+  border: 0;
+  background: transparent;
+}
+
 /* background hover classes */
 
 .btn-bg-hover-white:hover {
