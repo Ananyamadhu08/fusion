@@ -1,0 +1,107 @@
+/* top nav bar */
+
+.top-nav {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  padding: 0 1.5rem;
+  min-height: 5rem;
+  display: flex;
+}
+
+.top-nav .links {
+  float: right;
+  display: flex;
+}
+
+#top-nav-toggle {
+  display: none;
+}
+
+.top-nav .icon-burger {
+  display: none;
+  transform: translate(-50%);
+}
+
+.top-nav .icon-burger .line {
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 800px) {
+  .top-nav .links {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 5rem;
+    bottom: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    opacity: 85%;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .top-nav :checked ~ .links {
+    bottom: 0;
+  }
+
+  .top-nav .icon-burger {
+    position: relative;
+    left: 1rem;
+    display: block;
+  }
+
+  .top-nav :checked ~ .icon-burger .line:nth-child(1) {
+    transform: translateY(8px) rotate(230deg);
+  }
+
+  .top-nav :checked ~ .icon-burger .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-230deg);
+  }
+
+  .top-nav :checked ~ .icon-burger .line:nth-child(2) {
+    opacity: 0;
+  }
+}
+
+/* fixed side nav */
+.fixed-side-nav {
+  background-color: firebrick;
+  height: 100vh;
+  width: max-content;
+  position: fixed;
+}
+
+/* collapsible side nav  */
+
+.side-nav {
+  height: 100%;
+  width: 0;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 3rem;
+  transition: 0.5s;
+}
+
+.side-nav .links {
+  padding: 1rem 1rem 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.side-nav .close-btn {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}

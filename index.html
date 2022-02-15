@@ -12,55 +12,104 @@
     <title>Fusion</title>
   </head>
   <body>
-    <div class="m-10 p-5 flex" style="gap: 2rem">
-      <!-- ordered list -->
-      <ol class="ol-upper-alpha">
-        <li>ObjOne</li>
-        <li>ObjTwo</li>
-        <li>ObjThree</li>
-        <li>ObjFour</li>
-        <li>ObjFive</li>
-      </ol>
-      <br />
-      <ol class="ol-lower-alpha">
-        <li>ObjOne</li>
-        <li>ObjTwo</li>
-        <li>ObjThree</li>
-        <li>ObjFour</li>
-        <li>ObjFive</li>
-      </ol>
-      <br />
-      <ol class="ol-upper-roman">
-        <li>ObjOne</li>
-        <li>ObjTwo</li>
-        <li>ObjThree</li>
-        <li>ObjFour</li>
-        <li>ObjFive</li>
-      </ol>
-      <ol class="ol-lower-roman">
-        <li>ObjOne</li>
-        <li>ObjTwo</li>
-        <li>ObjThree</li>
-        <li>ObjFour</li>
-        <li>ObjFive</li>
-      </ol>
-      <br />
-      <!-- unordered list -->
-      <ul class="ul-circle">
-        <li>ObjOne</li>
-        <li>ObjTwo</li>
-        <li>ObjThree</li>
-        <li>ObjFour</li>
-        <li>ObjFive</li>
+    <!-- top nav bar -->
+
+    <!-- <header>
+      <nav class="top-nav flex align-items-center justify-between bg-cyan-900">
+        <input id="top-nav-toggle" type="checkbox" />
+        <a class="text-white text-lg flex gap-3">
+          <span class="fas fa-code text-2xl"></span>
+          <h2>Fusion<span class="text-cyan-400">CSS</span></h2>
+        </a>
+
+        <ul class="links gap-8">
+          <li>
+            <a
+              class="text-white flex justify-center align-items-center text-hover-cyan-400 text-lg"
+              href="#"
+            >
+              <i class="fab fa-twitter mr-2"></i>
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a
+              class="text-white text-hover-cyan-400 flex justify-center align-items-center text-lg"
+              href="#"
+            >
+              <i class="fab fa-github mr-2"></i>
+              Github
+            </a>
+          </li>
+          <li>
+            <a
+              class="text-white text-hover-cyan-400 flex justify-center align-items-center text-lg"
+              href="#"
+            >
+              <i class="fab fa-linkedin mr-2"></i>
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a
+              class="text-white text-hover-cyan-400 flex justify-center align-items-center text-lg"
+              href="#"
+            >
+              Documentation
+            </a>
+          </li>
+        </ul>
+
+        <label for="top-nav-toggle" class="icon-burger">
+          <div class="line bg-white"></div>
+          <div class="line bg-white"></div>
+          <div class="line bg-white"></div>
+        </label>
+      </nav>
+    </header> -->
+
+    <!-- side bar -->
+
+    <nav id="side-navbar" class="side-nav bg-cyan-900">
+      <span class="fas fa-times close-btn text-white" onclick="closeNav()">
+      </span>
+      <ul class="links text-slate-300">
+        <li>
+          <a class="" href="#">
+            <i class="fab fa-twitter mr-2"></i>
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a class="" href="#">
+            <i class="fab fa-github mr-2"></i>
+            Github
+          </a>
+        </li>
+        <li>
+          <a class="" href="#">
+            <i class="fab fa-linkedin mr-2"></i>
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a class="" href="#"> Documentation </a>
+        </li>
       </ul>
-      <br />
-      <ul class="list-none flex flex-col w-max">
-        <li class="m-1 bg-grey-400 p-2">ObjOne</li>
-        <li class="m-1 bg-grey-400 p-2">ObjTwo</li>
-        <li class="m-1 bg-grey-400 p-2">ObjThree</li>
-        <li class="m-1 bg-grey-400 p-2">ObjFour</li>
-        <li class="m-1 bg-grey-400 p-2">ObjFive</li>
-      </ul>
-    </div>
+    </nav>
+
+    <button class="btn btn-transparent" onclick="openNav()">
+      <span class="fas fa-bars text-2xl"></span>
+    </button>
+
+    <script>
+      function closeNav() {
+        document.getElementById("side-navbar").style.width = "0";
+      }
+
+      function openNav() {
+        document.getElementById("side-navbar").style.width = "250px";
+      }
+    </script>
   </body>
 </html>
