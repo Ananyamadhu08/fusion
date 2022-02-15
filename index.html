@@ -7,52 +7,32 @@
     <link href="css/index.css" rel="stylesheet" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
     <title>Fusion</title>
   </head>
   <body>
-    <button
-      id="modal-btn"
-      class="btn btn-square-solid bg-cyan-900 text-white mt-16 ml-16"
-    >
-      Open Modal
-    </button>
-
-    <div id="modal" class="modal">
-      <div class="modal-cont bg-teal-600">
-        <span
-          class="close-btn text-slate-700 text-hover-white fas fa-times"
-        ></span>
-        <h2>This is a modal</h2>
-        <p>
-          sections 1.10.32 and 1.10.33] McClintock, a Latin professor at
-          Hscovered the undoubtable source. Lorem Ipsum comes from sections
-          1.10.32 and 1.10.33] McClintock, a Latin professor at Hampdehe 1914
-          translation by H. Rackham.ock
-        </p>
-      </div>
+    <div class="full-star-rating">
+      <input id="star-1" type="radio" name="star" value="star-1" />
+      <label for="star-1" title="1 star">
+        <i class="active fa fa-star" aria-hidden="true"></i>
+      </label>
+      <input id="star-2" type="radio" name="star" value="star-2" />
+      <label for="star-2" title="2 stars">
+        <i class="active fa fa-star" aria-hidden="true"></i>
+      </label>
+      <input id="star-3" type="radio" name="star" value="star-3" />
+      <label for="star-3" title="3 stars">
+        <i class="active fa fa-star" aria-hidden="true"></i>
+      </label>
+      <input id="star-4" type="radio" name="star" value="star-4" />
+      <label for="star-4" title="4 stars">
+        <i class="active fa fa-star" aria-hidden="true"></i>
+      </label>
+      <input id="star-5" type="radio" name="star" value="star-5" />
+      <label for="star-5" title="5 stars">
+        <i class="active fa fa-star" aria-hidden="true"></i>
+      </label>
     </div>
-    <script>
-      var modal = document.getElementById("modal");
-
-      var modalBtn = document.getElementById("modal-btn");
-
-      var closeBtn = document.getElementsByClassName("close-btn")[0];
-
-      modalBtn.onclick = function () {
-        modal.style.display = "block";
-      };
-
-      closeBtn.onclick = function () {
-        modal.style.display = "none";
-      };
-
-      window.onclick = function (event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      };
-    </script>
   </body>
 </html>

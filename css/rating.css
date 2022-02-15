@@ -1,0 +1,22 @@
+/* full star rating bar */
+
+.full-star-rating {
+  direction: rtl;
+  display: inline-block;
+}
+
+.full-star-rating input[type="radio"] {
+  display: none;
+}
+
+.full-star-rating label {
+  color: var(--grey-400);
+  font-size: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.full-star-rating label:hover,
+.full-star-rating label:hover ~ label,
+.full-star-rating input[type="radio"]:checked ~ label {
+  color: var(--yellow-400);
+}
