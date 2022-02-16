@@ -20,3 +20,38 @@
 .full-star-rating input[type="radio"]:checked ~ label {
   color: var(--yellow-400);
 }
+
+/* half star rating bar */
+
+.half-star-rating {
+  border: none;
+  float: left;
+}
+
+.half-star-rating > input {
+  display: none;
+}
+
+.half-star-rating > label::before {
+  margin: 0.5rem;
+  font-size: 1.25rem;
+  font-family: fontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.half-star-rating > .half::before {
+  content: "\f089";
+  position: absolute;
+}
+
+.half-star-rating > label {
+  color: var(--grey-300);
+  float: right;
+}
+
+.half-star-rating > input:checked ~ label,
+.half-star-rating:not(:checked) > label:hover,
+.half-star-rating:not(:checked) > label:hover ~ label {
+  color: var(--amber-300);
+}
