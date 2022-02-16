@@ -6,110 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/index.css" rel="stylesheet" />
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <title>Fusion</title>
   </head>
   <body>
-    <!-- top nav bar -->
-
-    <!-- <header>
-      <nav class="top-nav flex align-items-center justify-between bg-cyan-900">
-        <input id="top-nav-toggle" type="checkbox" />
-        <a class="text-white text-lg flex gap-3">
-          <span class="fas fa-code text-2xl"></span>
-          <h2>Fusion<span class="text-cyan-400">CSS</span></h2>
-        </a>
-
-        <ul class="links gap-8">
-          <li>
-            <a
-              class="text-white flex justify-center align-items-center text-hover-cyan-400 text-lg"
-              href="#"
-            >
-              <i class="fab fa-twitter mr-2"></i>
-              Twitter
-            </a>
-          </li>
-          <li>
-            <a
-              class="text-white text-hover-cyan-400 flex justify-center align-items-center text-lg"
-              href="#"
-            >
-              <i class="fab fa-github mr-2"></i>
-              Github
-            </a>
-          </li>
-          <li>
-            <a
-              class="text-white text-hover-cyan-400 flex justify-center align-items-center text-lg"
-              href="#"
-            >
-              <i class="fab fa-linkedin mr-2"></i>
-              LinkedIn
-            </a>
-          </li>
-          <li>
-            <a
-              class="text-white text-hover-cyan-400 flex justify-center align-items-center text-lg"
-              href="#"
-            >
-              Documentation
-            </a>
-          </li>
-        </ul>
-
-        <label for="top-nav-toggle" class="icon-burger">
-          <div class="line bg-white"></div>
-          <div class="line bg-white"></div>
-          <div class="line bg-white"></div>
-        </label>
-      </nav>
-    </header> -->
-
-    <!-- side bar -->
-
-    <nav id="side-navbar" class="side-nav bg-cyan-900">
-      <span class="fas fa-times close-btn text-white" onclick="closeNav()">
-      </span>
-      <ul class="links text-slate-300">
-        <li>
-          <a class="" href="#">
-            <i class="fab fa-twitter mr-2"></i>
-            Twitter
-          </a>
-        </li>
-        <li>
-          <a class="" href="#">
-            <i class="fab fa-github mr-2"></i>
-            Github
-          </a>
-        </li>
-        <li>
-          <a class="" href="#">
-            <i class="fab fa-linkedin mr-2"></i>
-            LinkedIn
-          </a>
-        </li>
-        <li>
-          <a class="" href="#"> Documentation </a>
-        </li>
-      </ul>
-    </nav>
-
-    <button class="btn btn-transparent" onclick="openNav()">
-      <span class="fas fa-bars text-2xl"></span>
+    <button
+      id="modal-btn"
+      class="btn btn-square-solid bg-cyan-900 text-white mt-16 ml-16"
+    >
+      Open Modal
     </button>
 
+    <div id="modal" class="modal">
+      <div class="modal-cont bg-teal-600">
+        <span
+          class="close-btn text-slate-700 text-hover-white fas fa-times"
+        ></span>
+        <h2>This is a modal</h2>
+        <p>
+          sections 1.10.32 and 1.10.33] McClintock, a Latin professor at
+          Hscovered the undoubtable source. Lorem Ipsum comes from sections
+          1.10.32 and 1.10.33] McClintock, a Latin professor at Hampdehe 1914
+          translation by H. Rackham.ock
+        </p>
+      </div>
+    </div>
     <script>
-      function closeNav() {
-        document.getElementById("side-navbar").style.width = "0";
-      }
+      var modal = document.getElementById("modal");
 
-      function openNav() {
-        document.getElementById("side-navbar").style.width = "250px";
-      }
+      var modalBtn = document.getElementById("modal-btn");
+
+      var closeBtn = document.getElementsByClassName("close-btn")[0];
+
+      modalBtn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      closeBtn.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
     </script>
   </body>
 </html>
