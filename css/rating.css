@@ -1,0 +1,56 @@
+/* full star rating bar */
+
+.full-star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.full-star-rating .full-rating-input {
+  display: none;
+}
+
+.full-star-rating .full-rating-label {
+  color: var(--grey-300);
+  transition: all 0.3s ease-in-out;
+}
+
+.full-star-rating .full-rating-label:hover,
+.full-star-rating .full-rating-label:hover ~ .full-rating-label,
+.full-star-rating .full-rating-input:checked ~ .full-rating-label {
+  color: var(--yellow-400);
+}
+
+/* half star rating bar */
+
+.half-star-rating {
+  border: none;
+}
+
+.half-star-rating > .half-rating-input {
+  display: none;
+}
+
+.half-star-rating > .half-rating-label::before {
+  margin: 0.5rem;
+  font-family: fontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.half-star-rating > .half::before {
+  content: "\f089";
+  position: absolute;
+}
+
+.half-star-rating > .half-rating-label {
+  color: var(--grey-300);
+  float: right;
+}
+
+.half-star-rating > .half-rating-input:checked ~ .half-rating-label,
+.half-star-rating:not(:checked) > .half-rating-label:hover,
+.half-star-rating:not(:checked)
+  > .half-rating-label:hover
+  ~ .half-rating-label {
+  color: var(--amber-300);
+}
