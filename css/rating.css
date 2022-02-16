@@ -1,23 +1,22 @@
 /* full star rating bar */
 
 .full-star-rating {
-  direction: rtl;
-  display: inline-block;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-.full-star-rating input[type="radio"] {
+.full-star-rating .full-rating-input {
   display: none;
 }
 
-.full-star-rating label {
-  color: var(--grey-400);
-  font-size: 2rem;
+.full-star-rating .full-rating-label {
+  color: var(--grey-300);
   transition: all 0.3s ease-in-out;
 }
 
-.full-star-rating label:hover,
-.full-star-rating label:hover ~ label,
-.full-star-rating input[type="radio"]:checked ~ label {
+.full-star-rating .full-rating-label:hover,
+.full-star-rating .full-rating-label:hover ~ .full-rating-label,
+.full-star-rating .full-rating-input:checked ~ .full-rating-label {
   color: var(--yellow-400);
 }
 
@@ -25,16 +24,14 @@
 
 .half-star-rating {
   border: none;
-  float: left;
 }
 
-.half-star-rating > input {
+.half-star-rating > .half-rating-input {
   display: none;
 }
 
-.half-star-rating > label::before {
+.half-star-rating > .half-rating-label::before {
   margin: 0.5rem;
-  font-size: 1.25rem;
   font-family: fontAwesome;
   display: inline-block;
   content: "\f005";
@@ -45,13 +42,15 @@
   position: absolute;
 }
 
-.half-star-rating > label {
+.half-star-rating > .half-rating-label {
   color: var(--grey-300);
   float: right;
 }
 
-.half-star-rating > input:checked ~ label,
-.half-star-rating:not(:checked) > label:hover,
-.half-star-rating:not(:checked) > label:hover ~ label {
+.half-star-rating > .half-rating-input:checked ~ .half-rating-label,
+.half-star-rating:not(:checked) > .half-rating-label:hover,
+.half-star-rating:not(:checked)
+  > .half-rating-label:hover
+  ~ .half-rating-label {
   color: var(--amber-300);
 }
