@@ -1,0 +1,42 @@
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltip-text {
+  margin: 0.2rem;
+  visibility: hidden;
+  width: max-content;
+  text-align: center;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+.tooltip .tooltip-text-right {
+  top: -0.625rem;
+  left: 105%;
+}
+
+.tooltip .tooltip-text-left {
+  top: -0.625rem;
+  right: 105%;
+}
+
+.tooltip .tooltip-text-top {
+  bottom: 100%;
+  left: 50%;
+  margin-left: -4.2rem;
+}
+
+.tooltip .tooltip-text-bottom {
+  top: 100%;
+  left: 50%;
+  margin-left: -4.2rem;
+}
