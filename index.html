@@ -13,20 +13,11 @@
   </head>
 
   <body>
-    <button onclick="showSnackbar()">click me</button>
-    <div class="snackbar bg-grey-500">this is a toast</div>
-    <script>
-      function showSnackbar() {
-        var x = document.querySelector(".snackbar");
-
-        console.log(x);
-
-        x.classList.add("show");
-
-        setTimeout(function () {
-          x.classList.remove("show");
-        }, 5000);
-      }
-    </script>
+    <div class="tooltip m-64">
+      this text has a tooltip
+      <span class="tooltip-text tooltip-text-bottom bg-grey-300"
+        >Tooltip text</span
+      >
+    </div>
   </body>
 </html>
