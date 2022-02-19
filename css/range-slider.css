@@ -1,0 +1,41 @@
+.range-slider {
+  position: relative;
+}
+
+.range {
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.range::-ms-tooltip {
+  display: none;
+}
+
+.track {
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  pointer-events: none;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.track-inner {
+  width: 0;
+  height: 100%;
+}
+
+.thumb {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  pointer-events: none;
+  transform: translate(0%, -50%);
+}
+
+.thumb-circle {
+  border-radius: 50%;
+}
