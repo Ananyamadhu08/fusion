@@ -506,6 +506,15 @@
     <script src="/pages/highlight.js"></script>
     <script>
       hljs.highlightAll();
+
+      /* Set the width of the side navigation to 250px */
+      const openNav = () => {
+        document.getElementById("side-navbar").style.width = "250px";
+      };
+      /* Set the width of the side navigation to 0 */
+      const closeNav = () => {
+        document.getElementById("side-navbar").style.width = "0";
+      };
     </script>
   </body>
 </html>

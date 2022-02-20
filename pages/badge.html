@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spacing</title>
+    <title>Badge</title>
+
     <link href="../css/index.css" rel="stylesheet" />
     <link href="/pages/docs.css" rel="stylesheet" />
     <link href="/pages/night-owl.css" rel="stylesheet" />
@@ -32,7 +33,7 @@
             </h2>
           </a>
 
-          <ul class="links gap-16">
+          <ul class="links gap-10">
             <li>
               <a
                 class="text-white text-hover-indigo-400 flex justify-center align-items-center text-lg"
@@ -217,7 +218,7 @@
               <a href="/pages/colors.html">Colors</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
             >
               <a href="/pages/spacing.html">Spacing</a>
             </li>
@@ -237,7 +238,7 @@
               <a href="/pages/avatar.html">Avatar</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
             >
               <a href="/pages/badge.html"> Badge</a>
             </li>
@@ -330,221 +331,191 @@
         </nav>
 
         <section class="docs-page p-10 relative mt-3">
-          <h3 class="font-semibol text-xl mb-5">Spacing</h3>
+          <h3 class="font-semibold text-xl mb-5">Badge</h3>
           <h5 class="font-normal text-lg mb-5">
-            <span class="text-indigo-500 bg-indigo-100">Fusion CSS</span>
-            provides a wide range of values and a comprehensive numeric spacing
-            scale. The values are proportional, so 4 is twice as much spacing as
-            2 for example. One spacing unit is equal to 0.25rem, which
-            translates to 4px by default in most browsers.
-
-            <br class="mb-5" />
-            All spacing like margin, padding, height and width have the
-            respective classes, margin -
-            <span class="text-indigo-500 bg-indigo-100 underline"> m</span>,
-            padding -
-            <span class="text-indigo-500 bg-indigo-100 underline"> p</span>,
-            width -
-            <span class="text-indigo-500 bg-indigo-100 underline"> w</span>,
-            height -
-            <span class="text-indigo-500 bg-indigo-100 underline"> h</span>,
-            margin-top -
-            <span class="text-indigo-500 bg-indigo-100 underline"> mt</span>,
-            margin-bottom -
-            <span class="text-indigo-500 bg-indigo-100 underline"> mb</span>,
-            margin-left -
-            <span class="text-indigo-500 bg-indigo-100 underline"> ml</span>,
-            margin-right -
-            <span class="text-indigo-500 bg-indigo-100 underline"> mr</span>,
-            padding-top -
-            <span class="text-indigo-500 bg-indigo-100 underline"> pt</span>,
-            padding-bottom -
-            <span class="text-indigo-500 bg-indigo-100 underline"> pb</span>,
-            padding-left -
-            <span class="text-indigo-500 bg-indigo-100 underline"> pl</span>,
-            padding-right -
-            <span class="text-indigo-500 bg-indigo-100 underline"> pr</span>.
-
-            <br class="mb-5" />
-
-            All the spacing classes can be used with this chart for example
-            <span class="text-indigo-500 bg-indigo-100 underline">m-5</span>,
-            <span class="text-indigo-500 bg-indigo-100 underline">pb-11</span>,
-            <span class="text-indigo-500 bg-indigo-100 underline">h-16</span>,
-            <span class="text-indigo-500 bg-indigo-100 underline">mt-44</span>,
-            <span class="text-indigo-500 bg-indigo-100 underline">w-32</span>
-            etc.
+            A badge can be use to show notification count or some kind of status
+            information.
           </h5>
 
+          <h3 class="font-semibold text-xl mb-5">Examples</h3>
+
           <div class="p-5">
-            <table>
-              <tbody>
-                <tr>
-                  <td>&nbsp;Size</td>
-                  <td>&nbsp;Value in rem</td>
-                  <td>&nbsp;Value in px</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;1</td>
-                  <td>0.25rem</td>
-                  <td>4px</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;2</td>
-                  <td>0.5rem</td>
-                  <td>8px</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;3</td>
-                  <td>0.75rem</td>
-                  <td>12px</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;4</td>
-                  <td>1rem</td>
-                  <td>16px</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;5</td>
-                  <td>1.25rem</td>
-                  <td>20px</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;6</td>
-                  <td>1.5rem</td>
-                  <td>24px</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;7</td>
-                  <td>1.75rem</td>
-                  <td>28px</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;8</td>
-                  <td>2rem</td>
-                  <td>32px</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;9</td>
-                  <td>2.25rem</td>
-                  <td>36px</td>
-                </tr>
-                <tr>
-                  <td>10</td>
-                  <td>2.5rem</td>
-                  <td>40px</td>
-                </tr>
-                <tr>
-                  <td>11</td>
-                  <td>2.75rem</td>
-                  <td>44px</td>
-                </tr>
-                <tr>
-                  <td>12</td>
-                  <td>3rem</td>
-                  <td>48px</td>
-                </tr>
-                <tr>
-                  <td>14</td>
-                  <td>3.5rem</td>
-                  <td>56px</td>
-                </tr>
-                <tr>
-                  <td>16</td>
-                  <td>4rem</td>
-                  <td>64px</td>
-                </tr>
-                <tr>
-                  <td>20</td>
-                  <td>5rem</td>
-                  <td>80px</td>
-                </tr>
-                <tr>
-                  <td>24</td>
-                  <td>6rem</td>
-                  <td>96px</td>
-                </tr>
-                <tr>
-                  <td>28</td>
-                  <td>7rem</td>
-                  <td>112px</td>
-                </tr>
-                <tr>
-                  <td>32</td>
-                  <td>8rem</td>
-                  <td>128px</td>
-                </tr>
-                <tr>
-                  <td>36</td>
-                  <td>9rem</td>
-                  <td>144px</td>
-                </tr>
-                <tr>
-                  <td>40</td>
-                  <td>10rem</td>
-                  <td>160px</td>
-                </tr>
-                <tr>
-                  <td>44</td>
-                  <td>11rem</td>
-                  <td>176px</td>
-                </tr>
-                <tr>
-                  <td>48</td>
-                  <td>12rem</td>
-                  <td>192px</td>
-                </tr>
-                <tr>
-                  <td>52</td>
-                  <td>12rem</td>
-                  <td>208px</td>
-                </tr>
-                <tr>
-                  <td>56</td>
-                  <td>14rem</td>
-                  <td>224px</td>
-                </tr>
-                <tr>
-                  <td>60</td>
-                  <td>15rem</td>
-                  <td>240px</td>
-                </tr>
-                <tr>
-                  <td>64</td>
-                  <td>16rem</td>
-                  <td>256px</td>
-                </tr>
-                <tr>
-                  <td>72</td>
-                  <td>18rem</td>
-                  <td>288px</td>
-                </tr>
-                <tr>
-                  <td>80</td>
-                  <td>20rem</td>
-                  <td>320px</td>
-                </tr>
-                <tr>
-                  <td>96</td>
-                  <td>24rem</td>
-                  <td>384px</td>
-                </tr>
-              </tbody>
-            </table>
+            <h4 class="font-semibold text-xl mb-5 underline">
+              Badges on Avatar
+            </h4>
+            <div class="flex justify-start align-items-center mb-6">
+              <div class="badge-container mr-3">
+                <div class="avatar avatar-lg">
+                  <img
+                    class="img-responsive img-round"
+                    src="/css/images/img_avatar.png"
+                    alt="avatar"
+                  />
+                </div>
+                <span class="status-badge status-online"></span>
+              </div>
+              <div class="badge-container mr-3">
+                <div class="avatar avatar-md">
+                  <img
+                    class="img-responsive img-round"
+                    src="/css/images/img_avatar.png"
+                    alt="avatar"
+                  />
+                </div>
+                <span class="status-badge status-offline"></span>
+              </div>
+              <div class="badge-container mr-3">
+                <div class="avatar avatar-sm">
+                  <img
+                    class="img-responsive img-round"
+                    src="/css/images/img_avatar.png"
+                    alt="avatar"
+                  />
+                </div>
+                <span class="status-badge status-away"></span>
+              </div>
+              <div class="badge-container mr-3">
+                <div class="avatar avatar-xs">
+                  <img
+                    class="img-responsive img-round"
+                    alt="avatar"
+                    src="/css/images/img_avatar.png"
+                  />
+                </div>
+                <span class="status-badge status-online"></span>
+              </div>
+            </div>
+            <pre style="max-width: 70%; background: transparent; margin: auto">
+           <code class="html rounded-lg overflow-scroll h-full w-full">
+&lt;div class="badge-container mr-3">
+    &lt;div class="avatar avatar-lg">
+      &lt;img
+        class="img-responsive img-round"
+        src="/css/images/img_avatar.png"
+        alt="avatar"
+      />
+    &lt;/div>
+    &lt;span class="status-badge status-online">&lt;/span>
+  &lt;/div>
+  &lt;div class="badge-container mr-3">
+    &lt;div class="avatar avatar-md">
+      &lt;img
+        class="img-responsive img-round"
+        src="/css/images/img_avatar.png"
+        alt="avatar"
+      />
+    &lt;/div>
+    &lt;span class="status-badge status-offline">&lt;/span>
+  &lt;/div>
+  &lt;div class="badge-container mr-3">
+    &lt;div class="avatar avatar-sm">
+      &lt;img
+        class="img-responsive img-round"
+        src="/css/images/img_avatar.png"
+        alt="avatar"
+      />
+    &lt;/div>
+    &lt;span class="status-badge status-away">&lt;/span>
+  &lt;/div>
+  &lt;div class="badge-container mr-3">
+    &lt;div class="avatar avatar-xs">
+      &lt;img
+        class="img-responsive img-round"
+        alt="avatar"
+        src="/css/images/img_avatar.png"
+      />
+    &lt;/div>
+    &lt;span class="status-badge status-online">&lt;/span>
+  &lt;/div>
+
+           </code>
+        </pre>
+
+            <h4 class="h4 font-semibold text-xl mb-5 mt-5 underline">
+              Badges on Icon
+            </h4>
+
+            <a>
+              <span class="btn-icon badge-container"
+                ><i class="text-slate-700 fas fa-shopping-cart"></i>
+                <span class="icon-badge-sm text-xs status-badge">2</span>
+              </span>
+            </a>
+
+            <pre style="max-width: 70%; background: transparent; margin: auto">
+           <code class="html rounded-lg overflow-scroll h-full w-full">
+  &lt;a>
+    &lt;span class="btn-icon badge-container"
+      >&lt;i class="text-slate-700 fas fa-shopping-cart">&lt;/i>
+      &lt;span class="icon-badge-sm text-xs status-badge">2&lt;/span>
+    &lt;/span>
+  &lt;/a>
+           </code>
+        </pre>
+
+            <div class="flex flex-col mt-5">
+              <h4 class="font-semibold text-xl mb-5 underline">
+                Badges on Text
+              </h4>
+
+              <h2 class="badge-container mb-2">
+                Example of Text with Badge
+                <span class="text-badge bg-teal-500 text-white">New</span>
+              </h2>
+              <h3 class="badge-container mb-2">
+                Example of Text with Badge
+                <span class="text-badge bg-sky-500 text-white">New</span>
+              </h3>
+              <h4 class="badge-container mb-2">
+                Example of Text with Badge
+                <span
+                  class="text-badge bg-rose-500 rounded-pill-badge text-white"
+                  >New</span
+                >
+              </h4>
+              <h5 class="badge-container">
+                Example of Text with Badge
+                <span class="text-badge bg-cyan-500 text-white">New</span>
+              </h5>
+            </div>
           </div>
+
+          <pre style="max-width: 70%; background: transparent; margin: auto">
+           <code class="html rounded-lg overflow-scroll h-full w-full">
+&lt;h2 class="badge-container mb-2">
+    Example of Text with Badge
+    &lt;span class="text-badge bg-teal-500 text-white">New&lt;/span>
+  &lt;/h2>
+  &lt;h3 class="badge-container mb-2">
+    Example of Text with Badge
+    &lt;span class="text-badge bg-sky-500 text-white">New&lt;/span>
+  &lt;/h3>
+  &lt;h4 class="badge-container mb-2">
+    Example of Text with Badge
+    &lt;span
+      class="text-badge bg-rose-500 rounded-pill-badge text-white"
+      >New&lt;/span
+    >
+  &lt;/h4>
+  &lt;h5 class="badge-container">
+    Example of Text with Badge
+    &lt;span class="text-badge bg-cyan-500 text-white">New&lt;/span>
+  &lt;/h5>
+           </code>
+        </pre>
 
           <div class="page-footer flex justify-between">
             <a
-              href="/pages/colors.html"
+              href="/pages/avatar.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
-              Colors
+              Avatar
             </a>
             <a
-              href="/pages/alerts.html"
+              href="/pages/badges.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
-              Alert
+              Button
             </a>
           </div>
         </section>
@@ -590,17 +561,20 @@
           </li>
         </ul>
       </footer>
-
-      <script>
-        /* Set the width of the side navigation to 250px */
-        const openNav = () => {
-          document.getElementById("side-navbar").style.width = "250px";
-        };
-        /* Set the width of the side navigation to 0 */
-        const closeNav = () => {
-          document.getElementById("side-navbar").style.width = "0";
-        };
-      </script>
     </div>
+
+    <script src="/pages/highlight.js"></script>
+    <script>
+      hljs.highlightAll();
+
+      /* Set the width of the side navigation to 250px */
+      const openNav = () => {
+        document.getElementById("side-navbar").style.width = "250px";
+      };
+      /* Set the width of the side navigation to 0 */
+      const closeNav = () => {
+        document.getElementById("side-navbar").style.width = "0";
+      };
+    </script>
   </body>
 </html>
