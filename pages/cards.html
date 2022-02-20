@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Buttons</title>
+    <title>Cards</title>
 
     <link href="../css/index.css" rel="stylesheet" />
     <link href="/pages/docs.css" rel="stylesheet" />
@@ -15,7 +15,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
   </head>
-
   <body>
     <div class="flex flex-row">
       <!-- header -->
@@ -111,7 +110,7 @@
               <a href="/pages/badge.html"> Badge</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-hover-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
             >
               <a href="/pages/buttons.html">Buttons</a>
             </li>
@@ -244,12 +243,12 @@
               <a href="/pages/badge.html"> Badge</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
             >
               <a href="/pages/buttons.html">Buttons</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
             >
               <a href="/pages/cards.html">Cards</a>
             </li>
@@ -332,330 +331,285 @@
         </nav>
 
         <section class="docs-page p-10 relative mt-3">
-          <h3 class="font-semibold text-xl mb-5">Buttons</h3>
+          <h3 class="font-semibold text-xl mb-5">Cards</h3>
           <h5 class="font-normal text-lg mb-5">
-            Buttons are also called as call to action. We have range of buttons
-            and their states. You may use a tag or button element, you just need
-            to add the respective classes, and you are good to go.
+            Card are used to show user related data collectively, like product
+            details.
           </h5>
 
           <h3 class="font-semibold text-xl mb-5">Examples</h3>
 
           <div class="p-5">
-            <h1 class="pt-10">Primary Buttons</h1>
+            <h4 class="font-semibold text-xl mb-5 underline">Vertical Card</h4>
+
+            <!-- card 1 -->
             <div
-              class="pt-10 flex align-items-center gap-6 flex-wrap text-center"
+              class="shadow-lg rounded flex flex-col relative w-72 mb-12 ml-12"
             >
-              <button
-                class="btn btn-square-solid text-white bg-rose-700 btn-bg-hover-rose-600"
-              >
-                click me
-              </button>
-              <button
-                class="btn text-white btn-bg-hover-teal-500 btn-text-hover-white btn-rounded-solid bg-teal-700"
-              >
-                click me
-              </button>
-              <button
-                class="btn btn-square-outlined btn-bg-hover-blue-600 text-hover-white text-blue-600"
-              >
-                click me
-              </button>
-              <button
-                class="btn btn-rounded-outlined text-rose-600 btn-bg-hover-rose-600 btn-text-hover-white"
-              >
-                click me
-              </button>
-              <button
-                class="btn btn-text-underline btn-text-hover-rose-800 text-green-600"
-              >
-                Text Primary
-              </button>
-              <button class="btn-icon text-teal-900">
-                <span class="fas fa-shopping-cart"></span>
-              </button>
-              <button class="btn btn-square-icon-text bg-amber-600 text-white">
-                <span class="far fa-gem"></span>
-                Primary button
-              </button>
-              <button
-                class="btn btn-rounded-icon-text bg-teal-700 text-white btn-bg-hover-teal-500"
-              >
-                <span class="fas fa-shopping-cart"></span>
-                Primary button
-              </button>
+              <!-- image container -->
+              <div class="h-72">
+                <img
+                  class="img-responsive rounded"
+                  style="height: 100%"
+                  src="/css/images/img_dress.png"
+                  alt="dress"
+                />
+                <div class="px-4 py-2 text-badge card-badge bg-indigo-300">
+                  new
+                </div>
+              </div>
+              <!-- card content container -->
+              <div class="p-3">
+                <h3 class="text-grey-600 subtitle1 mb-2">
+                  Printed floral dress
+                </h3>
+                <h4 class="subtitle2">Girls white printed dress</h4>
+                <h5 class="text-grey-600 mb-4">sold by marge</h5>
+                <p class="body1 mb-3">
+                  White Flower print fit & flare dress. Square neck Short, puff
+                  sleeves. Knee length in flared hem Crepe fabric with concealed
+                  zip closure.
+                </p>
+                <div class="flex justify-around">
+                  <button
+                    class="btn btn-square-solid btn-xs bg-indigo-400 text-white mr-3"
+                  >
+                    <span class="fas fa-shopping-cart"></span>Add to cart
+                  </button>
+                  <button
+                    class="btn btn-square-solid btn-xs bg-indigo-400 text-white"
+                  >
+                    <span class="fas fa-heart"></span>Add to wishlist
+                  </button>
+                </div>
+              </div>
+            </div>
+            <pre style="max-width: 70%; background: transparent; margin: auto">
+           <code class="html rounded-lg overflow-scroll h-full w-full">
+&lt;div class="shadow-lg rounded flex flex-col relative w-72 mb-12 ml-12">
+ <!-- image container  -->
+&lt;div class="h-72">
+ &lt;img
+ class="img-responsive rounded"
+style="height: 100%"
+src="/css/images/img_dress.png"
+alt="dress"/>
+ &lt;div class="px-4 py-2 text-badge card-badge bg-indigo-300">new&lt;/div>
+&lt;/div>
+            
+ <!-- card content container  -->
+&lt;div class="p-3">
+&lt;h3 class="text-grey-600 subtitle1 mb-2">Printed floral dress&lt;/h3>
+&lt;h4 class="subtitle2">Girls white printed dress&lt;/h4>
+&lt;h5 class="text-grey-600 mb-4">sold by marge&lt;/h5>
+&lt;p class="body1 mb-3">
+White Flower print fit & flare dress. Square neck Short, puff sleeves.
+Knee length in flared hem Crepe fabric with concealed zip closure.
+ &lt;/p>
+&lt;div class="flex justify-around">
+&lt;button class="btn btn-square-solid btn-xs bg-indigo-500 text-white mr-3">
+ &lt;span class="fas fa-shopping-cart">&lt;/span>Add to cart
+&lt;/button>
+ &lt;button class="btn btn-square-solid btn-xs bg-indigo-500 text-white">
+ &lt;span class="fas fa-heart">&lt;/span>Add to wishlist
+&lt;/button>
+ &lt;/div>
+ &lt;/div>
+&lt;/div>          
+           </code>
+        </pre>
+
+            <h4 class="h4 font-semibold text-xl mb-5 underline">
+              Vertical Card With Overlay
+            </h4>
+
+            <!-- card 2 -->
+            <div
+              class="shadow-lg rounded flex flex-col relative w-72 mb-12 ml-12 overlay"
+            >
+              <!-- image container -->
+              <div class="h-72">
+                <img
+                  class="img-responsive rounded"
+                  style="height: 100%"
+                  src="/css/images/img_dress.png"
+                  alt="dress"
+                />
+                <div class="px-4 py-2 text-badge card-badge bg-grey-400">
+                  out of stock
+                </div>
+              </div>
+              <!-- card content container -->
+              <div class="p-3">
+                <h3 class="text-grey-600 subtitle1 mb-2">
+                  Printed floral dress
+                </h3>
+                <h4 class="subtitle2">Girls white printed dress</h4>
+                <h5 class="text-grey-600 mb-4">sold by marge</h5>
+                <p class="body1 mb-3">
+                  White Flower print fit & flare dress. Square neck Short, puff
+                  sleeves. Knee length in flared hem Crepe fabric with concealed
+                  zip closure.
+                </p>
+                <div class="flex justify-around">
+                  <button
+                    class="btn btn-square-solid btn-xs bg-grey-500 text-white mr-3"
+                  >
+                    <span class="fas fa-shopping-cart"></span>Add to cart
+                  </button>
+                  <button
+                    class="btn btn-square-solid btn-xs bg-grey-500 text-white"
+                  >
+                    <span class="fas fa-heart"></span>Add to wishlist
+                  </button>
+                </div>
+              </div>
             </div>
 
             <pre style="max-width: 70%; background: transparent; margin: auto">
-              <code class="html rounded-lg overflow-scroll h-full w-full">
-&lt;button
-  class="btn btn-square-solid text-white bg-rose-700 btn-bg-hover-rose-600"
- >
-  click me
-&lt;/button>
-&lt;button
-  class="btn text-white btn-bg-hover-teal-500 btn-text-hover-white btn-rounded-solid bg-teal-700"
- >
-  click me
-&lt;/button>
-&lt;button
-  class="btn btn-square-outlined btn-bg-hover-blue-600 text-hover-white text-blue-600"
- >
-  click me
-&lt;/button>
-&lt;button
-  class="btn btn-rounded-outlined text-rose-600 btn-bg-hover-rose-600 btn-text-hover-white"
- >
-  click me
-&lt;/button>
-&lt;button class="btn btn-text-underline btn-text-hover-rose-800 text-green-600">
-  Text Primary
-&lt;/button>
-&lt;button class="btn-icon text-teal-900">
-  &lt;span class="fas fa-shopping-cart">&lt;/span>
-&lt;/button>
-&lt;button class="btn btn-square-icon-text bg-amber-600 text-white">
-  &lt;span class="far fa-gem">&lt;/span>
-  Primary button
-&lt;/button>
-&lt;button
-  class="btn btn-rounded-icon-text bg-teal-700 text-white btn-bg-hover-teal-500"
- >
-  &lt;span class="fas fa-shopping-cart">&lt;/span>
-  Primary button
-&lt;/button>
-
-              </code>
-           </pre>
-
-            <h1 class="pt-10">Secondary Buttons</h1>
-            <div
-              class="pt-10 flex align-items-center gap-6 text-center flex-wrap"
-            >
-              <button class="btn btn-square-solid">click me</button>
-              <button class="btn btn-rounded-solid">click me</button>
-              <button
-                class="btn btn-square-outlined text-slate-500 btn-bg-hover-grey-200"
-              >
-                secondary button
-              </button>
-              <button
-                class="btn btn-rounded-outlined text-slate-500 btn-bg-hover-grey-200"
-              >
-                secondary button
-              </button>
-              <button class="btn btn-text-underline text-slate-600">
-                Text Secondary
-              </button>
-              <button class="btn-icon text-grey-500">
-                <span class="fas fa-trash-alt"></span>
-              </button>
-            </div>
-            <pre style="max-width: 70%; background: transparent; margin: auto">
-              <code class="html rounded-lg overflow-scroll h-full w-full">
-&lt;button class="btn btn-square-solid">click me &lt;/button>
- &lt;button class="btn btn-rounded-solid">click me&lt;/button> 
- &lt;button class="btn btn-square-outlined text-slate-500 btn-bg-hover-grey-200"> secondary button
-&lt;/button> 
-&lt;button class="btn btn-rounded-outlined text-slate-500
-btn-bg-hover-grey-200"> secondary button &lt;/button> 
-&lt;button class="btn btn-text-underline text-slate-600">Text Secondary&lt;/button> 
-&lt;button class="btn-icon text-grey-500"> &lt;span class="fas fa-trash-alt">&lt;/span>
-&lt;/button>
-              </code>
-           </pre>
-            <h1 class="pt-10">Disabled Buttons</h1>
-            <div
-              class="pt-10 text-center flex align-items-center gap-6 flex-wrap"
-            >
-              <button
-                class="btn btn-square-solid text-white bg-rose-700 btn-bg-hover-rose-600 btn-disabled"
-              >
-                click me
-              </button>
-              <button
-                class="btn text-white btn-bg-hover-teal-500 btn-text-hover-white btn-rounded-solid bg-teal-700 btn-disabled"
-              >
-                click me
-              </button>
-              <button
-                class="btn btn-square-outlined btn-bg-hover-blue-600 text-hover-white text-blue-600 btn-disabled"
-              >
-                click me
-              </button>
-              <button
-                class="btn btn-rounded-outlined text-rose-600 btn-bg-hover-rose-600 btn-text-hover-white btn-disabled"
-              >
-                click me
-              </button>
-              <button
-                class="btn btn-text-underline btn-text-hover-rose-800 text-green-600 btn-disabled"
-              >
-                Text Primary
-              </button>
-              <button class="btn-icon text-teal-900 btn-disabled">
-                <span class="fas fa-shopping-cart"></span>
-              </button>
-              <button
-                class="btn btn-square-icon-text bg-amber-600 text-white btn-disabled"
-              >
-                <span class="far fa-gem"></span>
-                Primary button
-              </button>
-              <button
-                class="btn btn-rounded-icon-text bg-teal-700 text-white btn-bg-hover-teal-500 btn-disabled"
-              >
-                <span class="fas fa-shopping-cart"></span>
-                Primary button
-              </button>
-            </div>
-            <pre style="max-width: 70%; background: transparent; margin: auto">
-              <code class="html rounded-lg overflow-scroll h-full w-full">
+           <code class="html rounded-lg overflow-scroll h-full w-full">
+ &lt;div
+class="shadow-lg rounded flex flex-col relative w-72 mb-12 ml-12 overlay">
+ &lt;!-- image container -->
+ &lt;div class="h-72">
+  &lt;img
+ class="img-responsive rounded"
+ style="height: 100%"
+ src="/css/images/img_dress.png"
+alt="dress"
+/>
+ &lt;div class="px-4 py-2 text-badge card-badge bg-grey-400">
+  out of stock
+&lt;/div>
+&lt;/div>
+&lt;!-- card content container -->
+&lt;div class="p-3">
+&lt;h3 class="text-grey-600 subtitle1 mb-2">
+Printed floral dress
+&lt;/h3>
+&lt;h4 class="subtitle2">Girls white printed dress&lt;/h4>
+ &lt;h5 class="text-grey-600 mb-4">sold by marge&lt;/h5>
+ &lt;p class="body1 mb-3">
+ White Flower print fit & flare dress. Square neck Short, puff
+sleeves. Knee length in flared hem Crepe fabric with concealed
+zip closure.
+&lt;/p>
+&lt;div class="flex justify-around">
  &lt;button
-  class="btn btn-square-solid text-white bg-rose-700 btn-bg-hover-rose-600 btn-disabled"
+ class="btn btn-square-solid btn-xs bg-grey-500 text-white mr-3"
 >
-  click me
+ &lt;span class="fas fa-shopping-cart">&lt;/span> Add to cart
 &lt;/button>
-&lt;button
-  class="btn text-white btn-bg-hover-teal-500 btn-text-hover-white btn-rounded-solid bg-teal-700 btn-disabled"
+ &lt;button
+class="btn btn-square-solid btn-xs bg-grey-500 text-white"
 >
-  click me
+ &lt;span class="fas fa-heart">&lt;/span> Add to wishlist
 &lt;/button>
-&lt;button
-  class="btn btn-square-outlined btn-bg-hover-blue-600 text-hover-white text-blue-600 btn-disabled"
->
-  click me
-&lt;/button>
-&lt;button
-  class="btn btn-rounded-outlined text-rose-600 btn-bg-hover-rose-600 btn-text-hover-white btn-disabled"
->
-  click me
-&lt;/button>
-&lt;button
-  class="btn btn-text-underline btn-text-hover-rose-800 text-green-600 btn-disabled"
->
-  Text Primary
-&lt;/button>
-&lt;button class="btn-icon text-teal-900 btn-disabled">
-  &lt;span class="fas fa-shopping-cart">&lt;/span>
-&lt;/button>
-&lt;button class="btn btn-square-icon-text bg-amber-600 text-white btn-disabled">
-  &lt;span class="far fa-gem">&lt;/span>
-  Primary button
-&lt;/button>
-&lt;button
-  class="btn btn-rounded-icon-text bg-teal-700 text-white btn-bg-hover-teal-500 btn-disabled"
->
-  &lt;span class="fas fa-shopping-cart">&lt;/span>
-  Primary button
-&lt;/button>
+&lt;/div>
+&lt;/div>
+ &lt;/div>
+           </code>
+        </pre>
 
-              </code>
-           </pre>
-            <h1 class="pt-10">Button Sizes</h1>
-            <div
-              class="pt-7 text-center flex align-items-center gap-6 flex-wrap"
-            >
-              <button
-                class="btn btn-square-solid text-white bg-sky-700 btn-bg-hover-sky-600 btn-sm"
+            <h4 class="h4 font-semibold text-xl mb-5 underline">
+              Horizontal Card
+            </h4>
+
+            <div class="relative mt-5">
+              <div
+                style="height: 100%; width: 80%"
+                class="flex shadow rounded-md"
               >
-                click me
-              </button>
-              <button
-                class="btn text-white btn-bg-hover-fuchsia-700 btn-text-hover-white btn-rounded-solid bg-fuchsia-900 btn-sm"
-              >
-                click me
-              </button>
-              <button
-                class="btn btn-square-solid text-white bg-sky-700 btn-bg-hover-sky-600 btn-md"
-              >
-                click me
-              </button>
-              <button
-                class="btn text-white btn-bg-hover-fuchsia-700 btn-text-hover-white btn-rounded-solid bg-fuchsia-900 btn-md"
-              >
-                click me
-              </button>
-              <button
-                class="btn btn-square-solid text-white bg-sky-700 btn-bg-hover-sky-600 btn-lg"
-              >
-                click me
-              </button>
-              <button
-                class="btn text-white btn-bg-hover-fuchsia-700 btn-text-hover-white btn-rounded-solid bg-fuchsia-900 btn-lg"
-              >
-                click me
-              </button>
-              <button
-                class="btn btn-square-solid text-white bg-sky-700 btn-bg-hover-sky-600 btn-xl"
-              >
-                click me
-              </button>
-              <button
-                class="btn text-white btn-bg-hover-fuchsia-700 btn-text-hover-white btn-rounded-solid bg-fuchsia-900 btn-xl"
-              >
-                click me
-              </button>
+                <div class="w-50-percent badge-container img-container">
+                  <img
+                    class="rounded-md h-full img-responsive"
+                    src="/css/images/img_dress.png"
+                    alt=""
+                    srcset=""
+                  />
+                  <div class="px-4 py-2 text-badge card-badge bg-indigo-300">
+                    new
+                  </div>
+                </div>
+                <div class="card-description p-6">
+                  <h3 class="text-grey-600 subtitle1 mb-2">
+                    Printed floral dress
+                  </h3>
+                  <h4 class="subtitle2">Girls white printed dress</h4>
+                  <h5 class="text-grey-600 mb-4">sold by marge</h5>
+                  <p class="body1 mb-3">
+                    White Flower print fit & flare dress. Square neck Short,
+                    puff sleeves. Knee length in flared hem Crepe fabric with
+                    concealed zip closure.
+                  </p>
+                  <div class="flex">
+                    <button
+                      class="btn btn-square-solid btn-md bg-indigo-400 text-white mr-3"
+                    >
+                      <span class="fas fa-shopping-cart"></span>Add to cart
+                    </button>
+                    <button
+                      class="btn btn-square-solid btn-md bg-indigo-400 text-white"
+                    >
+                      <span class="fas fa-heart"></span>Add to wishlist
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <pre style="max-width: 70%; background: transparent; margin: auto">
-              <code class="html rounded-lg overflow-scroll h-full w-full">
-&lt;button
-  class="btn btn-square-solid text-white bg-sky-700 btn-bg-hover-sky-600 btn-sm"
->
-  click me
-&lt;/button>
-&lt;button
-  class="btn text-white btn-bg-hover-fuchsia-700 btn-text-hover-white btn-rounded-solid bg-fuchsia-900 btn-sm"
->
-  click me
-&lt;/button>
-&lt;button
-  class="btn btn-square-solid text-white bg-sky-700 btn-bg-hover-sky-600 btn-md"
->
-  click me
-&lt;/button>
-&lt;button
-  class="btn text-white btn-bg-hover-fuchsia-700 btn-text-hover-white btn-rounded-solid bg-fuchsia-900 btn-md"
->
-  click me
-&lt;/button>
-&lt;button
-  class="btn btn-square-solid text-white bg-sky-700 btn-bg-hover-sky-600 btn-lg"
->
-  click me
-&lt;/button>
-&lt;button
-  class="btn text-white btn-bg-hover-fuchsia-700 btn-text-hover-white btn-rounded-solid bg-fuchsia-900 btn-lg"
->
-  click me
-&lt;/button>
-&lt;button
-  class="btn btn-square-solid text-white bg-sky-700 btn-bg-hover-sky-600 btn-xl"
->
-  click me
-&lt;/button>
-&lt;button
-  class="btn text-white btn-bg-hover-fuchsia-700 btn-text-hover-white btn-rounded-solid bg-fuchsia-900 btn-xl"
->
-  click me
-&lt;/button>
-
-              </code>
-           </pre>
           </div>
+
+          <pre style="max-width: 70%; background: transparent; margin: auto">
+           <code class="html rounded-lg overflow-scroll h-full w-full">
+&lt;div class="relative mt-5">
+&lt;div style="height: 100%; width: 80%" class="flex shadow rounded-md">
+&lt;div class="w-50-percent badge-container img-container">
+&lt;img
+class="rounded-md h-full img-responsive"
+src="/css/images/img_dress.png"
+alt=""
+srcset=""
+/>
+&lt;div class="px-4 py-2 text-badge card-badge bg-indigo-300">new&lt;/div>
+&lt;/div>
+&lt;div class="card-description p-6">
+&lt;h3 class="text-grey-600 subtitle1 mb-2">Printed floral dress&lt;/h3>
+&lt;h4 class="subtitle2">Girls white printed dress&lt;/h4>
+&lt;h5 class="text-grey-600 mb-4">sold by marge&lt;/h5>
+&lt;p class="body1 mb-3">
+White Flower print fit & flare dress. Square neck Short, puff sleeves.
+Knee length in flared hem Crepe fabric with concealed zip closure.
+&lt;/p>
+&lt;div class="flex">
+&lt;button
+                    class="btn btn-square-solid btn-md bg-indigo-400 text-white mr-3"
+                  >
+&lt;span class="fas fa-shopping-cart">&lt;/span>Add to cart
+&lt;/button>
+          
+&lt;button class="btn btn-square-solid btn-md bg-indigo-400 text-white">
+&lt;span class="fas fa-heart">&lt;/span>Add to wishlist
+&lt;/button>
+&lt;/div>
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+          
+           </code>
+        </pre>
 
           <div class="page-footer flex justify-between">
             <a
-              href="/pages/badge.html"
+              href="/pages/buttons.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
-              Badge
+              Button
             </a>
             <a
-              href="/pages/cards.html"
+              href="/docs/pages/image.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
-              Cards
+              Image
             </a>
           </div>
         </section>
