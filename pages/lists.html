@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Input</title>
+    <title>Lists</title>
     <link href="../css/index.css" rel="stylesheet" />
     <link href="/pages/docs.css" rel="stylesheet" />
     <link href="/pages/night-owl.css" rel="stylesheet" />
@@ -17,6 +17,7 @@
   <body>
     <div class="flex flex-row">
       <!-- header -->
+
       <header>
         <nav
           class="top-nav flex align-items-center justify-between bg-grey-800"
@@ -257,12 +258,12 @@
               <a href="/pages/image.html">Image</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
             >
               <a href="/pages/input.html">Input</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
             >
               <a href="/pages/lists.html">Lists</a>
             </li>
@@ -330,119 +331,134 @@
         </nav>
 
         <section class="docs-page p-10 relative mt-3">
-          <h3 class="font-semibold text-xl mb-5">Input</h3>
+          <h3 class="font-semibold text-xl mb-5">Lists</h3>
           <h5 class="font-normal text-lg mb-5">
-            Input elements are used in Forms. Depending on type of input, the
-            ability to style it varies. You should always use a label for your
-            input elements for accessibility reasons.
+            Lists can be used at many places like navigation bar, stacked
+            notifications, article pages, etc.
           </h5>
 
           <h3 class="font-semibold text-xl mb-5">Examples</h3>
 
-          <div class="p-5">
-            <h4 class="font-semibold text-xl mb-5 underline">Input</h4>
+          <div class="pb-6 flex justify-center align-items-center gap-14">
+            <!-- ordered list -->
+            <ol class="ol-upper-alpha">
+              <li>ObjOne</li>
+              <li>ObjTwo</li>
+              <li>ObjThree</li>
+              <li>ObjFour</li>
+              <li>ObjFive</li>
+            </ol>
 
-            <!-- standard input -->
-            <div class="input-container mb-7">
-              <input
-                type="text"
-                id="email"
-                class="input input-lime-hover input-blue-focus"
-                autocomplete="off"
-                placeholder=" "
-              />
-              <label for="email" class="input-label text-grey-700 bg-white"
-                >input outlined</label
-              >
-            </div>
+            <ol class="ol-lower-alpha">
+              <li>ObjOne</li>
+              <li>ObjTwo</li>
+              <li>ObjThree</li>
+              <li>ObjFour</li>
+              <li>ObjFive</li>
+            </ol>
 
-            <!-- filled input -->
-            <div class="input-container mb-7">
-              <input
-                type="text"
-                id="email"
-                class="input input-grey-fill-light input-lime-hover input-blue-focus"
-                autocomplete="off"
-                placeholder=" "
-              />
-              <label for="email" class="input-label text-black bg-grey-200"
-                >input filled</label
-              >
-            </div>
+            <ol class="ol-upper-roman">
+              <li>ObjOne</li>
+              <li>ObjTwo</li>
+              <li>ObjThree</li>
+              <li>ObjFour</li>
+              <li>ObjFive</li>
+            </ol>
 
-            <!-- error input -->
-            <div class="input-container mb-7">
-              <input
-                type="text"
-                id="email"
-                class="input input-red input-red-focus"
-                autocomplete="off"
-                placeholder=" "
-              />
-              <label for="email" class="input-label text-red-500 bg-white"
-                >input error</label
-              >
-              <small class="error text-red-500 text-sm">error message</small>
-            </div>
-            <pre style="max-width: 70%; background: transparent; margin: auto">
-                <code class="html rounded-lg overflow-scroll h-full w-full">
+            <ol class="ol-lower-roman">
+              <li>ObjOne</li>
+              <li>ObjTwo</li>
+              <li>ObjThree</li>
+              <li>ObjFour</li>
+              <li>ObjFive</li>
+            </ol>
 
-&lt;div class="input-container mb-7">
-  &lt;input
-    type="text"
-    id="email"
-    class="input input-lime-hover input-blue-focus"
-    autocomplete="off"
-    placeholder=" "
-  />
-  &lt;label for="email" class="input-label text-grey-700 bg-white"
-    >input outlined&lt;/label
-  >
-&lt;/div>
+            <!-- unordered list -->
+            <ul class="ul-circle">
+              <li>ObjOne</li>
+              <li>ObjTwo</li>
+              <li>ObjThree</li>
+              <li>ObjFour</li>
+              <li>ObjFive</li>
+            </ul>
 
-&lt;div class="input-container mb-7">
-  &lt;input
-    type="text"
-    id="email"
-    class="input input-grey-fill-light input-lime-hover input-blue-focus"
-    autocomplete="off"
-    placeholder=" "
-  />
-  &lt;label for="email" class="input-label text-black bg-grey-200"
-    >input filled&lt;/label
-  >
-&lt;/div>
-
-&lt;div class="input-container mb-7">
-  &lt;input
-    type="text"
-    id="email"
-    class="input input-red input-red-focus"
-    autocomplete="off"
-    placeholder=" "
-  />
-  &lt;label for="email" class="input-label text-red-500 bg-white"
-    >input error&lt;/label
-  >
-  &lt;small class="error text-red-500 text-sm">error message&lt;/small>
-&lt;/div>
-
-                </code>
-             </pre>
+            <ul class="list-none flex flex-col w-max">
+              <li class="m-1 bg-grey-400 p-2">ObjOne</li>
+              <li class="m-1 bg-grey-400 p-2">ObjTwo</li>
+              <li class="m-1 bg-grey-400 p-2">ObjThree</li>
+              <li class="m-1 bg-grey-400 p-2">ObjFour</li>
+              <li class="m-1 bg-grey-400 p-2">ObjFive</li>
+            </ul>
           </div>
+
+          <pre style="max-width: 70%; background: transparent; margin: auto">
+                   <code class="html rounded-lg overflow-scroll h-full w-full">
+&lt;ol class="ol-upper-alpha">
+    &lt;li>ObjOne&lt;/li>
+    &lt;li>ObjTwo&lt;/li>
+    &lt;li>ObjThree&lt;/li>
+    &lt;li>ObjFour&lt;/li>
+    &lt;li>ObjFive&lt;/li>
+  &lt;/ol>
+
+  &lt;ol class="ol-lower-alpha">
+    &lt;li>ObjOne&lt;/li>
+    &lt;li>ObjTwo&lt;/li>
+    &lt;li>ObjThree&lt;/li>
+    &lt;li>ObjFour&lt;/li>
+    &lt;li>ObjFive&lt;/li>
+  &lt;/ol>
+
+  &lt;ol class="ol-upper-roman">
+    &lt;li>ObjOne&lt;/li>
+    &lt;li>ObjTwo&lt;/li>
+    &lt;li>ObjThree&lt;/li>
+    &lt;li>ObjFour&lt;/li>
+    &lt;li>ObjFive&lt;/li>
+  &lt;/ol>
+
+  &lt;ol class="ol-lower-roman">
+    &lt;li>ObjOne&lt;/li>
+    &lt;li>ObjTwo&lt;/li>
+    &lt;li>ObjThree&lt;/li>
+    &lt;li>ObjFour&lt;/li>
+    &lt;li>ObjFive&lt;/li>
+  &lt;/ol>
+
+  &lt;!-- unordered list -->
+  &lt;ul class="ul-circle">
+    &lt;li>ObjOne&lt;/li>
+    &lt;li>ObjTwo&lt;/li>
+    &lt;li>ObjThree&lt;/li>
+    &lt;li>ObjFour&lt;/li>
+    &lt;li>ObjFive&lt;/li>
+  &lt;/ul>
+
+  &lt;ul class="list-none flex flex-col w-max">
+    &lt;li class="m-1 bg-grey-400 p-2">ObjOne&lt;/li>
+    &lt;li class="m-1 bg-grey-400 p-2">ObjTwo&lt;/li>
+    &lt;li class="m-1 bg-grey-400 p-2">ObjThree&lt;/li>
+    &lt;li class="m-1 bg-grey-400 p-2">ObjFour&lt;/li>
+    &lt;li class="m-1 bg-grey-400 p-2">ObjFive&lt;/li>
+  &lt;/ul>
+&lt;/div>
+
+
+                   </code>
+                </pre>
 
           <div class="page-footer flex justify-between">
             <a
-              href="/pages/image.html"
+              href="/pages/input.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
-              Image
+              Input
             </a>
             <a
-              href="/pages/lists.html"
+              href="/pages/navigation.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
-              Lists
+              Navigation
             </a>
           </div>
         </section>
@@ -488,20 +504,20 @@
           </li>
         </ul>
       </footer>
+
+      <script src="/pages/highlight.js"></script>
+      <script>
+        hljs.highlightAll();
+
+        /* Set the width of the side navigation to 250px */
+        const openNav = () => {
+          document.getElementById("side-navbar").style.width = "250px";
+        };
+        /* Set the width of the side navigation to 0 */
+        const closeNav = () => {
+          document.getElementById("side-navbar").style.width = "0";
+        };
+      </script>
     </div>
-
-    <script src="/pages/highlight.js"></script>
-    <script>
-      hljs.highlightAll();
-
-      /* Set the width of the side navigation to 250px */
-      const openNav = () => {
-        document.getElementById("side-navbar").style.width = "250px";
-      };
-      /* Set the width of the side navigation to 0 */
-      const closeNav = () => {
-        document.getElementById("side-navbar").style.width = "0";
-      };
-    </script>
   </body>
 </html>
