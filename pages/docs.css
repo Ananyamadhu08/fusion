@@ -3,11 +3,11 @@
 }
 
 .docs-sidenav::-webkit-scrollbar-track {
-  background-color: var(--cyan-500);
+  background-color: var(--indigo-500);
 }
 
 .docs-sidenav::-webkit-scrollbar-thumb {
-  background: var(--cyan-200);
+  background: var(--indigo-200);
   border-radius: 25px;
 }
 
@@ -16,11 +16,11 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background-color: var(--cyan-500);
+  background-color: var(--indigo-500);
 }
 
 body::-webkit-scrollbar-thumb {
-  background: var(--cyan-200);
+  background: var(--indigo-200);
   border-radius: 25px;
 }
 
@@ -28,7 +28,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
-  border: 1px solid #ddd;
+  border: 1px solid var(--grey-200);
 }
 
 th,
@@ -38,7 +38,7 @@ td {
 }
 
 tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: var(--grey-200);
 }
 
 .docs-sidenav {
