@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image</title>
-
+    <title>Input</title>
     <link href="../css/index.css" rel="stylesheet" />
     <link href="/pages/docs.css" rel="stylesheet" />
     <link href="/pages/night-owl.css" rel="stylesheet" />
@@ -18,7 +17,6 @@
   <body>
     <div class="flex flex-row">
       <!-- header -->
-
       <header>
         <nav
           class="top-nav flex align-items-center justify-between bg-grey-800"
@@ -254,12 +252,12 @@
               <a href="/pages/cards.html">Cards</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
             >
               <a href="/pages/image.html">Image</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
             >
               <a href="/pages/input.html">Input</a>
             </li>
@@ -332,73 +330,119 @@
         </nav>
 
         <section class="docs-page p-10 relative mt-3">
-          <h3 class="font-semibold text-xl mb-5">Image</h3>
+          <h3 class="font-semibold text-xl mb-5">Input</h3>
           <h5 class="font-normal text-lg mb-5">
-            Images can be made responsive to fit the width of the parent, images
-            can also be customized to be round in shape. You can add the class
-            <span class="text-indigo-500 bg-indigo-100 underline"
-              >img-responsive</span
-            >
-            to make your image fit the width of a container. It's height will
-            get adjusted by keeping the aspect ratio same. If you want to change
-            the aspect ratio, you will have to crop the image. You can add the
-            class
-            <span class="text-indigo-500 bg-indigo-100 underline"
-              >img-round</span
-            >
-            to make your images round.
+            Input elements are used in Forms. Depending on type of input, the
+            ability to style it varies. You should always use a label for your
+            input elements for accessibility reasons.
           </h5>
 
           <h3 class="font-semibold text-xl mb-5">Examples</h3>
 
           <div class="p-5">
-            <h4 class="font-semibold text-xl mb-5 underline">
-              Responsive Image
-            </h4>
+            <h4 class="font-semibold text-xl mb-5 underline">Input</h4>
 
-            <div class="mb-5" style="width: 400px">
-              <img
-                class="img-responsive rounded"
-                src="https://picsum.photos/400"
-                alt="random-img"
+            <!-- standard input -->
+            <div class="input-container mb-7">
+              <input
+                type="text"
+                id="email"
+                class="input input-lime-hover input-blue-focus"
+                autocomplete="off"
+                placeholder=" "
               />
+              <label for="email" class="input-label text-grey-700 bg-white"
+                >input outlined</label
+              >
             </div>
 
+            <!-- filled input -->
+            <div class="input-container mb-7">
+              <input
+                type="text"
+                id="email"
+                class="input input-grey-fill-light input-lime-hover input-blue-focus"
+                autocomplete="off"
+                placeholder=" "
+              />
+              <label for="email" class="input-label text-black bg-grey-200"
+                >input filled</label
+              >
+            </div>
+
+            <!-- error input -->
+            <div class="input-container mb-7">
+              <input
+                type="text"
+                id="email"
+                class="input input-red input-red-focus"
+                autocomplete="off"
+                placeholder=" "
+              />
+              <label for="email" class="input-label text-red-500 bg-white"
+                >input error</label
+              >
+              <small class="error text-red-500 text-sm">error message</small>
+            </div>
             <pre style="max-width: 70%; background: transparent; margin: auto">
-                   <code class="html rounded-lg overflow-scroll h-full w-full">
-&lt;img class="img-responsive" src="https://picsum.photos/400/400" alt="random-img">
-                   </code>
-                </pre>
-            <h3 class="font-semibold text-xl mb-5 underline">Round Image</h3>
+                <code class="html rounded-lg overflow-scroll h-full w-full">
 
-            <div style="width: 100px">
-              <img
-                class="img-responsive img-round"
-                src="https://picsum.photos/400/400"
-                alt="random-img"
-              />
-            </div>
+&lt;div class="input-container mb-7">
+  &lt;input
+    type="text"
+    id="email"
+    class="input input-lime-hover input-blue-focus"
+    autocomplete="off"
+    placeholder=" "
+  />
+  &lt;label for="email" class="input-label text-grey-700 bg-white"
+    >input outlined&lt;/label
+  >
+&lt;/div>
+
+&lt;div class="input-container mb-7">
+  &lt;input
+    type="text"
+    id="email"
+    class="input input-grey-fill-light input-lime-hover input-blue-focus"
+    autocomplete="off"
+    placeholder=" "
+  />
+  &lt;label for="email" class="input-label text-black bg-grey-200"
+    >input filled&lt;/label
+  >
+&lt;/div>
+
+&lt;div class="input-container mb-7">
+  &lt;input
+    type="text"
+    id="email"
+    class="input input-red input-red-focus"
+    autocomplete="off"
+    placeholder=" "
+  />
+  &lt;label for="email" class="input-label text-red-500 bg-white"
+    >input error&lt;/label
+  >
+  &lt;small class="error text-red-500 text-sm">error message&lt;/small>
+&lt;/div>
+
+                </code>
+             </pre>
           </div>
-
-          <pre style="max-width: 70%; background: transparent; margin: auto">
-                   <code class="html rounded-lg overflow-scroll h-full w-full">
-&lt;img class="img-responsive img-round" src="https://picsum.photos/400/400" alt="random-img">
-
-                   </code>
-                </pre>
 
           <div class="page-footer flex justify-between">
             <a
-              href="/pages/cards.html"
+              href="/pages/image.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
-              Cards
+              Image
             </a>
             <a
-              href="/pages/input.html"
+              href="pages/lists.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
-              Input
+              Lists
             </a>
           </div>
         </section>
