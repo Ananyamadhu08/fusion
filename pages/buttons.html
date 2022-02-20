@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buttons</title>
+
+    <link href="../css/index.css" rel="stylesheet" />
+    <link href="/pages/docs.css" rel="stylesheet" />
+    <link href="/pages/night-owl.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="flex flex-row">
+      <!-- header -->
+      <header>
+        <nav
+          class="top-nav flex align-items-center justify-between bg-grey-800"
+        >
+          <input id="top-nav-toggle" type="checkbox" />
+          <a
+            href="../index.html"
+            class="text-white flex align-items-center gap-2"
+          >
+            <span class="fas fa-code text-2xl"></span>
+            <h2 class="text-xl">
+              <span class="text-indigo-400 text-3xl">FUSION</span>CSS
+            </h2>
+          </a>
+
+          <ul class="links gap-10">
+            <li>
+              <a
+                class="text-white text-hover-indigo-400 flex justify-center align-items-center text-lg"
+                href="/pages/docs.html"
+              >
+                <i class="fa-solid fa-file-lines mr-2"></i>
+                Documentation
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="text-white text-hover-indigo-400 flex justify-center align-items-center text-lg"
+                href="https://github.com/Ananyamadhu08/fusion"
+                target="_blank"
+              >
+                <i class="fab fa-github mr-2"></i>
+                Github
+              </a>
+            </li>
+          </ul>
+
+          <label for="top-nav-toggle" class="icon-burger">
+            <div class="line bg-white"></div>
+            <div class="line bg-white"></div>
+            <div class="line bg-white"></div>
+          </label>
+        </nav>
+      </header>
+
+      <!-- responsive side nav -->
+      <a class="mySidenavToggle m-7" onclick="openNav()"
+        ><i class="fa-solid fa-bars" onclick="openNav();"></i
+      ></a>
+
+      <nav id="side-navbar" class="side-nav bg-grey-800">
+        <span class="fas fa-times close-btn text-white" onclick="closeNav()">
+        </span>
+        <div class="nav overflow-scroll text-white">
+          <ul class="flex flex-col mb-40 p-5">
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
+            >
+              <a href="/pages/docs.html">Getting Started</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/colors.html">Colors</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/spacing.html">Spacing</a>
+            </li>
+
+            <!-- components -->
+            <li class="p-1 text-xl text-grey-700 mt-5">
+              <a>Components</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/alerts.html">Alert</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/avatar.html">Avatar</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/badge.html"> Badge</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-hover-indigo-400"
+            >
+              <a href="/pages/buttons.html">Buttons</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/cards.html">Cards</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/image.html">Image</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/input.html">Input</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/lists.html">Lists</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/navigation.html">Navigation</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/modal.html">Modal</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/rating.html">Star Rating</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/snackbar.html">Snackbar</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/tooltip.html">Tooltip</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/image-carousel.html">Image Carousel</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/dropdown-select.html">Dropdown Select</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/range-slider.html">Range Slider</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/input.html">Input</a>
+            </li>
+
+            <!-- other utilities -->
+            <li class="p-1 text-xl text-grey-700 mt-5">
+              <a>Other Utilities</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/grid-system.html">Grid System</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/effects.html">Effects</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/typography.html">Typography</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- main -->
+      <main style="min-height: 90vh" class="w-full justify-end flex">
+        <nav class="h-full relative pl-10 docs-sidenav z-10">
+          <ul class="flex flex-col mb-40 p-5 mt-7">
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/docs.html">Getting Started</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/colors.html">Colors</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/spacing.html">Spacing</a>
+            </li>
+
+            <!-- components -->
+            <li class="p-1 text-xl text-grey-700 mt-5 font-semibold">
+              <a>Components</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/alerts.html">Alert</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/avatar.html">Avatar</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/badge.html"> Badge</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
+            >
+              <a href="/pages/buttons.html">Buttons</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/cards.html">Cards</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/image.html">Image</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/input.html">Input</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/lists.html">Lists</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/navigation.html">Navigation</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/modal.html">Modal</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/rating.html">Star Rating</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/snackbar.html">Snackbar</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/tooltip.html">Tooltip</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/image-carousel.html">Image Carousel</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/dropdown-select.html">Dropdown Select</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/range-slider.html">Range Slider</a>
+            </li>
+
+            <!-- other utilities -->
+            <li class="p-1 text-xl text-grey-700 mt-5 font-semibold">
+              <a>Other Utilities</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/grid-system.html">Grid System</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/effects.html">Effects</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/typography.html">Typography</a>
+            </li>
+          </ul>
+        </nav>
+
+        <section class="docs-page p-10 relative mt-3">
+          <h3 class="font-semibold text-xl mb-5">Buttons</h3>
+          <h5 class="font-normal text-lg mb-5">
+            Buttons are also called as call to action. We have range of buttons
+            and their states. You may use a tag or button element, you just need
+            to add the respective classes, and you are good to go.
+          </h5>
+
+          <h3 class="font-semibold text-xl mb-5">Examples</h3>
+
+          <div class="p-5">
+            <h1 class="text-center pt-10">Primary Buttons</h1>
+            <div
+              class="pt-10 flex justify-center align-items-center gap-6 flex-wrap text-center"
+            >
+              <button
+                class="btn btn-square-solid text-white bg-rose-700 btn-bg-hover-rose-600"
+              >
+                click me
+              </button>
+              <button
+                class="btn text-white btn-bg-hover-teal-500 btn-text-hover-white btn-rounded-solid bg-teal-700"
+              >
+                click me
+              </button>
+              <button
+                class="btn btn-square-outlined btn-bg-hover-blue-600 text-hover-white text-blue-600"
+              >
+                click me
+              </button>
+              <button
+                class="btn btn-rounded-outlined text-rose-600 btn-bg-hover-rose-600 btn-text-hover-white"
+              >
+                click me
+              </button>
+              <button
+                class="btn btn-text-underline btn-text-hover-rose-800 text-green-600"
+              >
+                Text Primary
+              </button>
+              <button class="btn-icon text-teal-900">
+                <span class="fas fa-shopping-cart"></span>
+              </button>
+              <button class="btn btn-square-icon-text bg-amber-600 text-white">
+                <span class="far fa-gem"></span>
+                Primary button
+              </button>
+              <button
+                class="btn btn-rounded-icon-text bg-teal-700 text-white btn-bg-hover-teal-500"
+              >
+                <span class="fas fa-shopping-cart"></span>
+                Primary button
+              </button>
+            </div>
+
+            <pre style="max-width: 70%; background: transparent; margin: auto">
+              <code class="html rounded-lg overflow-scroll h-full w-full">
+&lt;button
+  class="btn btn-square-solid text-white bg-rose-700 btn-bg-hover-rose-600"
+ >
+  click me
+&lt;/button>
+&lt;button
+  class="btn text-white btn-bg-hover-teal-500 btn-text-hover-white btn-rounded-solid bg-teal-700"
+ >
+  click me
+&lt;/button>
+&lt;button
+  class="btn btn-square-outlined btn-bg-hover-blue-600 text-hover-white text-blue-600"
+ >
+  click me
+&lt;/button>
+&lt;button
+  class="btn btn-rounded-outlined text-rose-600 btn-bg-hover-rose-600 btn-text-hover-white"
+ >
+  click me
+&lt;/button>
+&lt;button class="btn btn-text-underline btn-text-hover-rose-800 text-green-600">
+  Text Primary
+&lt;/button>
+&lt;button class="btn-icon text-teal-900">
+  &lt;span class="fas fa-shopping-cart">&lt;/span>
+&lt;/button>
+&lt;button class="btn btn-square-icon-text bg-amber-600 text-white">
+  &lt;span class="far fa-gem">&lt;/span>
+  Primary button
+&lt;/button>
+&lt;button
+  class="btn btn-rounded-icon-text bg-teal-700 text-white btn-bg-hover-teal-500"
+ >
+  &lt;span class="fas fa-shopping-cart">&lt;/span>
+  Primary button
+&lt;/button>
+
+              </code>
+           </pre>
+
+            <h1 class="text-center pt-10">Secondary Buttons</h1>
+            <div
+              class="pt-10 flex justify-center align-items-center gap-6 text-center flex-wrap"
+            >
+              <button class="btn btn-square-solid">click me</button>
+              <button class="btn btn-rounded-solid">click me</button>
+              <button
+                class="btn btn-square-outlined text-slate-500 btn-bg-hover-grey-200"
+              >
+                secondary button
+              </button>
+              <button
+                class="btn btn-rounded-outlined text-slate-500 btn-bg-hover-grey-200"
+              >
+                secondary button
+              </button>
+              <button class="btn btn-text-underline text-slate-600">
+                Text Secondary
+              </button>
+              <button class="btn-icon text-grey-500">
+                <span class="fas fa-trash-alt"></span>
+              </button>
+            </div>
+            <pre style="max-width: 70%; background: transparent; margin: auto">
+              <code class="html rounded-lg overflow-scroll h-full w-full">
+&lt;button class="btn btn-square-solid">click me &lt;/button>
+ &lt;button class="btn btn-rounded-solid">click me&lt;/button> 
+ &lt;button class="btn btn-square-outlined text-slate-500 btn-bg-hover-grey-200"> secondary button
+&lt;/button> 
+&lt;button class="btn btn-rounded-outlined text-slate-500
+btn-bg-hover-grey-200"> secondary button &lt;/button> 
+&lt;button class="btn btn-text-underline text-slate-600">Text Secondary&lt;/button> 
+&lt;button class="btn-icon text-grey-500"> &lt;span class="fas fa-trash-alt">&lt;/span>
+&lt;/button>
+              </code>
+           </pre>
+            <h1 class="text-center pt-10">Disabled Buttons</h1>
+            <div
+              class="pt-10 text-center flex justify-center align-items-center gap-6 flex-wrap"
+            >
+              <button
+                class="btn btn-square-solid text-white bg-rose-700 btn-bg-hover-rose-600 btn-disabled"
+              >
+                click me
+              </button>
+              <button
+                class="btn text-white btn-bg-hover-teal-500 btn-text-hover-white btn-rounded-solid bg-teal-700 btn-disabled"
+              >
+                click me
+              </button>
+              <button
+                class="btn btn-square-outlined btn-bg-hover-blue-600 text-hover-white text-blue-600 btn-disabled"
+              >
+                click me
+              </button>
+              <button
+                class="btn btn-rounded-outlined text-rose-600 btn-bg-hover-rose-600 btn-text-hover-white btn-disabled"
+              >
+                click me
+              </button>
+              <button
+                class="btn btn-text-underline btn-text-hover-rose-800 text-green-600 btn-disabled"
+              >
+                Text Primary
+              </button>
+              <button class="btn-icon text-teal-900 btn-disabled">
+                <span class="fas fa-shopping-cart"></span>
+              </button>
+              <button
+                class="btn btn-square-icon-text bg-amber-600 text-white btn-disabled"
+              >
+                <span class="far fa-gem"></span>
+                Primary button
+              </button>
+              <button
+                class="btn btn-rounded-icon-text bg-teal-700 text-white btn-bg-hover-teal-500 btn-disabled"
+              >
+                <span class="fas fa-shopping-cart"></span>
+                Primary button
+              </button>
+            </div>
+            <pre style="max-width: 70%; background: transparent; margin: auto">
+              <code class="html rounded-lg overflow-scroll h-full w-full">
+ &lt;button
+  class="btn btn-square-solid text-white bg-rose-700 btn-bg-hover-rose-600 btn-disabled"
+>
+  click me
+&lt;/button>
+&lt;button
+  class="btn text-white btn-bg-hover-teal-500 btn-text-hover-white btn-rounded-solid bg-teal-700 btn-disabled"
+>
+  click me
+&lt;/button>
+&lt;button
+  class="btn btn-square-outlined btn-bg-hover-blue-600 text-hover-white text-blue-600 btn-disabled"
+>
+  click me
+&lt;/button>
+&lt;button
+  class="btn btn-rounded-outlined text-rose-600 btn-bg-hover-rose-600 btn-text-hover-white btn-disabled"
+>
+  click me
+&lt;/button>
+&lt;button
+  class="btn btn-text-underline btn-text-hover-rose-800 text-green-600 btn-disabled"
+>
+  Text Primary
+&lt;/button>
+&lt;button class="btn-icon text-teal-900 btn-disabled">
+  &lt;span class="fas fa-shopping-cart">&lt;/span>
+&lt;/button>
+&lt;button class="btn btn-square-icon-text bg-amber-600 text-white btn-disabled">
+  &lt;span class="far fa-gem">&lt;/span>
+  Primary button
+&lt;/button>
+&lt;button
+  class="btn btn-rounded-icon-text bg-teal-700 text-white btn-bg-hover-teal-500 btn-disabled"
+>
+  &lt;span class="fas fa-shopping-cart">&lt;/span>
+  Primary button
+&lt;/button>
+
+              </code>
+           </pre>
+            <h1 class="text-center pt-10">Button Sizes</h1>
+            <div
+              class="pt-7 text-center flex justify-center align-items-center gap-6 flex-wrap"
+            >
+              <button
+                class="btn btn-square-solid text-white bg-sky-700 btn-bg-hover-sky-600 btn-sm"
+              >
+                click me
+              </button>
+              <button
+                class="btn text-white btn-bg-hover-fuchsia-700 btn-text-hover-white btn-rounded-solid bg-fuchsia-900 btn-sm"
+              >
+                click me
+              </button>
+              <button
+                class="btn btn-square-solid text-white bg-sky-700 btn-bg-hover-sky-600 btn-md"
+              >
+                click me
+              </button>
+              <button
+                class="btn text-white btn-bg-hover-fuchsia-700 btn-text-hover-white btn-rounded-solid bg-fuchsia-900 btn-md"
+              >
+                click me
+              </button>
+              <button
+                class="btn btn-square-solid text-white bg-sky-700 btn-bg-hover-sky-600 btn-lg"
+              >
+                click me
+              </button>
+              <button
+                class="btn text-white btn-bg-hover-fuchsia-700 btn-text-hover-white btn-rounded-solid bg-fuchsia-900 btn-lg"
+              >
+                click me
+              </button>
+              <button
+                class="btn btn-square-solid text-white bg-sky-700 btn-bg-hover-sky-600 btn-xl"
+              >
+                click me
+              </button>
+              <button
+                class="btn text-white btn-bg-hover-fuchsia-700 btn-text-hover-white btn-rounded-solid bg-fuchsia-900 btn-xl"
+              >
+                click me
+              </button>
+            </div>
+            <pre style="max-width: 70%; background: transparent; margin: auto">
+              <code class="html rounded-lg overflow-scroll h-full w-full">
+&lt;button
+  class="btn btn-square-solid text-white bg-sky-700 btn-bg-hover-sky-600 btn-sm"
+>
+  click me
+&lt;/button>
+&lt;button
+  class="btn text-white btn-bg-hover-fuchsia-700 btn-text-hover-white btn-rounded-solid bg-fuchsia-900 btn-sm"
+>
+  click me
+&lt;/button>
+&lt;button
+  class="btn btn-square-solid text-white bg-sky-700 btn-bg-hover-sky-600 btn-md"
+>
+  click me
+&lt;/button>
+&lt;button
+  class="btn text-white btn-bg-hover-fuchsia-700 btn-text-hover-white btn-rounded-solid bg-fuchsia-900 btn-md"
+>
+  click me
+&lt;/button>
+&lt;button
+  class="btn btn-square-solid text-white bg-sky-700 btn-bg-hover-sky-600 btn-lg"
+>
+  click me
+&lt;/button>
+&lt;button
+  class="btn text-white btn-bg-hover-fuchsia-700 btn-text-hover-white btn-rounded-solid bg-fuchsia-900 btn-lg"
+>
+  click me
+&lt;/button>
+&lt;button
+  class="btn btn-square-solid text-white bg-sky-700 btn-bg-hover-sky-600 btn-xl"
+>
+  click me
+&lt;/button>
+&lt;button
+  class="btn text-white btn-bg-hover-fuchsia-700 btn-text-hover-white btn-rounded-solid bg-fuchsia-900 btn-xl"
+>
+  click me
+&lt;/button>
+
+              </code>
+           </pre>
+          </div>
+
+          <div class="page-footer flex justify-between">
+            <a
+              href="/pages/badge.html"
+              class="btn btn-text-underline text-hover-indigo-500"
+            >
+              Badge
+            </a>
+            <a
+              href="/pages/cards.html"
+              class="btn btn-text-underline text-hover-indigo-500"
+            >
+              Cards
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <!-- footer -->
+      <footer
+        class="bg-indigo-200 justify-center align-items-center flex flex-col p-5 fixed w-full z-50"
+        style="bottom: 0"
+      >
+        <div class="text-grey-700">
+          Made with <i class="fa-solid fa-code"></i> by
+          <a class="btn-text-underline text-hover-indigo-600">Ananya</a>
+        </div>
+        <ul class="links gap-2 flex mt-3">
+          <li>
+            <a
+              class="text-indigo-600 text-hover-white flex justify-center align-items-center text-lg"
+              href="https://twitter.com/AnanyaMadhu27"
+              target="_blank"
+            >
+              <i class="fa-brands fa-twitter mr-2"></i>
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="text-indigo-600 text-hover-white flex justify-center align-items-center text-lg"
+              href="https://github.com/Ananyamadhu08"
+              target="_blank"
+            >
+              <i class="fab fa-github mr-2"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="text-indigo-600 text-hover-white flex justify-center align-items-center text-lg"
+              href="https://www.linkedin.com/in/ananya-madhu-74479b206/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin mr-2"></i>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script src="/pages/highlight.js"></script>
+    <script>
+      hljs.highlightAll();
+
+      /* Set the width of the side navigation to 250px */
+      const openNav = () => {
+        document.getElementById("side-navbar").style.width = "250px";
+      };
+      /* Set the width of the side navigation to 0 */
+      const closeNav = () => {
+        document.getElementById("side-navbar").style.width = "0";
+      };
+    </script>
+  </body>
+</html>

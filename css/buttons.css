@@ -4,7 +4,7 @@
   border: 0.5px solid var(--slate-300);
   width: max-content;
   height: max-content;
-  padding: 0.7rem 1rem;
+  padding: 0.7em 1em;
   display: flex;
   gap: 0.5rem;
   justify-content: center;
