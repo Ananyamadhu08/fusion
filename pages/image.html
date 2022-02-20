@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cards</title>
+    <title>Document</title>
 
     <link href="../css/index.css" rel="stylesheet" />
     <link href="/pages/docs.css" rel="stylesheet" />
@@ -248,12 +248,12 @@
               <a href="/pages/buttons.html">Buttons</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
             >
               <a href="/pages/cards.html">Cards</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
             >
               <a href="/pages/image.html">Image</a>
             </li>
@@ -331,285 +331,73 @@
         </nav>
 
         <section class="docs-page p-10 relative mt-3">
-          <h3 class="font-semibold text-xl mb-5">Cards</h3>
+          <h3 class="font-semibold text-xl mb-5">Image</h3>
           <h5 class="font-normal text-lg mb-5">
-            Card are used to show user related data collectively, like product
-            details.
+            Images can be made responsive to fit the width of the parent, images
+            can also be customized to be round in shape. You can add the class
+            <span class="text-indigo-500 bg-indigo-100 underline"
+              >img-responsive</span
+            >
+            to make your image fit the width of a container. It's height will
+            get adjusted by keeping the aspect ratio same. If you want to change
+            the aspect ratio, you will have to crop the image. You can add the
+            class
+            <span class="text-indigo-500 bg-indigo-100 underline"
+              >img-round</span
+            >
+            to make your images round.
           </h5>
 
           <h3 class="font-semibold text-xl mb-5">Examples</h3>
 
           <div class="p-5">
-            <h4 class="font-semibold text-xl mb-5 underline">Vertical Card</h4>
-
-            <!-- card 1 -->
-            <div
-              class="shadow-lg rounded flex flex-col relative w-72 mb-12 ml-12"
-            >
-              <!-- image container -->
-              <div class="h-72">
-                <img
-                  class="img-responsive rounded"
-                  style="height: 100%"
-                  src="/css/images/img_dress.png"
-                  alt="dress"
-                />
-                <div class="px-4 py-2 text-badge card-badge bg-indigo-300">
-                  new
-                </div>
-              </div>
-              <!-- card content container -->
-              <div class="p-3">
-                <h3 class="text-grey-600 subtitle1 mb-2">
-                  Printed floral dress
-                </h3>
-                <h4 class="subtitle2">Girls white printed dress</h4>
-                <h5 class="text-grey-600 mb-4">sold by marge</h5>
-                <p class="body1 mb-3">
-                  White Flower print fit & flare dress. Square neck Short, puff
-                  sleeves. Knee length in flared hem Crepe fabric with concealed
-                  zip closure.
-                </p>
-                <div class="flex justify-around">
-                  <button
-                    class="btn btn-square-solid btn-xs bg-indigo-400 text-white mr-3"
-                  >
-                    <span class="fas fa-shopping-cart"></span>Add to cart
-                  </button>
-                  <button
-                    class="btn btn-square-solid btn-xs bg-indigo-400 text-white"
-                  >
-                    <span class="fas fa-heart"></span>Add to wishlist
-                  </button>
-                </div>
-              </div>
-            </div>
-            <pre style="max-width: 70%; background: transparent; margin: auto">
-           <code class="html rounded-lg overflow-scroll h-full w-full">
-&lt;div class="shadow-lg rounded flex flex-col relative w-72 mb-12 ml-12">
- <!-- image container  -->
-&lt;div class="h-72">
- &lt;img
- class="img-responsive rounded"
-style="height: 100%"
-src="/css/images/img_dress.png"
-alt="dress"/>
- &lt;div class="px-4 py-2 text-badge card-badge bg-indigo-300">new&lt;/div>
-&lt;/div>
-            
- <!-- card content container  -->
-&lt;div class="p-3">
-&lt;h3 class="text-grey-600 subtitle1 mb-2">Printed floral dress&lt;/h3>
-&lt;h4 class="subtitle2">Girls white printed dress&lt;/h4>
-&lt;h5 class="text-grey-600 mb-4">sold by marge&lt;/h5>
-&lt;p class="body1 mb-3">
-White Flower print fit & flare dress. Square neck Short, puff sleeves.
-Knee length in flared hem Crepe fabric with concealed zip closure.
- &lt;/p>
-&lt;div class="flex justify-around">
-&lt;button class="btn btn-square-solid btn-xs bg-indigo-500 text-white mr-3">
- &lt;span class="fas fa-shopping-cart">&lt;/span>Add to cart
-&lt;/button>
- &lt;button class="btn btn-square-solid btn-xs bg-indigo-500 text-white">
- &lt;span class="fas fa-heart">&lt;/span>Add to wishlist
-&lt;/button>
- &lt;/div>
- &lt;/div>
-&lt;/div>          
-           </code>
-        </pre>
-
             <h4 class="font-semibold text-xl mb-5 underline">
-              Vertical Card With Overlay
+              Responsive Image
             </h4>
 
-            <!-- card 2 -->
-            <div
-              class="shadow-lg rounded flex flex-col relative w-72 mb-12 ml-12 overlay"
-            >
-              <!-- image container -->
-              <div class="h-72">
-                <img
-                  class="img-responsive rounded"
-                  style="height: 100%"
-                  src="/css/images/img_dress.png"
-                  alt="dress"
-                />
-                <div class="px-4 py-2 text-badge card-badge bg-grey-400">
-                  out of stock
-                </div>
-              </div>
-              <!-- card content container -->
-              <div class="p-3">
-                <h3 class="text-grey-600 subtitle1 mb-2">
-                  Printed floral dress
-                </h3>
-                <h4 class="subtitle2">Girls white printed dress</h4>
-                <h5 class="text-grey-600 mb-4">sold by marge</h5>
-                <p class="body1 mb-3">
-                  White Flower print fit & flare dress. Square neck Short, puff
-                  sleeves. Knee length in flared hem Crepe fabric with concealed
-                  zip closure.
-                </p>
-                <div class="flex justify-around">
-                  <button
-                    class="btn btn-square-solid btn-xs bg-grey-500 text-white mr-3"
-                  >
-                    <span class="fas fa-shopping-cart"></span>Add to cart
-                  </button>
-                  <button
-                    class="btn btn-square-solid btn-xs bg-grey-500 text-white"
-                  >
-                    <span class="fas fa-heart"></span>Add to wishlist
-                  </button>
-                </div>
-              </div>
+            <div class="mb-5" style="width: 400px">
+              <img
+                class="img-responsive rounded"
+                src="https://picsum.photos/400"
+                alt="random-img"
+              />
             </div>
 
             <pre style="max-width: 70%; background: transparent; margin: auto">
-           <code class="html rounded-lg overflow-scroll h-full w-full">
- &lt;div
-class="shadow-lg rounded flex flex-col relative w-72 mb-12 ml-12 overlay">
- &lt;!-- image container -->
- &lt;div class="h-72">
-  &lt;img
- class="img-responsive rounded"
- style="height: 100%"
- src="/css/images/img_dress.png"
-alt="dress"
-/>
- &lt;div class="px-4 py-2 text-badge card-badge bg-grey-400">
-  out of stock
-&lt;/div>
-&lt;/div>
-&lt;!-- card content container -->
-&lt;div class="p-3">
-&lt;h3 class="text-grey-600 subtitle1 mb-2">
-Printed floral dress
-&lt;/h3>
-&lt;h4 class="subtitle2">Girls white printed dress&lt;/h4>
- &lt;h5 class="text-grey-600 mb-4">sold by marge&lt;/h5>
- &lt;p class="body1 mb-3">
- White Flower print fit & flare dress. Square neck Short, puff
-sleeves. Knee length in flared hem Crepe fabric with concealed
-zip closure.
-&lt;/p>
-&lt;div class="flex justify-around">
- &lt;button
- class="btn btn-square-solid btn-xs bg-grey-500 text-white mr-3"
->
- &lt;span class="fas fa-shopping-cart">&lt;/span> Add to cart
-&lt;/button>
- &lt;button
-class="btn btn-square-solid btn-xs bg-grey-500 text-white"
->
- &lt;span class="fas fa-heart">&lt;/span> Add to wishlist
-&lt;/button>
-&lt;/div>
-&lt;/div>
- &lt;/div>
-           </code>
-        </pre>
+                   <code class="html rounded-lg overflow-scroll h-full w-full">
+&lt;img class="img-responsive" src="https://picsum.photos/400/400" alt="random-img">
+                   </code>
+                </pre>
+            <h3 class="font-semibold text-xl mb-5 underline">Round Image</h3>
 
-            <h4 class="font-semibold text-xl mb-5 underline">
-              Horizontal Card
-            </h4>
-
-            <div class="relative mt-5">
-              <div
-                style="height: 100%; width: 80%"
-                class="flex shadow rounded-md"
-              >
-                <div class="w-50-percent badge-container img-container">
-                  <img
-                    class="rounded-md h-full img-responsive"
-                    src="/css/images/img_dress.png"
-                    alt=""
-                    srcset=""
-                  />
-                  <div class="px-4 py-2 text-badge card-badge bg-indigo-300">
-                    new
-                  </div>
-                </div>
-                <div class="card-description p-6">
-                  <h3 class="text-grey-600 subtitle1 mb-2">
-                    Printed floral dress
-                  </h3>
-                  <h4 class="subtitle2">Girls white printed dress</h4>
-                  <h5 class="text-grey-600 mb-4">sold by marge</h5>
-                  <p class="body1 mb-3">
-                    White Flower print fit & flare dress. Square neck Short,
-                    puff sleeves. Knee length in flared hem Crepe fabric with
-                    concealed zip closure.
-                  </p>
-                  <div class="flex">
-                    <button
-                      class="btn btn-square-solid btn-md bg-indigo-400 text-white mr-3"
-                    >
-                      <span class="fas fa-shopping-cart"></span>Add to cart
-                    </button>
-                    <button
-                      class="btn btn-square-solid btn-md bg-indigo-400 text-white"
-                    >
-                      <span class="fas fa-heart"></span>Add to wishlist
-                    </button>
-                  </div>
-                </div>
-              </div>
+            <div style="width: 100px">
+              <img
+                class="img-responsive img-round"
+                src="https://picsum.photos/400/400"
+                alt="random-img"
+              />
             </div>
           </div>
 
           <pre style="max-width: 70%; background: transparent; margin: auto">
-           <code class="html rounded-lg overflow-scroll h-full w-full">
-&lt;div class="relative mt-5">
-&lt;div style="height: 100%; width: 80%" class="flex shadow rounded-md">
-&lt;div class="w-50-percent badge-container img-container">
-&lt;img
-class="rounded-md h-full img-responsive"
-src="/css/images/img_dress.png"
-alt=""
-srcset=""
-/>
-&lt;div class="px-4 py-2 text-badge card-badge bg-indigo-300">new&lt;/div>
-&lt;/div>
-&lt;div class="card-description p-6">
-&lt;h3 class="text-grey-600 subtitle1 mb-2">Printed floral dress&lt;/h3>
-&lt;h4 class="subtitle2">Girls white printed dress&lt;/h4>
-&lt;h5 class="text-grey-600 mb-4">sold by marge&lt;/h5>
-&lt;p class="body1 mb-3">
-White Flower print fit & flare dress. Square neck Short, puff sleeves.
-Knee length in flared hem Crepe fabric with concealed zip closure.
-&lt;/p>
-&lt;div class="flex">
-&lt;button
-                    class="btn btn-square-solid btn-md bg-indigo-400 text-white mr-3"
-                  >
-&lt;span class="fas fa-shopping-cart">&lt;/span>Add to cart
-&lt;/button>
-          
-&lt;button class="btn btn-square-solid btn-md bg-indigo-400 text-white">
-&lt;span class="fas fa-heart">&lt;/span>Add to wishlist
-&lt;/button>
-&lt;/div>
-&lt;/div>
- &lt;/div>
-&lt;/div>
-          
-           </code>
-        </pre>
+                   <code class="html rounded-lg overflow-scroll h-full w-full">
+&lt;img class="img-responsive img-round" src="https://picsum.photos/400/400" alt="random-img">
+
+                   </code>
+                </pre>
 
           <div class="page-footer flex justify-between">
             <a
-              href="/pages/buttons.html"
+              href="/pages/cards.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
-              Button
+              Cards
             </a>
             <a
-              href="/pages/image.html"
+              href="/pages/input.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
-              Image
+              Input
             </a>
           </div>
         </section>
