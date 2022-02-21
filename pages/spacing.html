@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spacing</title>
+    <link href="../css/index.css" rel="stylesheet" />
+    <link href="/pages/docs.css" rel="stylesheet" />
+    <link href="/pages/night-owl.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="flex flex-row">
+      <!-- header -->
+      <header>
+        <nav
+          class="top-nav flex align-items-center justify-between bg-grey-800"
+        >
+          <input id="top-nav-toggle" type="checkbox" />
+          <a
+            href="../index.html"
+            class="text-white flex align-items-center gap-2"
+          >
+            <span class="fas fa-code text-2xl"></span>
+            <h2 class="text-xl">
+              <span class="text-indigo-400 text-3xl">FUSION</span>CSS
+            </h2>
+          </a>
+
+          <ul class="links gap-16">
+            <li>
+              <a
+                class="text-white text-hover-indigo-400 flex justify-center align-items-center text-lg"
+                href="/pages/docs.html"
+              >
+                <i class="fa-solid fa-file-lines mr-2"></i>
+                Documentation
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="text-white text-hover-indigo-400 flex justify-center align-items-center text-lg"
+                href="https://github.com/Ananyamadhu08/fusion"
+                target="_blank"
+              >
+                <i class="fab fa-github mr-2"></i>
+                Github
+              </a>
+            </li>
+          </ul>
+
+          <label for="top-nav-toggle" class="icon-burger">
+            <div class="line bg-white"></div>
+            <div class="line bg-white"></div>
+            <div class="line bg-white"></div>
+          </label>
+        </nav>
+      </header>
+
+      <!-- responsive side nav -->
+      <a class="mySidenavToggle m-7" onclick="openNav()"
+        ><i class="fa-solid fa-bars" onclick="openNav();"></i
+      ></a>
+
+      <nav id="side-navbar" class="side-nav bg-grey-800">
+        <span class="fas fa-times close-btn text-white" onclick="closeNav()">
+        </span>
+        <div class="nav overflow-scroll text-white">
+          <ul class="flex flex-col mb-40 p-5">
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
+            >
+              <a href="/pages/docs.html">Getting Started</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/colors.html">Colors</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/spacing.html">Spacing</a>
+            </li>
+
+            <!-- components -->
+            <li class="p-1 text-xl text-grey-700 mt-5">
+              <a>Components</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/alerts.html">Alert</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/avatar.html">Avatar</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/badge.html"> Badge</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/buttons.html">Buttons</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/cards.html">Cards</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/image.html">Image</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/input.html">Input</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/lists.html">Lists</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/navigation.html">Navigation</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/modal.html">Modal</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/rating.html">Star Rating</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/snackbar.html">Snackbar</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/tooltip.html">Tooltip</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/image-carousel.html">Image Carousel</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/dropdown-select.html">Dropdown Select</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/range-slider.html">Range Slider</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/input.html">Input</a>
+            </li>
+
+            <!-- other utilities -->
+            <li class="p-1 text-xl text-grey-700 mt-5">
+              <a>Other Utilities</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/grid-system.html">Grid System</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/effects.html">Effects</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/typography.html">Typography</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- main -->
+      <main style="min-height: 90vh" class="w-full justify-end flex">
+        <nav class="h-full relative pl-10 docs-sidenav z-10">
+          <ul class="flex flex-col mb-40 p-5 mt-7">
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/docs.html">Getting Started</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/colors.html">Colors</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
+            >
+              <a href="/pages/spacing.html">Spacing</a>
+            </li>
+
+            <!-- components -->
+            <li class="p-1 text-xl text-grey-700 mt-5 font-semibold">
+              <a>Components</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/alerts.html">Alert</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/avatar.html">Avatar</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/badge.html"> Badge</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/buttons.html">Buttons</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/cards.html">Cards</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/image.html">Image</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/input.html">Input</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/lists.html">Lists</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/navigation.html">Navigation</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/modal.html">Modal</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/rating.html">Star Rating</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/snackbar.html">Snackbar</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/tooltip.html">Tooltip</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/image-carousel.html">Image Carousel</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/dropdown-select.html">Dropdown Select</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/range-slider.html">Range Slider</a>
+            </li>
+
+            <!-- other utilities -->
+            <li class="p-1 text-xl text-grey-700 mt-5 font-semibold">
+              <a>Other Utilities</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/grid-system.html">Grid System</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/effects.html">Effects</a>
+            </li>
+            <li
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+            >
+              <a href="/pages/typography.html">Typography</a>
+            </li>
+          </ul>
+        </nav>
+
+        <section class="docs-page p-10 relative mt-3">
+          <h3 class="font-semibol text-xl mb-5">Spacing</h3>
+          <h5 class="font-normal text-lg mb-5">
+            <span class="text-indigo-500 bg-indigo-100">Fusion CSS</span>
+            provides a wide range of values and a comprehensive numeric spacing
+            scale. The values are proportional, so 4 is twice as much spacing as
+            2 for example. One spacing unit is equal to 0.25rem, which
+            translates to 4px by default in most browsers.
+
+            <br class="mb-5" />
+            All spacing like margin, padding, height and width have the
+            respective classes, margin -
+            <span class="text-indigo-500 bg-indigo-100 underline"> m</span>,
+            padding -
+            <span class="text-indigo-500 bg-indigo-100 underline"> p</span>,
+            width -
+            <span class="text-indigo-500 bg-indigo-100 underline"> w</span>,
+            height -
+            <span class="text-indigo-500 bg-indigo-100 underline"> h</span>,
+            margin-top -
+            <span class="text-indigo-500 bg-indigo-100 underline"> mt</span>,
+            margin-bottom -
+            <span class="text-indigo-500 bg-indigo-100 underline"> mb</span>,
+            margin-left -
+            <span class="text-indigo-500 bg-indigo-100 underline"> ml</span>,
+            margin-right -
+            <span class="text-indigo-500 bg-indigo-100 underline"> mr</span>,
+            padding-top -
+            <span class="text-indigo-500 bg-indigo-100 underline"> pt</span>,
+            padding-bottom -
+            <span class="text-indigo-500 bg-indigo-100 underline"> pb</span>,
+            padding-left -
+            <span class="text-indigo-500 bg-indigo-100 underline"> pl</span>,
+            padding-right -
+            <span class="text-indigo-500 bg-indigo-100 underline"> pr</span>.
+
+            <br class="mb-5" />
+
+            All the spacing classes can be used with this chart for example
+            <span class="text-indigo-500 bg-indigo-100 underline">m-5</span>,
+            <span class="text-indigo-500 bg-indigo-100 underline">pb-11</span>,
+            <span class="text-indigo-500 bg-indigo-100 underline">h-16</span>,
+            <span class="text-indigo-500 bg-indigo-100 underline">mt-44</span>,
+            <span class="text-indigo-500 bg-indigo-100 underline">w-32</span>
+            etc.
+          </h5>
+
+          <div class="p-5">
+            <table>
+              <tbody>
+                <tr>
+                  <td>&nbsp;Size</td>
+                  <td>&nbsp;Value in rem</td>
+                  <td>&nbsp;Value in px</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;1</td>
+                  <td>0.25rem</td>
+                  <td>4px</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;2</td>
+                  <td>0.5rem</td>
+                  <td>8px</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;3</td>
+                  <td>0.75rem</td>
+                  <td>12px</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;4</td>
+                  <td>1rem</td>
+                  <td>16px</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;5</td>
+                  <td>1.25rem</td>
+                  <td>20px</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;6</td>
+                  <td>1.5rem</td>
+                  <td>24px</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;7</td>
+                  <td>1.75rem</td>
+                  <td>28px</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;8</td>
+                  <td>2rem</td>
+                  <td>32px</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;9</td>
+                  <td>2.25rem</td>
+                  <td>36px</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>2.5rem</td>
+                  <td>40px</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>2.75rem</td>
+                  <td>44px</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>3rem</td>
+                  <td>48px</td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td>3.5rem</td>
+                  <td>56px</td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td>4rem</td>
+                  <td>64px</td>
+                </tr>
+                <tr>
+                  <td>20</td>
+                  <td>5rem</td>
+                  <td>80px</td>
+                </tr>
+                <tr>
+                  <td>24</td>
+                  <td>6rem</td>
+                  <td>96px</td>
+                </tr>
+                <tr>
+                  <td>28</td>
+                  <td>7rem</td>
+                  <td>112px</td>
+                </tr>
+                <tr>
+                  <td>32</td>
+                  <td>8rem</td>
+                  <td>128px</td>
+                </tr>
+                <tr>
+                  <td>36</td>
+                  <td>9rem</td>
+                  <td>144px</td>
+                </tr>
+                <tr>
+                  <td>40</td>
+                  <td>10rem</td>
+                  <td>160px</td>
+                </tr>
+                <tr>
+                  <td>44</td>
+                  <td>11rem</td>
+                  <td>176px</td>
+                </tr>
+                <tr>
+                  <td>48</td>
+                  <td>12rem</td>
+                  <td>192px</td>
+                </tr>
+                <tr>
+                  <td>52</td>
+                  <td>12rem</td>
+                  <td>208px</td>
+                </tr>
+                <tr>
+                  <td>56</td>
+                  <td>14rem</td>
+                  <td>224px</td>
+                </tr>
+                <tr>
+                  <td>60</td>
+                  <td>15rem</td>
+                  <td>240px</td>
+                </tr>
+                <tr>
+                  <td>64</td>
+                  <td>16rem</td>
+                  <td>256px</td>
+                </tr>
+                <tr>
+                  <td>72</td>
+                  <td>18rem</td>
+                  <td>288px</td>
+                </tr>
+                <tr>
+                  <td>80</td>
+                  <td>20rem</td>
+                  <td>320px</td>
+                </tr>
+                <tr>
+                  <td>96</td>
+                  <td>24rem</td>
+                  <td>384px</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="page-footer flex justify-between">
+            <a
+              href="/pages/colors.html"
+              class="btn btn-text-underline text-hover-indigo-500"
+            >
+              Colors
+            </a>
+            <a
+              href="/pages/alerts.html"
+              class="btn btn-text-underline text-hover-indigo-500"
+            >
+              Alert
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <!-- footer -->
+      <footer
+        class="bg-indigo-200 justify-center align-items-center flex flex-col p-5 fixed w-full z-50"
+        style="bottom: 0"
+      >
+        <div class="text-grey-700">
+          Made with <i class="fa-solid fa-code"></i> by
+          <a class="btn-text-underline text-hover-indigo-600">Ananya</a>
+        </div>
+        <ul class="links gap-2 flex mt-3">
+          <li>
+            <a
+              class="text-indigo-600 text-hover-white flex justify-center align-items-center text-lg"
+              href="https://twitter.com/AnanyaMadhu27"
+              target="_blank"
+            >
+              <i class="fa-brands fa-twitter mr-2"></i>
+            </a>
+          </li>
+
+          <li>
+            <a
+              class="text-indigo-600 text-hover-white flex justify-center align-items-center text-lg"
+              href="https://github.com/Ananyamadhu08"
+              target="_blank"
+            >
+              <i class="fab fa-github mr-2"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="text-indigo-600 text-hover-white flex justify-center align-items-center text-lg"
+              href="https://www.linkedin.com/in/ananya-madhu-74479b206/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin mr-2"></i>
+            </a>
+          </li>
+        </ul>
+      </footer>
+
+      <script>
+        /* Set the width of the side navigation to 250px */
+        const openNav = () => {
+          document.getElementById("side-navbar").style.width = "250px";
+        };
+        /* Set the width of the side navigation to 0 */
+        const closeNav = () => {
+          document.getElementById("side-navbar").style.width = "0";
+        };
+      </script>
+    </div>
+  </body>
+</html>
