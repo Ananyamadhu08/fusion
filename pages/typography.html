@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alerts</title>
+    <title>Typography</title>
     <link href="../css/index.css" rel="stylesheet" />
     <link href="/pages/docs.css" rel="stylesheet" />
     <link href="/pages/night-owl.css" rel="stylesheet" />
@@ -17,6 +17,7 @@
   <body>
     <div class="flex flex-row">
       <!-- header -->
+
       <header>
         <nav
           class="top-nav flex align-items-center justify-between bg-grey-800"
@@ -227,7 +228,7 @@
               <a>Components</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
             >
               <a href="/pages/alerts.html">Alert</a>
             </li>
@@ -322,7 +323,7 @@
               <a href="/pages/effects.html">Effects</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
             >
               <a href="/pages/typography.html">Typography</a>
             </li>
@@ -330,90 +331,156 @@
         </nav>
 
         <section class="docs-page p-10 relative mt-3">
-          <h3 class="font-semibold text-xl mb-5">Alert</h3>
-          <h5 class="font-normal text-lg mb-10">
-            An alert helps us display short, important messages in a way that
-            attracts the attention of the user without interrupting the user's
-            task.
+          <h3 class="font-semibold text-xl mb-5">Typography</h3>
+
+          <h5 class="font-normal text-lg mb-5">
+            Typography is the art and technique of arranging type to make
+            written language legible, readable and appealing when displayed. The
+            arrangement of type involves selecting typefaces, point sizes, line
+            lengths, line-spacing, and letter-spacing, as well as adjusting the
+            space between pairs of letters.
           </h5>
+          <h3 class="font-semibold text-xl mb-5">Examples</h3>
 
-          <h3 class="font-semibold text-xl">Examples</h3>
+          <div class="p-5">
+            <h4 class="h4 font-semibold text-xl mb-5 underline">
+              Example of headings
+            </h4>
+            <h1 class="h1">This is a h1 heading</h1>
+            <h2 class="h2">This is a h2 heading</h2>
+            <h3 class="h3">This is a h3 heading</h3>
+            <h4 class="h4">This is a h4 heading</h4>
+            <h5 class="h5">This is a h5 heading</h5>
+            <h6 class="h6">This is a h6 heading</h6>
+            <pre style="max-width: 70%; background: transparent; margin: auto">
+                        <code class="html rounded-lg overflow-scroll h-full w-full">
+&lt;h1 class="h1">This is a h1 heading&lt;/h1>
+&lt;h2 class="h2">This is a h2 heading&lt;/h2>
+&lt;h3 class="h3">This is a h3 heading&lt;/h3>
+&lt;h4 class="h4">This is a h4 heading&lt;/h4>
+&lt;h5 class="h5">This is a h5 heading&lt;/h5>
+&lt;h6 class="h6">This is a h6 heading&lt;/h6>
+                        </code>
+                     </pre>
 
-          <div class="p-5 flex flex-col gap-5">
-            <div class="alert bg-indigo-300 text-indigo-800">
-              This is an alert!!!
-            </div>
-            <div class="alert bg-green-200 text-green-800">
-              <span><i class="fas fa-check-circle"></i></span>
-              Success alert: order placed
-            </div>
-            <div class="alert bg-red-200 text-red-800">
-              <span><i class="fas fa-exclamation-triangle"></i></span>
-              Danger alert: This file will be permanentaly deleted. Are you sure
-              you want to proceed?
-            </div>
-            <div class="alert bg-yellow-200 text-yellow-800">
-              <span><i class="fas fa-exclamation-triangle"></i></span>
-              Warning alert: Low storage
-            </div>
+            <h4 class="h4 font-semibold text-xl mb-5 underline">
+              Example of some body, subtitle and button text
+            </h4>
 
-            <div class="alert alert-with-btn bg-orange-300 text-orange-800">
-              <span>
-                <i class="alert-icon fas fa-exclamation-triangle"></i>
-                Warning alert!!!
-              </span>
+            <p class="body1">
+              body1. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore
+              consectetur, neque doloribus, cupiditate numquam dignissimos
+              laborum fugiat deleniti? Eum quasi quidem quibusdam
+            </p>
+            <p class="body2">
+              body2. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore
+              consectetur, neque doloribus, cupiditate numquam dignissimos
+              laborum fugiat deleniti? Eum quasi quidem quibusdam
+            </p>
+            <h6 class="subtitle1">
+              subtitle1. Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Quos blanditiis tenetur
+            </h6>
+            <h6 class="subtitle2">
+              subtitle2. Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Quos blanditiis tenetur
+            </h6>
+            <span class="button-text">This is a button text</span>
+            <span class="overline-text">this is a overline text</span>
+            <span class="caption-text">this is caption text</span>
 
-              <button
-                type="button"
-                class="alert-btn"
-                id="alert-example-close-btn"
-              >
-                <i class="fa-solid fa-x"></i>
-              </button>
-            </div>
+            <pre style="max-width: 70%; background: transparent; margin: auto">
+                        <code class="html rounded-lg overflow-scroll h-full w-full">
+&lt;p class="body1">
+    body1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+    blanditiis tenetur unde suscipit, quam beatae rerum inventore
+    consectetur, neque doloribus, cupiditate numquam dignissimos laborum
+    fugiat deleniti? Eum quasi quidem quibusdam
+&lt;/p>
+&lt;p class="body2">
+    body2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+    blanditiis tenetur unde suscipit, quam beatae rerum inventore
+    consectetur, neque doloribus, cupiditate numquam dignissimos laborum
+    fugiat deleniti? Eum quasi quidem quibusdam
+&lt;/p>
+&lt;h6 class="subtitle1">
+    subtitle1. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Quos blanditiis tenetur
+&lt;/h6>
+&lt;h6 class="subtitle2">
+    subtitle2. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Quos blanditiis tenetur
+&lt;/h6>
+&lt;span class="button-text">This is a button text&lt;/span>
+&lt;span class="overline-text">this is a overline text&lt;/span>
+&lt;span class="caption-text">this is caption text&lt;/span>
+                        </code>
+                     </pre>
+
+            <h4 class="h4 font-semibold text-xl mb-5 underline">
+              Example of text sizes
+            </h4>
+
+            <p class="text-xs">The quick brown fox jumps over the lazy dog.</p>
+            <p class="text-sm">The quick brown fox jumps over the lazy dog.</p>
+            <p class="text-base">
+              The quick brown fox jumps over the lazy dog.
+            </p>
+            <p class="italic text-md">
+              The quick brown fox jumps over the lazy dog.
+            </p>
+            <p class="text-lg">The quick brown fox jumps over the lazy dog.</p>
+            <p class="text-xl">The quick brown fox jumps over the lazy dog.</p>
+            <p class="text-2xl">The quick brown fox jumps over the lazy dog.</p>
+            <p class="italic text-3xl">
+              The quick brown fox jumps over the lazy dog.
+            </p>
+            <p class="text-4xl">The quick brown fox jumps over the lazy dog.</p>
+            <p class="italic text-5xl">
+              The quick brown fox jumps over the lazy dog.
+            </p>
+            <p class="text-6xl">The quick brown fox jumps over the lazy dog.</p>
+            <p class="text-7xl">The quick brown fox jumps over the lazy dog.</p>
+            <p class="text-8xl">The quick brown fox jumps over the lazy dog.</p>
+            <p class="text-9xl">The quick brown fox jumps over the lazy dog.</p>
+            <pre style="max-width: 70%; background: transparent; margin: auto">
+                        <code class="html rounded-lg overflow-scroll h-full w-full mt-5">
+&lt;p class="text-xs">The quick brown fox jumps over the lazy dog.&lt;/p>
+&lt;p class="text-sm">The quick brown fox jumps over the lazy dog.&lt;/p>
+&lt;p class="text-base">The quick brown fox jumps over the lazy dog.&lt;/p>
+&lt;p class="italic text-md">The quick brown fox jumps over the lazy dog.&lt;/p>
+&lt;p class="text-lg">The quick brown fox jumps over the lazy dog.&lt;/p>
+&lt;p class="text-xl">The quick brown fox jumps over the lazy dog.&lt;/p>
+&lt;p class="text-2xl">The quick brown fox jumps over the lazy dog.&lt;/p>
+&lt;p class="italic text-3xl">
+    The quick brown fox jumps over the lazy dog.
+&lt;/p>
+&lt;p class="text-4xl">The quick brown fox jumps over the lazy dog.&lt;/p>
+&lt;p class="italic text-5xl">
+    The quick brown fox jumps over the lazy dog.
+&lt;/p>
+&lt;p class="text-6xl">The quick brown fox jumps over the lazy dog.&lt;/p>
+&lt;p class="text-7xl">The quick brown fox jumps over the lazy dog.&lt;/p>
+&lt;p class="text-8xl">The quick brown fox jumps over the lazy dog.&lt;/p>
+&lt;p class="text-9xl">The quick brown fox jumps over the lazy dog.&lt;/p>
+                        </code>
+                     </pre>
           </div>
-
-          <pre style="max-width: 70%; background: transparent; margin: auto">
-           <code class="html rounded-lg overflow-scroll h-full w-full">
-<!-- alert example -->
-&lt;div class="alert bg-indigo-300 text-indigo-800">This is an alert!!!&lt;/div>
-
-<!-- success alert example -->
-&lt;div class="alert bg-green-200 text-green-800"> &lt;span>&lt;i class="fas
-fa-check-circle">&lt;/i>&lt;/span> Success alert: order placed &lt;/div>
-
-<!-- danger alert example -->
-&lt;div class="alert bg-red-200 text-red-800"> &lt;span>&lt;i class="fas
-fa-exclamation-triangle">&lt;/i>&lt;/span> Danger alert: This file will be
-permanentaly deleted. Are you sure you want to proceed? &lt;/div>
-
-<!-- warning alert example  -->
-&lt;div class="alert bg-yellow-200 text-yellow-800"> &lt;span>&lt;i class="fas
-fa-exclamation-triangle">&lt;/i>&lt;/span> Warning alert: Low storage &lt;/div>
-
-<!-- warning alert example with close button -->
-&lt;div class="alert alert-with-btn bg-orange-300 text-orange-800"> &lt;span>
-&lt;i class="alert-icon fas fa-exclamation-triangle">&lt;/i> Warning alert!!!
-&lt;/span> &lt;button type="button" class="alert-btn"
-id="alert-example-close-btn"> &lt;i class="fa-solid fa-x">&lt;/i> &lt;/button>
-&lt;/div>
-
-           </code>
-        </pre>
 
           <div class="page-footer flex justify-between">
             <a
-              href="/pages/spacing.html"
+              href="/pages/effects.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
-              Spacing
+              Effects
             </a>
             <a
-              href="/pages/avatar.html"
+              href="pages/typography.html"
               class="btn btn-text-underline text-hover-indigo-500"
+              >Typography</a
             >
-              Avatar
-            </a>
           </div>
         </section>
       </main>
