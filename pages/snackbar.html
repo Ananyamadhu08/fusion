@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
+    <title>Snackbar</title>
     <link href="../css/index.css" rel="stylesheet" />
     <link href="/pages/docs.css" rel="stylesheet" />
     <link href="/pages/night-owl.css" rel="stylesheet" />
@@ -279,12 +278,12 @@
               <a href="/pages/modal.html">Modal</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
             >
               <a href="/pages/rating.html">Star Rating</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
             >
               <a href="/pages/snackbar.html">Snackbar</a>
             </li>
@@ -332,439 +331,68 @@
         </nav>
 
         <section class="docs-page p-10 relative mt-3">
-          <h3 class="font-semibold text-xl mb-5">Star Rating</h3>
+          <h3 class="font-semibold text-xl mb-5">Snackbar</h3>
 
           <h5 class="font-normal text-lg mb-5">
-            Rating can be used as read-only badge or in reviews section. Can be
-            used in reviews section as form too.
+            Snackbars inform users of a process that an app has performed or
+            will perform. They appear temporarily, towards the bottom of the
+            screen. They shouldn't interrupt the user experience, and they don't
+            require user input to disappear. Snackbars contain a single line of
+            text directly related to the operation performed. They may contain a
+            text action, but no icons. You can use them to display
+            notifications.
           </h5>
-
           <h3 class="font-semibold text-xl mb-5">Examples</h3>
 
-          <div class="p-5 flex flex-col justify-content align-items-center">
-            <!-- full star rating -->
-            <h1>Full star rating</h1>
-            <div class="full-star-rating mt-4 mb-16 gap-3">
-              <input
-                class="full-rating-input"
-                id="star-5"
-                type="radio"
-                name="star"
-                value="star-5"
-              />
-              <label
-                class="full-rating-label text-3xl"
-                for="star-5"
-                title="5 stars"
+          <div class="p-5">
+            <div class="flex justify-center">
+              <button
+                class="btn btn-squared-solid bg-indigo-400"
+                onclick="showSnackbar()"
               >
-                <i class="fa fa-star" aria-hidden="true"></i>
-              </label>
-
-              <input
-                class="full-rating-input"
-                id="star-4"
-                type="radio"
-                name="star"
-                value="star-4"
-              />
-              <label
-                class="full-rating-label text-3xl"
-                for="star-4"
-                title="4 stars"
-              >
-                <i class="fa fa-star" aria-hidden="true"></i>
-              </label>
-
-              <input
-                class="full-rating-input"
-                id="star-3"
-                type="radio"
-                name="star"
-                value="star-3"
-              />
-              <label
-                class="full-rating-label text-3xl"
-                for="star-3"
-                title="3 stars"
-              >
-                <i class="fa fa-star" aria-hidden="true"></i>
-              </label>
-
-              <input
-                class="full-rating-input"
-                id="star-2"
-                type="radio"
-                name="star"
-                value="star-2"
-              />
-              <label
-                class="full-rating-label text-3xl"
-                for="star-2"
-                title="2 stars"
-              >
-                <i class="fa fa-star" aria-hidden="true"></i>
-              </label>
-
-              <input
-                class="full-rating-input"
-                id="star-1"
-                type="radio"
-                name="star"
-                value="star-1"
-              />
-              <label
-                class="full-rating-label text-3xl"
-                for="star-1"
-                title="1 star"
-              >
-                <i class="fa fa-star" aria-hidden="true"></i>
-              </label>
+                click me
+              </button>
             </div>
-
-            <!-- half star rating-->
-            <h1>Half star rating</h1>
-            <div class="half-star-rating mt-4 mb-10 gap-3">
-              <input
-                class="half-rating-input"
-                type="radio"
-                id="star-5"
-                name="star"
-                value="5"
-              />
-              <label
-                class="full half-rating-label text-3xl"
-                for="star-5"
-                title="5 stars"
-              ></label>
-
-              <input
-                class="half-rating-input"
-                type="radio"
-                id="star-4half"
-                name="star"
-                value="4.5"
-              />
-              <label
-                class="half half-rating-label text-3xl"
-                for="star-4half"
-                title="4.5 stars"
-              ></label>
-
-              <input
-                class="half-rating-input"
-                type="radio"
-                id="star-4"
-                name="star"
-                value="4"
-              />
-              <label
-                class="full half-rating-label text-3xl"
-                for="star-4"
-                title="4 stars"
-              ></label>
-
-              <input
-                class="half-rating-input"
-                type="radio"
-                id="star-3half"
-                name="star"
-                value="3.5"
-              />
-              <label
-                class="half half-rating-label text-3xl"
-                for="star-3half"
-                title="3.5 stars"
-              ></label>
-
-              <input
-                class="half-rating-input"
-                type="radio"
-                id="star-3"
-                name="star"
-                value="3"
-              />
-              <label
-                class="full half-rating-label text-3xl"
-                for="star-3"
-                title="3 stars"
-              ></label>
-
-              <input
-                class="half-rating-input"
-                type="radio"
-                id="star-2half"
-                name="star"
-                value="2.5"
-              />
-              <label
-                class="half half-rating-label text-3xl"
-                for="star-2half"
-                title="2.5 stars"
-              ></label>
-
-              <input
-                class="half-rating-input"
-                type="radio"
-                id="star-2"
-                name="star"
-                value="2"
-              />
-              <label
-                class="full half-rating-label text-3xl"
-                for="star-2"
-                title="2 stars"
-              ></label>
-
-              <input
-                class="half-rating-input"
-                type="radio"
-                id="star-1half"
-                name="star"
-                value="1.5"
-              />
-              <label
-                class="half half-rating-label text-3xl"
-                for="star-1half"
-                title="1.5 stars"
-              ></label>
-
-              <input
-                class="half-rating-input"
-                type="radio"
-                id="star-1"
-                name="star"
-                value="1"
-              />
-              <label
-                class="full half-rating-label text-3xl"
-                for="star-1"
-                title="1 stars"
-              ></label>
-
-              <input
-                class="half-rating-input"
-                type="radio"
-                id="star-half"
-                name="star"
-                value="0.5"
-              />
-              <label
-                class="half half-rating-label text-3xl"
-                for="star-half"
-                title="0.5 stars"
-              ></label>
-            </div>
+            <div class="snackbar bg-grey-400">this is a toast</div>
           </div>
 
           <pre style="max-width: 70%; background: transparent; margin: auto">
                      <code class="html rounded-lg overflow-scroll h-full w-full">
- &lt;h1>Full star rating&lt;/h1>
-&lt;div class="full-star-rating mt-4 mb-16 gap-3">
-  &lt;input
-    class="full-rating-input"
-    id="star-5"
-    type="radio"
-    name="star"
-    value="star-5"
-  />
-  &lt;label class="full-rating-label text-3xl" for="star-5" title="5 stars">
-    &lt;i class="fa fa-star" aria-hidden="true">&lt;/i>
-  &lt;/label>
-
-  &lt;input
-    class="full-rating-input"
-    id="star-4"
-    type="radio"
-    name="star"
-    value="star-4"
-  />
-  &lt;label class="full-rating-label text-3xl" for="star-4" title="4 stars">
-    &lt;i class="fa fa-star" aria-hidden="true">&lt;/i>
-  &lt;/label>
-
-  &lt;input
-    class="full-rating-input"
-    id="star-3"
-    type="radio"
-    name="star"
-    value="star-3"
-  />
-  &lt;label class="full-rating-label text-3xl" for="star-3" title="3 stars">
-    &lt;i class="fa fa-star" aria-hidden="true">&lt;/i>
-  &lt;/label>
-
-  &lt;input
-    class="full-rating-input"
-    id="star-2"
-    type="radio"
-    name="star"
-    value="star-2"
-  />
-  &lt;label class="full-rating-label text-3xl" for="star-2" title="2 stars">
-    &lt;i class="fa fa-star" aria-hidden="true">&lt;/i>
-  &lt;/label>
-
-  &lt;input
-    class="full-rating-input"
-    id="star-1"
-    type="radio"
-    name="star"
-    value="star-1"
-  />
-  &lt;label class="full-rating-label text-3xl" for="star-1" title="1 star">
-    &lt;i class="fa fa-star" aria-hidden="true">&lt;/i>
-  &lt;/label>
-&lt;/div>
-
-
-&lt;h1>Half star rating&lt;/h1>
-&lt;div class="half-star-rating mt-4 mb-10 gap-3">
-  &lt;input
-    class="half-rating-input"
-    type="radio"
-    id="star-5"
-    name="star"
-    value="5"
-  />
-  &lt;label
-    class="full half-rating-label text-3xl"
-    for="star-5"
-    title="5 stars"
-  >&lt;/label>
-
-  &lt;input
-    class="half-rating-input"
-    type="radio"
-    id="star-4half"
-    name="star"
-    value="4.5"
-  />
-  &lt;label
-    class="half half-rating-label text-3xl"
-    for="star-4half"
-    title="4.5 stars"
-  >&lt;/label>
-
-  &lt;input
-    class="half-rating-input"
-    type="radio"
-    id="star-4"
-    name="star"
-    value="4"
-  />
-  &lt;label
-    class="full half-rating-label text-3xl"
-    for="star-4"
-    title="4 stars"
-  >&lt;/label>
-
-  &lt;input
-    class="half-rating-input"
-    type="radio"
-    id="star-3half"
-    name="star"
-    value="3.5"
-  />
-  &lt;label
-    class="half half-rating-label text-3xl"
-    for="star-3half"
-    title="3.5 stars"
-  >&lt;/label>
-
-  &lt;input
-    class="half-rating-input"
-    type="radio"
-    id="star-3"
-    name="star"
-    value="3"
-  />
-  &lt;label
-    class="full half-rating-label text-3xl"
-    for="star-3"
-    title="3 stars"
-  >&lt;/label>
-
-  &lt;input
-    class="half-rating-input"
-    type="radio"
-    id="star-2half"
-    name="star"
-    value="2.5"
-  />
-  &lt;label
-    class="half half-rating-label text-3xl"
-    for="star-2half"
-    title="2.5 stars"
-  >&lt;/label>
-
-  &lt;input
-    class="half-rating-input"
-    type="radio"
-    id="star-2"
-    name="star"
-    value="2"
-  />
-  &lt;label
-    class="full half-rating-label text-3xl"
-    for="star-2"
-    title="2 stars"
-  >&lt;/label>
-
-  &lt;input
-    class="half-rating-input"
-    type="radio"
-    id="star-1half"
-    name="star"
-    value="1.5"
-  />
-  &lt;label
-    class="half half-rating-label text-3xl"
-    for="star-1half"
-    title="1.5 stars"
-  >&lt;/label>
-
-  &lt;input
-    class="half-rating-input"
-    type="radio"
-    id="star-1"
-    name="star"
-    value="1"
-  />
-  &lt;label
-    class="full half-rating-label text-3xl"
-    for="star-1"
-    title="1 stars"
-  >&lt;/label>
-
-  &lt;input
-    class="half-rating-input"
-    type="radio"
-    id="star-half"
-    name="star"
-    value="0.5"
-  />
-  &lt;label
-    class="half half-rating-label text-3xl"
-    for="star-half"
-    title="0.5 stars"
-  >&lt;/label>
-&lt;/div>
-        
+&lt;button onclick="showSnackbar()">click me&lt;/button>
+&lt;div class="snackbar bg-grey-500">this is a toast&lt;/div>
                      </code>
                   </pre>
 
+          <pre style="max-width: 70%; background: transparent; margin: auto">
+                    <code class="javascript rounded-lg overflow-scroll h-full w-full">
+function showSnackbar() {
+    var x = document.querySelector(".snackbar");
+                    
+    console.log(x);
+                    
+    x.classList.add("show");
+                    
+    setTimeout(function () {
+      x.classList.remove("show");
+    }, 3000);
+}
+       
+                    </code>
+                 </pre>
+
+          <!-- this is the footer of the the SECTION -->
           <div class="page-footer flex justify-between">
             <a
-              href="/pages/modal.html"
+              href="/pages/rating.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
-              Modal
+              Star Rating
             </a>
             <a
-              href="/pages/snackbar.html"
+              href="/pages/tooltip.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
-              Snackbar
+              Tooltip
             </a>
           </div>
         </section>
@@ -824,6 +452,19 @@
       const closeNav = () => {
         document.getElementById("side-navbar").style.width = "0";
       };
+    </script>
+    <script>
+      function showSnackbar() {
+        var x = document.querySelector(".snackbar");
+
+        console.log(x);
+
+        x.classList.add("show");
+
+        setTimeout(function () {
+          x.classList.remove("show");
+        }, 3000);
+      }
     </script>
   </body>
 </html>
