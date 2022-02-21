@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Input</title>
+    <title>Tooltip</title>
     <link href="../css/index.css" rel="stylesheet" />
     <link href="/pages/docs.css" rel="stylesheet" />
     <link href="/pages/night-owl.css" rel="stylesheet" />
@@ -17,6 +17,7 @@
   <body>
     <div class="flex flex-row">
       <!-- header -->
+
       <header>
         <nav
           class="top-nav flex align-items-center justify-between bg-grey-800"
@@ -257,7 +258,7 @@
               <a href="/pages/image.html">Image</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
             >
               <a href="/pages/input.html">Input</a>
             </li>
@@ -287,7 +288,7 @@
               <a href="/pages/snackbar.html">Snackbar</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
             >
               <a href="/pages/tooltip.html">Tooltip</a>
             </li>
@@ -330,119 +331,89 @@
         </nav>
 
         <section class="docs-page p-10 relative mt-3">
-          <h3 class="font-semibold text-xl mb-5">Input</h3>
-          <h5 class="font-normal text-lg mb-5">
-            Input elements are used in Forms. Depending on type of input, the
-            ability to style it varies. You should always use a label for your
-            input elements for accessibility reasons.
-          </h5>
+          <h3 class="font-semibold text-xl mb-5">Tooltip</h3>
 
+          <h5 class="font-normal text-lg mb-5">
+            Tooltips display text or other content when you hover over an HTML
+            element.
+          </h5>
           <h3 class="font-semibold text-xl mb-5">Examples</h3>
 
-          <div class="p-5">
-            <h4 class="font-semibold text-xl mb-5 underline">Input</h4>
-
-            <!-- standard input -->
-            <div class="input-container mb-7">
-              <input
-                type="text"
-                id="email"
-                class="input input-lime-hover input-blue-focus"
-                autocomplete="off"
-                placeholder=" "
-              />
-              <label for="email" class="input-label text-grey-700 bg-white"
-                >input outlined</label
+          <div class="p-5 flex flex-col align-items-center">
+            <div class="tooltip mb-16">
+              this text has a bottom tooltip
+              <span class="tooltip-text tooltip-text-bottom bg-grey-300"
+                >Tooltip text</span
               >
             </div>
-
-            <!-- filled input -->
-            <div class="input-container mb-7">
-              <input
-                type="text"
-                id="email"
-                class="input input-grey-fill-light input-lime-hover input-blue-focus"
-                autocomplete="off"
-                placeholder=" "
-              />
-              <label for="email" class="input-label text-black bg-grey-200"
-                >input filled</label
+            <br />
+            <div class="tooltip mb-16">
+              this text has a left tooltip
+              <span class="tooltip-text tooltip-text-left bg-grey-300"
+                >Tooltip text</span
               >
             </div>
-
-            <!-- error input -->
-            <div class="input-container mb-7">
-              <input
-                type="text"
-                id="email"
-                class="input input-red input-red-focus"
-                autocomplete="off"
-                placeholder=" "
-              />
-              <label for="email" class="input-label text-red-500 bg-white"
-                >input error</label
+            <br />
+            <div class="tooltip mb-16">
+              this text has a top tooltip
+              <span class="tooltip-text tooltip-text-top bg-grey-300"
+                >Tooltip text</span
               >
-              <small class="error text-red-500 text-sm">error message</small>
             </div>
-            <pre style="max-width: 70%; background: transparent; margin: auto">
-                <code class="html rounded-lg overflow-scroll h-full w-full">
-
-&lt;div class="input-container mb-7">
-  &lt;input
-    type="text"
-    id="email"
-    class="input input-lime-hover input-blue-focus"
-    autocomplete="off"
-    placeholder=" "
-  />
-  &lt;label for="email" class="input-label text-grey-700 bg-white"
-    >input outlined&lt;/label
-  >
-&lt;/div>
-
-&lt;div class="input-container mb-7">
-  &lt;input
-    type="text"
-    id="email"
-    class="input input-grey-fill-light input-lime-hover input-blue-focus"
-    autocomplete="off"
-    placeholder=" "
-  />
-  &lt;label for="email" class="input-label text-black bg-grey-200"
-    >input filled&lt;/label
-  >
-&lt;/div>
-
-&lt;div class="input-container mb-7">
-  &lt;input
-    type="text"
-    id="email"
-    class="input input-red input-red-focus"
-    autocomplete="off"
-    placeholder=" "
-  />
-  &lt;label for="email" class="input-label text-red-500 bg-white"
-    >input error&lt;/label
-  >
-  &lt;small class="error text-red-500 text-sm">error message&lt;/small>
-&lt;/div>
-
-                </code>
-             </pre>
+            <br />
+            <div class="tooltip mb-10">
+              this text has a right tooltip
+              <span class="tooltip-text tooltip-text-right bg-grey-300"
+                >Tooltip text</span
+              >
+            </div>
           </div>
 
+          <pre style="max-width: 70%; background: transparent; margin: auto">
+                     <code class="html rounded-lg overflow-scroll h-full w-full">
+  &lt;div class="tooltip mb-16">
+    this text has a bottom tooltip
+  &lt;span class="tooltip-text tooltip-text-bottom bg-grey-300"
+      >Tooltip text&lt;/span
+    >
+  &lt;/div>
+  &lt;br />
+  &lt;div class="tooltip mb-16">
+    this text has a left tooltip
+    &lt;span class="tooltip-text tooltip-text-left bg-grey-300"
+      >Tooltip text&lt;/span
+    >
+  &lt;/div>
+  &lt;br />
+  &lt;div class="tooltip mb-16">
+    this text has a top tooltip
+    &lt;span class="tooltip-text tooltip-text-top bg-grey-300"
+      >Tooltip text&lt;/span
+    >
+  &lt;/div>
+  &lt;br />
+  &lt;div class="tooltip mb-10">
+    this text has a right tooltip
+    &lt;span class="tooltip-text tooltip-text-right bg-grey-300"
+      >Tooltip text&lt;/span
+    >
+  &lt;/div>
+                     </code>
+                  </pre>
+
+          <!-- this is the footer of the the SECTION -->
           <div class="page-footer flex justify-between">
             <a
-              href="/pages/image.html"
+              href="/pages/snackbar.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
-              Image
+              Snackbar
             </a>
             <a
-              href="/pages/lists.html"
+              href="/pages/image-carousel.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
-              Lists
+              Image Carousel
             </a>
           </div>
         </section>

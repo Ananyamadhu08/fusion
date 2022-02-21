@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Input</title>
+    <title>Effects</title>
     <link href="../css/index.css" rel="stylesheet" />
     <link href="/pages/docs.css" rel="stylesheet" />
     <link href="/pages/night-owl.css" rel="stylesheet" />
@@ -17,6 +17,7 @@
   <body>
     <div class="flex flex-row">
       <!-- header -->
+
       <header>
         <nav
           class="top-nav flex align-items-center justify-between bg-grey-800"
@@ -257,7 +258,7 @@
               <a href="/pages/image.html">Image</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
             >
               <a href="/pages/input.html">Input</a>
             </li>
@@ -317,7 +318,7 @@
               <a href="/pages/grid-system.html">Grid System</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
             >
               <a href="/pages/effects.html">Effects</a>
             </li>
@@ -330,119 +331,186 @@
         </nav>
 
         <section class="docs-page p-10 relative mt-3">
-          <h3 class="font-semibold text-xl mb-5">Input</h3>
+          <h3 class="font-semibold text-xl mb-5">Effects</h3>
+
           <h5 class="font-normal text-lg mb-5">
-            Input elements are used in Forms. Depending on type of input, the
-            ability to style it varies. You should always use a label for your
-            input elements for accessibility reasons.
+            <span class="text-indigo-500 bg-indigo-100 underline"
+              >Fusion CSS</span
+            >
+            offers utilities for effects like
+            <span class="text-indigo-500 bg-indigo-100 underline"
+              >box-shadow</span
+            >
+            and
+            <span class="text-indigo-500 bg-indigo-100 underline">opacity</span
+            >. You can use classes like
+            <span class="text-indigo-500 bg-indigo-100 underline">shadow</span>,
+            <span class="text-indigo-500 bg-indigo-100 underline"
+              >shadow-md</span
+            >
+            to apply box a box-shadow and calsses like
+            <span class="text-indigo-500 bg-indigo-100 underline">o-20</span>
+            and
+            <span class="text-indigo-500 bg-indigo-100 underline">o-60</span>
+            for opacity.
           </h5>
 
           <h3 class="font-semibold text-xl mb-5">Examples</h3>
 
           <div class="p-5">
-            <h4 class="font-semibold text-xl mb-5 underline">Input</h4>
-
-            <!-- standard input -->
-            <div class="input-container mb-7">
-              <input
-                type="text"
-                id="email"
-                class="input input-lime-hover input-blue-focus"
-                autocomplete="off"
-                placeholder=" "
-              />
-              <label for="email" class="input-label text-grey-700 bg-white"
-                >input outlined</label
-              >
+            <div class="flex flex-col">
+              <div class="flex mb-10">
+                <div
+                  class="shadow w-40 h-40 flex justify-center align-items-center"
+                >
+                  shadow
+                </div>
+                <div
+                  class="shadow-sm w-40 h-40 flex justify-center align-items-center"
+                >
+                  shadow-sm
+                </div>
+                <div
+                  class="shadow-md w-40 h-40 flex justify-center align-items-center"
+                >
+                  shadow-md
+                </div>
+                <div
+                  class="shadow-lg w-40 h-40 flex justify-center align-items-center"
+                >
+                  shadow-lg
+                </div>
+                <div
+                  class="shadow-xl w-40 h-40 flex justify-center align-items-center"
+                >
+                  shadow-xl
+                </div>
+                <div
+                  class="shadow-2xl w-40 h-40 flex justify-center align-items-center"
+                >
+                  shadow-2xl
+                </div>
+              </div>
+              <div class="flex">
+                <div
+                  class="bg-indigo-500 opacity-10 w-20 h-20 mb-2 flex justify-center align-items-center"
+                >
+                  opacity-10
+                </div>
+                <div
+                  class="bg-indigo-500 opacity-20 w-20 h-20 mb-2 flex justify-center align-items-center"
+                >
+                  opacity-20
+                </div>
+                <div
+                  class="bg-indigo-500 opacity-30 w-20 h-20 mb-2 flex justify-center align-items-center"
+                >
+                  opacity-30
+                </div>
+                <div
+                  class="bg-indigo-500 opacity-40 w-20 h-20 mb-2 flex justify-center align-items-center"
+                >
+                  opacity-40
+                </div>
+                <div
+                  class="bg-indigo-500 opacity-50 w-20 h-20 mb-2 flex justify-center align-items-center"
+                >
+                  opacity-50
+                </div>
+                <div
+                  class="bg-indigo-500 opacity-60 w-20 h-20 mb-2 flex justify-center align-items-center"
+                >
+                  opacity-60
+                </div>
+                <div
+                  class="bg-indigo-500 opacity-70 w-20 h-20 mb-2 flex justify-center align-items-center"
+                >
+                  opacity-70
+                </div>
+                <div
+                  class="bg-indigo-500 opacity-80 w-20 h-20 mb-2 flex justify-center align-items-center"
+                >
+                  opacity-80
+                </div>
+                <div
+                  class="bg-indigo-500 opacity-90 w-20 h-20 mb-2 flex justify-center align-items-center"
+                >
+                  opacity-90
+                </div>
+                <div
+                  class="bg-indigo-500 opacity-100 w-20 h-20 mb-2 flex justify-center align-items-center"
+                >
+                  opacity-100
+                </div>
+              </div>
             </div>
+          </div>
 
-            <!-- filled input -->
-            <div class="input-container mb-7">
-              <input
-                type="text"
-                id="email"
-                class="input input-grey-fill-light input-lime-hover input-blue-focus"
-                autocomplete="off"
-                placeholder=" "
-              />
-              <label for="email" class="input-label text-black bg-grey-200"
-                >input filled</label
-              >
-            </div>
-
-            <!-- error input -->
-            <div class="input-container mb-7">
-              <input
-                type="text"
-                id="email"
-                class="input input-red input-red-focus"
-                autocomplete="off"
-                placeholder=" "
-              />
-              <label for="email" class="input-label text-red-500 bg-white"
-                >input error</label
-              >
-              <small class="error text-red-500 text-sm">error message</small>
-            </div>
-            <pre style="max-width: 70%; background: transparent; margin: auto">
-                <code class="html rounded-lg overflow-scroll h-full w-full">
-
-&lt;div class="input-container mb-7">
-  &lt;input
-    type="text"
-    id="email"
-    class="input input-lime-hover input-blue-focus"
-    autocomplete="off"
-    placeholder=" "
-  />
-  &lt;label for="email" class="input-label text-grey-700 bg-white"
-    >input outlined&lt;/label
-  >
-&lt;/div>
-
-&lt;div class="input-container mb-7">
-  &lt;input
-    type="text"
-    id="email"
-    class="input input-grey-fill-light input-lime-hover input-blue-focus"
-    autocomplete="off"
-    placeholder=" "
-  />
-  &lt;label for="email" class="input-label text-black bg-grey-200"
-    >input filled&lt;/label
-  >
-&lt;/div>
-
-&lt;div class="input-container mb-7">
-  &lt;input
-    type="text"
-    id="email"
-    class="input input-red input-red-focus"
-    autocomplete="off"
-    placeholder=" "
-  />
-  &lt;label for="email" class="input-label text-red-500 bg-white"
-    >input error&lt;/label
-  >
-  &lt;small class="error text-red-500 text-sm">error message&lt;/small>
-&lt;/div>
-
-                </code>
-             </pre>
+          <div class="mb-5">
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    <div>Class</div>
+                  </th>
+                  <th>
+                    <div>Properties</div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>shadow-sm</td>
+                  <td>box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);</td>
+                </tr>
+                <tr>
+                  <td>shadow</td>
+                  <td>
+                    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px
+                    rgb(0 0 0 / 0.1);
+                  </td>
+                </tr>
+                <tr>
+                  <td>shadow-md</td>
+                  <td>
+                    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px
+                    rgb(0 0 0 / 0.1);
+                  </td>
+                </tr>
+                <tr>
+                  <td>shadow-lg</td>
+                  <td>
+                    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px
+                    -4px rgb(0 0 0 / 0.1);
+                  </td>
+                </tr>
+                <tr>
+                  <td>shadow-xl</td>
+                  <td>
+                    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px
+                    -6px rgb(0 0 0 / 0.1);
+                  </td>
+                </tr>
+                <tr>
+                  <td>shadow-2xl</td>
+                  <td>box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
           <div class="page-footer flex justify-between">
             <a
-              href="/pages/image.html"
+              href="/pages/grid-system.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
-              Image
+              Grid System
             </a>
             <a
-              href="/pages/lists.html"
+              href="/pages/typography.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
-              Lists
+              Typography
             </a>
           </div>
         </section>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Input</title>
+    <title>Navigation</title>
     <link href="../css/index.css" rel="stylesheet" />
     <link href="/pages/docs.css" rel="stylesheet" />
     <link href="/pages/night-owl.css" rel="stylesheet" />
@@ -17,6 +17,7 @@
   <body>
     <div class="flex flex-row">
       <!-- header -->
+
       <header>
         <nav
           class="top-nav flex align-items-center justify-between bg-grey-800"
@@ -257,7 +258,7 @@
               <a href="/pages/image.html">Image</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
             >
               <a href="/pages/input.html">Input</a>
             </li>
@@ -267,7 +268,7 @@
               <a href="/pages/lists.html">Lists</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
             >
               <a href="/pages/navigation.html">Navigation</a>
             </li>
@@ -330,119 +331,152 @@
         </nav>
 
         <section class="docs-page p-10 relative mt-3">
-          <h3 class="font-semibold text-xl mb-5">Input</h3>
+          <h3 class="font-semibold text-xl mb-5">Navigation</h3>
           <h5 class="font-normal text-lg mb-5">
-            Input elements are used in Forms. Depending on type of input, the
-            ability to style it varies. You should always use a label for your
-            input elements for accessibility reasons.
+            Navivgation is a set of buttons or images in a row or column that
+            serves as a control point to link the user to different sections on
+            a website.
           </h5>
 
           <h3 class="font-semibold text-xl mb-5">Examples</h3>
 
           <div class="p-5">
-            <h4 class="font-semibold text-xl mb-5 underline">Input</h4>
-
-            <!-- standard input -->
-            <div class="input-container mb-7">
-              <input
-                type="text"
-                id="email"
-                class="input input-lime-hover input-blue-focus"
-                autocomplete="off"
-                placeholder=" "
-              />
-              <label for="email" class="input-label text-grey-700 bg-white"
-                >input outlined</label
+            <nav
+              style="position: relative; z-index: 0"
+              class="top-nav flex align-items-center justify-between bg-grey-800"
+            >
+              <input id="top-nav-toggle" type="checkbox" />
+              <a
+                href="../index.html"
+                class="text-white flex align-items-center gap-2"
               >
-            </div>
+                <span class="fas fa-code text-2xl"></span>
+                <h2 class="text-xl">
+                  <span class="text-indigo-400 text-3xl">FUSION</span>CSS
+                </h2>
+              </a>
 
-            <!-- filled input -->
-            <div class="input-container mb-7">
-              <input
-                type="text"
-                id="email"
-                class="input input-grey-fill-light input-lime-hover input-blue-focus"
-                autocomplete="off"
-                placeholder=" "
-              />
-              <label for="email" class="input-label text-black bg-grey-200"
-                >input filled</label
-              >
-            </div>
+              <ul class="links gap-10">
+                <li>
+                  <a
+                    class="text-white text-hover-indigo-400 flex justify-center align-items-center text-lg"
+                    href="/pages/docs.html"
+                  >
+                    <i class="fa-solid fa-file-lines mr-2"></i>
+                    Documentation
+                  </a>
+                </li>
 
-            <!-- error input -->
-            <div class="input-container mb-7">
-              <input
-                type="text"
-                id="email"
-                class="input input-red input-red-focus"
-                autocomplete="off"
-                placeholder=" "
-              />
-              <label for="email" class="input-label text-red-500 bg-white"
-                >input error</label
+                <li>
+                  <a
+                    class="text-white text-hover-indigo-400 flex justify-center align-items-center text-lg"
+                    href="https://github.com/Ananyamadhu08/fusion"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github mr-2"></i>
+                    Github
+                  </a>
+                </li>
+              </ul>
+
+              <label for="top-nav-toggle" class="icon-burger">
+                <div class="line bg-white"></div>
+                <div class="line bg-white"></div>
+                <div class="line bg-white"></div>
+              </label>
+            </nav>
+          </div>
+
+          <pre style="max-width: 70%; background: transparent; margin: auto">
+                   <code class="html rounded-lg overflow-scroll h-full w-full">
+&lt;nav
+style="position: relative; z-index: 0"
+class="top-nav flex align-items-center justify-between bg-grey-800"
+>
+&lt;input id="top-nav-toggle" type="checkbox" />
+&lt;a
+  href="../index.html"
+  class="text-white flex align-items-center gap-2"
+>
+  &lt;span class="fas fa-code text-2xl">&lt;/span>
+  &lt;h2 class="text-xl">
+    &lt;span class="text-indigo-400 text-3xl">FUSION&lt;/span>CSS
+  &lt;/h2>
+&lt;/a>
+
+&lt;ul class="links gap-10">
+  &lt;li>
+    &lt;a
+      class="text-white text-hover-indigo-400 flex justify-center align-items-center text-lg"
+      href="/pages/docs.html"
+    >
+      &lt;i class="fa-solid fa-file-lines mr-2">&lt;/i>
+      Documentation
+    &lt;/a>
+  &lt;/li>
+
+  &lt;li>
+    &lt;a
+      class="text-white text-hover-indigo-400 flex justify-center align-items-center text-lg"
+      href="https://github.com/Ananyamadhu08/fusion"
+      target="_blank"
+    >
+      &lt;i class="fab fa-github mr-2">&lt;/i>
+      Github
+    &lt;/a>
+  &lt;/li>
+&lt;/ul>
+
+&lt;label for="top-nav-toggle" class="icon-burger">
+  &lt;div class="line bg-white">&lt;/div>
+  &lt;div class="line bg-white">&lt;/div>
+  &lt;div class="line bg-white">&lt;/div>
+&lt;/label>
+&lt;/nav>
+                   </code>
+                </pre>
+
+          <div class="p-5">
+            <div class="flex justify-center mb-3">
+              <button
+                class="btn btn-square-solid bg-indigo-400"
+                onclick="openNav()"
               >
-              <small class="error text-red-500 text-sm">error message</small>
+                open sidenav
+              </button>
             </div>
             <pre style="max-width: 70%; background: transparent; margin: auto">
                 <code class="html rounded-lg overflow-scroll h-full w-full">
-
-&lt;div class="input-container mb-7">
-  &lt;input
-    type="text"
-    id="email"
-    class="input input-lime-hover input-blue-focus"
-    autocomplete="off"
-    placeholder=" "
-  />
-  &lt;label for="email" class="input-label text-grey-700 bg-white"
-    >input outlined&lt;/label
-  >
-&lt;/div>
-
-&lt;div class="input-container mb-7">
-  &lt;input
-    type="text"
-    id="email"
-    class="input input-grey-fill-light input-lime-hover input-blue-focus"
-    autocomplete="off"
-    placeholder=" "
-  />
-  &lt;label for="email" class="input-label text-black bg-grey-200"
-    >input filled&lt;/label
-  >
-&lt;/div>
-
-&lt;div class="input-container mb-7">
-  &lt;input
-    type="text"
-    id="email"
-    class="input input-red input-red-focus"
-    autocomplete="off"
-    placeholder=" "
-  />
-  &lt;label for="email" class="input-label text-red-500 bg-white"
-    >input error&lt;/label
-  >
-  &lt;small class="error text-red-500 text-sm">error message&lt;/small>
-&lt;/div>
-
+&lt;button class="btn btn-square-solid bg-indigo-400" onclick="openNav()">
+  open sidenav
+&lt;/button>
+                </code>
+             </pre>
+            <pre style="max-width: 70%; background: transparent; margin: auto">
+                <code class="javascript rounded-lg overflow-scroll h-full w-full">
+/* Set the width of the side navigation to 250px */
+const openNav = () => {
+  document.getElementById("side-navbar").style.width = "250px";
+};
+/* Set the width of the side navigation to 0 */
+const closeNav = () => {
+  document.getElementById("side-navbar").style.width = "0";
+};
                 </code>
              </pre>
           </div>
-
           <div class="page-footer flex justify-between">
-            <a
-              href="/pages/image.html"
-              class="btn btn-text-underline text-hover-indigo-500"
-            >
-              Image
-            </a>
             <a
               href="/pages/lists.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
               Lists
+            </a>
+            <a
+              href="/pages/modal.html"
+              class="btn btn-text-underline text-hover-indigo-500"
+            >
+              Modal
             </a>
           </div>
         </section>

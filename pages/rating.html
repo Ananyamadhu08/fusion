@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Input</title>
+    <title>Rating</title>
+
     <link href="../css/index.css" rel="stylesheet" />
     <link href="/pages/docs.css" rel="stylesheet" />
     <link href="/pages/night-owl.css" rel="stylesheet" />
@@ -17,6 +18,7 @@
   <body>
     <div class="flex flex-row">
       <!-- header -->
+
       <header>
         <nav
           class="top-nav flex align-items-center justify-between bg-grey-800"
@@ -257,7 +259,7 @@
               <a href="/pages/image.html">Image</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
             >
               <a href="/pages/input.html">Input</a>
             </li>
@@ -277,7 +279,7 @@
               <a href="/pages/modal.html">Modal</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
             >
               <a href="/pages/rating.html">Star Rating</a>
             </li>
@@ -330,119 +332,439 @@
         </nav>
 
         <section class="docs-page p-10 relative mt-3">
-          <h3 class="font-semibold text-xl mb-5">Input</h3>
+          <h3 class="font-semibold text-xl mb-5">Star Rating</h3>
+
           <h5 class="font-normal text-lg mb-5">
-            Input elements are used in Forms. Depending on type of input, the
-            ability to style it varies. You should always use a label for your
-            input elements for accessibility reasons.
+            Rating can be used as read-only badge or in reviews section. Can be
+            used in reviews section as form too.
           </h5>
 
           <h3 class="font-semibold text-xl mb-5">Examples</h3>
 
-          <div class="p-5">
-            <h4 class="font-semibold text-xl mb-5 underline">Input</h4>
-
-            <!-- standard input -->
-            <div class="input-container mb-7">
+          <div class="p-5 flex flex-col justify-content align-items-center">
+            <!-- full star rating -->
+            <h1>Full star rating</h1>
+            <div class="full-star-rating mt-4 mb-16 gap-3">
               <input
-                type="text"
-                id="email"
-                class="input input-lime-hover input-blue-focus"
-                autocomplete="off"
-                placeholder=" "
+                class="full-rating-input"
+                id="star-5"
+                type="radio"
+                name="star"
+                value="star-5"
               />
-              <label for="email" class="input-label text-grey-700 bg-white"
-                >input outlined</label
+              <label
+                class="full-rating-label text-3xl"
+                for="star-5"
+                title="5 stars"
               >
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </label>
+
+              <input
+                class="full-rating-input"
+                id="star-4"
+                type="radio"
+                name="star"
+                value="star-4"
+              />
+              <label
+                class="full-rating-label text-3xl"
+                for="star-4"
+                title="4 stars"
+              >
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </label>
+
+              <input
+                class="full-rating-input"
+                id="star-3"
+                type="radio"
+                name="star"
+                value="star-3"
+              />
+              <label
+                class="full-rating-label text-3xl"
+                for="star-3"
+                title="3 stars"
+              >
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </label>
+
+              <input
+                class="full-rating-input"
+                id="star-2"
+                type="radio"
+                name="star"
+                value="star-2"
+              />
+              <label
+                class="full-rating-label text-3xl"
+                for="star-2"
+                title="2 stars"
+              >
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </label>
+
+              <input
+                class="full-rating-input"
+                id="star-1"
+                type="radio"
+                name="star"
+                value="star-1"
+              />
+              <label
+                class="full-rating-label text-3xl"
+                for="star-1"
+                title="1 star"
+              >
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </label>
             </div>
 
-            <!-- filled input -->
-            <div class="input-container mb-7">
+            <!-- half star rating-->
+            <h1>Half star rating</h1>
+            <div class="half-star-rating mt-4 mb-10 gap-3">
               <input
-                type="text"
-                id="email"
-                class="input input-grey-fill-light input-lime-hover input-blue-focus"
-                autocomplete="off"
-                placeholder=" "
+                class="half-rating-input"
+                type="radio"
+                id="star-5"
+                name="star"
+                value="5"
               />
-              <label for="email" class="input-label text-black bg-grey-200"
-                >input filled</label
-              >
-            </div>
+              <label
+                class="full half-rating-label text-3xl"
+                for="star-5"
+                title="5 stars"
+              ></label>
 
-            <!-- error input -->
-            <div class="input-container mb-7">
               <input
-                type="text"
-                id="email"
-                class="input input-red input-red-focus"
-                autocomplete="off"
-                placeholder=" "
+                class="half-rating-input"
+                type="radio"
+                id="star-4half"
+                name="star"
+                value="4.5"
               />
-              <label for="email" class="input-label text-red-500 bg-white"
-                >input error</label
-              >
-              <small class="error text-red-500 text-sm">error message</small>
+              <label
+                class="half half-rating-label text-3xl"
+                for="star-4half"
+                title="4.5 stars"
+              ></label>
+
+              <input
+                class="half-rating-input"
+                type="radio"
+                id="star-4"
+                name="star"
+                value="4"
+              />
+              <label
+                class="full half-rating-label text-3xl"
+                for="star-4"
+                title="4 stars"
+              ></label>
+
+              <input
+                class="half-rating-input"
+                type="radio"
+                id="star-3half"
+                name="star"
+                value="3.5"
+              />
+              <label
+                class="half half-rating-label text-3xl"
+                for="star-3half"
+                title="3.5 stars"
+              ></label>
+
+              <input
+                class="half-rating-input"
+                type="radio"
+                id="star-3"
+                name="star"
+                value="3"
+              />
+              <label
+                class="full half-rating-label text-3xl"
+                for="star-3"
+                title="3 stars"
+              ></label>
+
+              <input
+                class="half-rating-input"
+                type="radio"
+                id="star-2half"
+                name="star"
+                value="2.5"
+              />
+              <label
+                class="half half-rating-label text-3xl"
+                for="star-2half"
+                title="2.5 stars"
+              ></label>
+
+              <input
+                class="half-rating-input"
+                type="radio"
+                id="star-2"
+                name="star"
+                value="2"
+              />
+              <label
+                class="full half-rating-label text-3xl"
+                for="star-2"
+                title="2 stars"
+              ></label>
+
+              <input
+                class="half-rating-input"
+                type="radio"
+                id="star-1half"
+                name="star"
+                value="1.5"
+              />
+              <label
+                class="half half-rating-label text-3xl"
+                for="star-1half"
+                title="1.5 stars"
+              ></label>
+
+              <input
+                class="half-rating-input"
+                type="radio"
+                id="star-1"
+                name="star"
+                value="1"
+              />
+              <label
+                class="full half-rating-label text-3xl"
+                for="star-1"
+                title="1 stars"
+              ></label>
+
+              <input
+                class="half-rating-input"
+                type="radio"
+                id="star-half"
+                name="star"
+                value="0.5"
+              />
+              <label
+                class="half half-rating-label text-3xl"
+                for="star-half"
+                title="0.5 stars"
+              ></label>
             </div>
-            <pre style="max-width: 70%; background: transparent; margin: auto">
-                <code class="html rounded-lg overflow-scroll h-full w-full">
-
-&lt;div class="input-container mb-7">
-  &lt;input
-    type="text"
-    id="email"
-    class="input input-lime-hover input-blue-focus"
-    autocomplete="off"
-    placeholder=" "
-  />
-  &lt;label for="email" class="input-label text-grey-700 bg-white"
-    >input outlined&lt;/label
-  >
-&lt;/div>
-
-&lt;div class="input-container mb-7">
-  &lt;input
-    type="text"
-    id="email"
-    class="input input-grey-fill-light input-lime-hover input-blue-focus"
-    autocomplete="off"
-    placeholder=" "
-  />
-  &lt;label for="email" class="input-label text-black bg-grey-200"
-    >input filled&lt;/label
-  >
-&lt;/div>
-
-&lt;div class="input-container mb-7">
-  &lt;input
-    type="text"
-    id="email"
-    class="input input-red input-red-focus"
-    autocomplete="off"
-    placeholder=" "
-  />
-  &lt;label for="email" class="input-label text-red-500 bg-white"
-    >input error&lt;/label
-  >
-  &lt;small class="error text-red-500 text-sm">error message&lt;/small>
-&lt;/div>
-
-                </code>
-             </pre>
           </div>
+
+          <pre style="max-width: 70%; background: transparent; margin: auto">
+                     <code class="html rounded-lg overflow-scroll h-full w-full">
+ &lt;h1>Full star rating&lt;/h1>
+&lt;div class="full-star-rating mt-4 mb-16 gap-3">
+  &lt;input
+    class="full-rating-input"
+    id="star-5"
+    type="radio"
+    name="star"
+    value="star-5"
+  />
+  &lt;label class="full-rating-label text-3xl" for="star-5" title="5 stars">
+    &lt;i class="fa fa-star" aria-hidden="true">&lt;/i>
+  &lt;/label>
+
+  &lt;input
+    class="full-rating-input"
+    id="star-4"
+    type="radio"
+    name="star"
+    value="star-4"
+  />
+  &lt;label class="full-rating-label text-3xl" for="star-4" title="4 stars">
+    &lt;i class="fa fa-star" aria-hidden="true">&lt;/i>
+  &lt;/label>
+
+  &lt;input
+    class="full-rating-input"
+    id="star-3"
+    type="radio"
+    name="star"
+    value="star-3"
+  />
+  &lt;label class="full-rating-label text-3xl" for="star-3" title="3 stars">
+    &lt;i class="fa fa-star" aria-hidden="true">&lt;/i>
+  &lt;/label>
+
+  &lt;input
+    class="full-rating-input"
+    id="star-2"
+    type="radio"
+    name="star"
+    value="star-2"
+  />
+  &lt;label class="full-rating-label text-3xl" for="star-2" title="2 stars">
+    &lt;i class="fa fa-star" aria-hidden="true">&lt;/i>
+  &lt;/label>
+
+  &lt;input
+    class="full-rating-input"
+    id="star-1"
+    type="radio"
+    name="star"
+    value="star-1"
+  />
+  &lt;label class="full-rating-label text-3xl" for="star-1" title="1 star">
+    &lt;i class="fa fa-star" aria-hidden="true">&lt;/i>
+  &lt;/label>
+&lt;/div>
+
+
+&lt;h1>Half star rating&lt;/h1>
+&lt;div class="half-star-rating mt-4 mb-10 gap-3">
+  &lt;input
+    class="half-rating-input"
+    type="radio"
+    id="star-5"
+    name="star"
+    value="5"
+  />
+  &lt;label
+    class="full half-rating-label text-3xl"
+    for="star-5"
+    title="5 stars"
+  >&lt;/label>
+
+  &lt;input
+    class="half-rating-input"
+    type="radio"
+    id="star-4half"
+    name="star"
+    value="4.5"
+  />
+  &lt;label
+    class="half half-rating-label text-3xl"
+    for="star-4half"
+    title="4.5 stars"
+  >&lt;/label>
+
+  &lt;input
+    class="half-rating-input"
+    type="radio"
+    id="star-4"
+    name="star"
+    value="4"
+  />
+  &lt;label
+    class="full half-rating-label text-3xl"
+    for="star-4"
+    title="4 stars"
+  >&lt;/label>
+
+  &lt;input
+    class="half-rating-input"
+    type="radio"
+    id="star-3half"
+    name="star"
+    value="3.5"
+  />
+  &lt;label
+    class="half half-rating-label text-3xl"
+    for="star-3half"
+    title="3.5 stars"
+  >&lt;/label>
+
+  &lt;input
+    class="half-rating-input"
+    type="radio"
+    id="star-3"
+    name="star"
+    value="3"
+  />
+  &lt;label
+    class="full half-rating-label text-3xl"
+    for="star-3"
+    title="3 stars"
+  >&lt;/label>
+
+  &lt;input
+    class="half-rating-input"
+    type="radio"
+    id="star-2half"
+    name="star"
+    value="2.5"
+  />
+  &lt;label
+    class="half half-rating-label text-3xl"
+    for="star-2half"
+    title="2.5 stars"
+  >&lt;/label>
+
+  &lt;input
+    class="half-rating-input"
+    type="radio"
+    id="star-2"
+    name="star"
+    value="2"
+  />
+  &lt;label
+    class="full half-rating-label text-3xl"
+    for="star-2"
+    title="2 stars"
+  >&lt;/label>
+
+  &lt;input
+    class="half-rating-input"
+    type="radio"
+    id="star-1half"
+    name="star"
+    value="1.5"
+  />
+  &lt;label
+    class="half half-rating-label text-3xl"
+    for="star-1half"
+    title="1.5 stars"
+  >&lt;/label>
+
+  &lt;input
+    class="half-rating-input"
+    type="radio"
+    id="star-1"
+    name="star"
+    value="1"
+  />
+  &lt;label
+    class="full half-rating-label text-3xl"
+    for="star-1"
+    title="1 stars"
+  >&lt;/label>
+
+  &lt;input
+    class="half-rating-input"
+    type="radio"
+    id="star-half"
+    name="star"
+    value="0.5"
+  />
+  &lt;label
+    class="half half-rating-label text-3xl"
+    for="star-half"
+    title="0.5 stars"
+  >&lt;/label>
+&lt;/div>
+        
+                     </code>
+                  </pre>
 
           <div class="page-footer flex justify-between">
             <a
-              href="/pages/image.html"
+              href="/pages/modal.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
-              Image
+              Modal
             </a>
             <a
-              href="/pages/lists.html"
+              href="/pages/snackbar.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
-              Lists
+              Snackbar
             </a>
           </div>
         </section>

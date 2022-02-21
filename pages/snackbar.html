@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Input</title>
+    <title>Snackbar</title>
     <link href="../css/index.css" rel="stylesheet" />
     <link href="/pages/docs.css" rel="stylesheet" />
     <link href="/pages/night-owl.css" rel="stylesheet" />
@@ -17,6 +17,7 @@
   <body>
     <div class="flex flex-row">
       <!-- header -->
+
       <header>
         <nav
           class="top-nav flex align-items-center justify-between bg-grey-800"
@@ -257,7 +258,7 @@
               <a href="/pages/image.html">Image</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
             >
               <a href="/pages/input.html">Input</a>
             </li>
@@ -282,7 +283,7 @@
               <a href="/pages/rating.html">Star Rating</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
             >
               <a href="/pages/snackbar.html">Snackbar</a>
             </li>
@@ -330,119 +331,68 @@
         </nav>
 
         <section class="docs-page p-10 relative mt-3">
-          <h3 class="font-semibold text-xl mb-5">Input</h3>
-          <h5 class="font-normal text-lg mb-5">
-            Input elements are used in Forms. Depending on type of input, the
-            ability to style it varies. You should always use a label for your
-            input elements for accessibility reasons.
-          </h5>
+          <h3 class="font-semibold text-xl mb-5">Snackbar</h3>
 
+          <h5 class="font-normal text-lg mb-5">
+            Snackbars inform users of a process that an app has performed or
+            will perform. They appear temporarily, towards the bottom of the
+            screen. They shouldn't interrupt the user experience, and they don't
+            require user input to disappear. Snackbars contain a single line of
+            text directly related to the operation performed. They may contain a
+            text action, but no icons. You can use them to display
+            notifications.
+          </h5>
           <h3 class="font-semibold text-xl mb-5">Examples</h3>
 
           <div class="p-5">
-            <h4 class="font-semibold text-xl mb-5 underline">Input</h4>
-
-            <!-- standard input -->
-            <div class="input-container mb-7">
-              <input
-                type="text"
-                id="email"
-                class="input input-lime-hover input-blue-focus"
-                autocomplete="off"
-                placeholder=" "
-              />
-              <label for="email" class="input-label text-grey-700 bg-white"
-                >input outlined</label
+            <div class="flex justify-center">
+              <button
+                class="btn btn-squared-solid bg-indigo-400"
+                onclick="showSnackbar()"
               >
+                click me
+              </button>
             </div>
-
-            <!-- filled input -->
-            <div class="input-container mb-7">
-              <input
-                type="text"
-                id="email"
-                class="input input-grey-fill-light input-lime-hover input-blue-focus"
-                autocomplete="off"
-                placeholder=" "
-              />
-              <label for="email" class="input-label text-black bg-grey-200"
-                >input filled</label
-              >
-            </div>
-
-            <!-- error input -->
-            <div class="input-container mb-7">
-              <input
-                type="text"
-                id="email"
-                class="input input-red input-red-focus"
-                autocomplete="off"
-                placeholder=" "
-              />
-              <label for="email" class="input-label text-red-500 bg-white"
-                >input error</label
-              >
-              <small class="error text-red-500 text-sm">error message</small>
-            </div>
-            <pre style="max-width: 70%; background: transparent; margin: auto">
-                <code class="html rounded-lg overflow-scroll h-full w-full">
-
-&lt;div class="input-container mb-7">
-  &lt;input
-    type="text"
-    id="email"
-    class="input input-lime-hover input-blue-focus"
-    autocomplete="off"
-    placeholder=" "
-  />
-  &lt;label for="email" class="input-label text-grey-700 bg-white"
-    >input outlined&lt;/label
-  >
-&lt;/div>
-
-&lt;div class="input-container mb-7">
-  &lt;input
-    type="text"
-    id="email"
-    class="input input-grey-fill-light input-lime-hover input-blue-focus"
-    autocomplete="off"
-    placeholder=" "
-  />
-  &lt;label for="email" class="input-label text-black bg-grey-200"
-    >input filled&lt;/label
-  >
-&lt;/div>
-
-&lt;div class="input-container mb-7">
-  &lt;input
-    type="text"
-    id="email"
-    class="input input-red input-red-focus"
-    autocomplete="off"
-    placeholder=" "
-  />
-  &lt;label for="email" class="input-label text-red-500 bg-white"
-    >input error&lt;/label
-  >
-  &lt;small class="error text-red-500 text-sm">error message&lt;/small>
-&lt;/div>
-
-                </code>
-             </pre>
+            <div class="snackbar bg-grey-400">this is a toast</div>
           </div>
 
+          <pre style="max-width: 70%; background: transparent; margin: auto">
+                     <code class="html rounded-lg overflow-scroll h-full w-full">
+&lt;button onclick="showSnackbar()">click me&lt;/button>
+&lt;div class="snackbar bg-grey-500">this is a toast&lt;/div>
+                     </code>
+                  </pre>
+
+          <pre style="max-width: 70%; background: transparent; margin: auto">
+                    <code class="javascript rounded-lg overflow-scroll h-full w-full">
+function showSnackbar() {
+    var x = document.querySelector(".snackbar");
+                    
+    console.log(x);
+                    
+    x.classList.add("show");
+                    
+    setTimeout(function () {
+      x.classList.remove("show");
+    }, 3000);
+}
+       
+                    </code>
+                 </pre>
+
+          <!-- this is the footer of the the SECTION -->
           <div class="page-footer flex justify-between">
             <a
-              href="/pages/image.html"
+              href="/pages/rating.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
-              Image
+              Star Rating
             </a>
             <a
-              href="/pages/lists.html"
+              href="/pages/tooltip.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
-              Lists
+              Tooltip
             </a>
           </div>
         </section>
@@ -502,6 +452,19 @@
       const closeNav = () => {
         document.getElementById("side-navbar").style.width = "0";
       };
+    </script>
+    <script>
+      function showSnackbar() {
+        var x = document.querySelector(".snackbar");
+
+        console.log(x);
+
+        x.classList.add("show");
+
+        setTimeout(function () {
+          x.classList.remove("show");
+        }, 3000);
+      }
     </script>
   </body>
 </html>

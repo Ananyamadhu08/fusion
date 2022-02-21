@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Input</title>
+    <title>Dropdown Select</title>
     <link href="../css/index.css" rel="stylesheet" />
     <link href="/pages/docs.css" rel="stylesheet" />
     <link href="/pages/night-owl.css" rel="stylesheet" />
@@ -17,6 +17,7 @@
   <body>
     <div class="flex flex-row">
       <!-- header -->
+
       <header>
         <nav
           class="top-nav flex align-items-center justify-between bg-grey-800"
@@ -257,7 +258,7 @@
               <a href="/pages/image.html">Image</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
             >
               <a href="/pages/input.html">Input</a>
             </li>
@@ -297,7 +298,7 @@
               <a href="/pages/image-carousel.html">Image Carousel</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
             >
               <a href="/pages/dropdown-select.html">Dropdown Select</a>
             </li>
@@ -330,119 +331,58 @@
         </nav>
 
         <section class="docs-page p-10 relative mt-3">
-          <h3 class="font-semibold text-xl mb-5">Input</h3>
+          <h3 class="font-semibold text-xl mb-5">Dropdown Select</h3>
+
           <h5 class="font-normal text-lg mb-5">
-            Input elements are used in Forms. Depending on type of input, the
-            ability to style it varies. You should always use a label for your
-            input elements for accessibility reasons.
+            A drop-down list is a graphical control element, similar to a list
+            box, that allows the user to choose one value from a list. When a
+            drop-down list is inactive, it displays a single value. When
+            activated, it displays a list of values, from which the user may
+            select one.
           </h5>
+          <h3 class="font-semibold text-xl">Examples</h3>
 
-          <h3 class="font-semibold text-xl mb-5">Examples</h3>
-
-          <div class="p-5">
-            <h4 class="font-semibold text-xl mb-5 underline">Input</h4>
-
-            <!-- standard input -->
-            <div class="input-container mb-7">
-              <input
-                type="text"
-                id="email"
-                class="input input-lime-hover input-blue-focus"
-                autocomplete="off"
-                placeholder=" "
-              />
-              <label for="email" class="input-label text-grey-700 bg-white"
-                >input outlined</label
-              >
+          <div class="p-2 flex justify-center">
+            <div class="custom-select m-16">
+              <select class="bg-indigo-400 text-white text-xl">
+                <option selected disabled>Choose a filter</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+              </select>
             </div>
-
-            <!-- filled input -->
-            <div class="input-container mb-7">
-              <input
-                type="text"
-                id="email"
-                class="input input-grey-fill-light input-lime-hover input-blue-focus"
-                autocomplete="off"
-                placeholder=" "
-              />
-              <label for="email" class="input-label text-black bg-grey-200"
-                >input filled</label
-              >
-            </div>
-
-            <!-- error input -->
-            <div class="input-container mb-7">
-              <input
-                type="text"
-                id="email"
-                class="input input-red input-red-focus"
-                autocomplete="off"
-                placeholder=" "
-              />
-              <label for="email" class="input-label text-red-500 bg-white"
-                >input error</label
-              >
-              <small class="error text-red-500 text-sm">error message</small>
-            </div>
-            <pre style="max-width: 70%; background: transparent; margin: auto">
-                <code class="html rounded-lg overflow-scroll h-full w-full">
-
-&lt;div class="input-container mb-7">
-  &lt;input
-    type="text"
-    id="email"
-    class="input input-lime-hover input-blue-focus"
-    autocomplete="off"
-    placeholder=" "
-  />
-  &lt;label for="email" class="input-label text-grey-700 bg-white"
-    >input outlined&lt;/label
-  >
-&lt;/div>
-
-&lt;div class="input-container mb-7">
-  &lt;input
-    type="text"
-    id="email"
-    class="input input-grey-fill-light input-lime-hover input-blue-focus"
-    autocomplete="off"
-    placeholder=" "
-  />
-  &lt;label for="email" class="input-label text-black bg-grey-200"
-    >input filled&lt;/label
-  >
-&lt;/div>
-
-&lt;div class="input-container mb-7">
-  &lt;input
-    type="text"
-    id="email"
-    class="input input-red input-red-focus"
-    autocomplete="off"
-    placeholder=" "
-  />
-  &lt;label for="email" class="input-label text-red-500 bg-white"
-    >input error&lt;/label
-  >
-  &lt;small class="error text-red-500 text-sm">error message&lt;/small>
-&lt;/div>
-
-                </code>
-             </pre>
           </div>
 
+          <pre style="max-width: 70%; background: transparent; margin: auto">
+                     <code class="html rounded-lg overflow-scroll h-full w-full">
+        &lt;div class="custom-select m-16">
+  &lt;select class="bg-indigo-400 text-white text-xl">
+    &lt;option selected disabled>Choose a filter&lt;/option>
+    &lt;option value="">1&lt;/option>
+    &lt;option value="">2&lt;/option>
+    &lt;option value="">3&lt;/option>
+    &lt;option value="">4&lt;/option>
+    &lt;option value="">5&lt;/option>
+  &lt;/select>
+&lt;/div>
+                     </code>
+                  </pre>
+
+          <!-- this is the footer of the the SECTION -->
           <div class="page-footer flex justify-between">
             <a
-              href="/pages/image.html"
+              href="/pages/image-carousel.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
-              Image
+              Image Carousel
             </a>
             <a
-              href="/pages/lists.html"
+              href="/pages/range-slider.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
-              Lists
+              Range Slider
             </a>
           </div>
         </section>

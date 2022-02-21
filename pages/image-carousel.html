@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Input</title>
+    <title>Image Carousel</title>
     <link href="../css/index.css" rel="stylesheet" />
     <link href="/pages/docs.css" rel="stylesheet" />
     <link href="/pages/night-owl.css" rel="stylesheet" />
@@ -17,6 +17,7 @@
   <body>
     <div class="flex flex-row">
       <!-- header -->
+
       <header>
         <nav
           class="top-nav flex align-items-center justify-between bg-grey-800"
@@ -257,7 +258,7 @@
               <a href="/pages/image.html">Image</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
             >
               <a href="/pages/input.html">Input</a>
             </li>
@@ -292,7 +293,7 @@
               <a href="/pages/tooltip.html">Tooltip</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
             >
               <a href="/pages/image-carousel.html">Image Carousel</a>
             </li>
@@ -330,119 +331,142 @@
         </nav>
 
         <section class="docs-page p-10 relative mt-3">
-          <h3 class="font-semibold text-xl mb-5">Input</h3>
-          <h5 class="font-normal text-lg mb-5">
-            Input elements are used in Forms. Depending on type of input, the
-            ability to style it varies. You should always use a label for your
-            input elements for accessibility reasons.
-          </h5>
+          <h3 class="font-semibold text-xl mb-5">Image Carousel</h3>
 
+          <h5 class="font-normal text-lg mb-5">
+            An image carousel is a container or slideshow of images or
+            information that users can select by clicking a button that directs
+            them forward or backward in the slideshow. An image carousel makes a
+            website more interactive by enhancing the user experience.
+          </h5>
           <h3 class="font-semibold text-xl mb-5">Examples</h3>
 
           <div class="p-5">
-            <h4 class="font-semibold text-xl mb-5 underline">Input</h4>
+            <div class="slideshow">
+              <div class="slides fade">
+                <div class="slide-number">1 / 3</div>
+                <img
+                  src="https://picsum.photos/id/1015/500/200"
+                  style="width: 100%"
+                />
+                <div class="slide-text">Caption One</div>
+              </div>
 
-            <!-- standard input -->
-            <div class="input-container mb-7">
-              <input
-                type="text"
-                id="email"
-                class="input input-lime-hover input-blue-focus"
-                autocomplete="off"
-                placeholder=" "
-              />
-              <label for="email" class="input-label text-grey-700 bg-white"
-                >input outlined</label
-              >
+              <div class="slides fade">
+                <div class="slide-number">2 / 3</div>
+                <img
+                  src="https://picsum.photos/id/1016/500/200"
+                  style="width: 100%"
+                />
+                <div class="slide-text">Caption Two</div>
+              </div>
+
+              <div class="slides fade">
+                <div class="slide-number">3 / 3</div>
+                <img
+                  src="https://picsum.photos/id/1039/500/200"
+                  style="width: 100%"
+                />
+                <div class="slide-text">Caption Three</div>
+              </div>
+
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
 
-            <!-- filled input -->
-            <div class="input-container mb-7">
-              <input
-                type="text"
-                id="email"
-                class="input input-grey-fill-light input-lime-hover input-blue-focus"
-                autocomplete="off"
-                placeholder=" "
-              />
-              <label for="email" class="input-label text-black bg-grey-200"
-                >input filled</label
-              >
+            <!-- The dots/circles -->
+            <div style="text-align: center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
             </div>
-
-            <!-- error input -->
-            <div class="input-container mb-7">
-              <input
-                type="text"
-                id="email"
-                class="input input-red input-red-focus"
-                autocomplete="off"
-                placeholder=" "
-              />
-              <label for="email" class="input-label text-red-500 bg-white"
-                >input error</label
-              >
-              <small class="error text-red-500 text-sm">error message</small>
-            </div>
-            <pre style="max-width: 70%; background: transparent; margin: auto">
-                <code class="html rounded-lg overflow-scroll h-full w-full">
-
-&lt;div class="input-container mb-7">
-  &lt;input
-    type="text"
-    id="email"
-    class="input input-lime-hover input-blue-focus"
-    autocomplete="off"
-    placeholder=" "
-  />
-  &lt;label for="email" class="input-label text-grey-700 bg-white"
-    >input outlined&lt;/label
-  >
-&lt;/div>
-
-&lt;div class="input-container mb-7">
-  &lt;input
-    type="text"
-    id="email"
-    class="input input-grey-fill-light input-lime-hover input-blue-focus"
-    autocomplete="off"
-    placeholder=" "
-  />
-  &lt;label for="email" class="input-label text-black bg-grey-200"
-    >input filled&lt;/label
-  >
-&lt;/div>
-
-&lt;div class="input-container mb-7">
-  &lt;input
-    type="text"
-    id="email"
-    class="input input-red input-red-focus"
-    autocomplete="off"
-    placeholder=" "
-  />
-  &lt;label for="email" class="input-label text-red-500 bg-white"
-    >input error&lt;/label
-  >
-  &lt;small class="error text-red-500 text-sm">error message&lt;/small>
-&lt;/div>
-
-                </code>
-             </pre>
           </div>
 
+          <pre style="max-width: 70%; background: transparent; margin: auto">
+                     <code class="html rounded-lg overflow-scroll h-full w-full">
+        &lt;div class="slideshow">
+  &lt;div class="slides fade">
+    &lt;div class="slide-number">1 / 3&lt;/div>
+    &lt;img src="https://picsum.photos/id/1015/500/200" style="width: 100%" />
+    &lt;div class="slide-text">Caption One&lt;/div>
+  &lt;/div>
+
+  &lt;div class="slides fade">
+    &lt;div class="slide-number">2 / 3&lt;/div>
+    &lt;img src="https://picsum.photos/id/1016/500/200" style="width: 100%" />
+    &lt;div class="slide-text">Caption Two&lt;/div>
+  &lt;/div>
+
+  &lt;div class="slides fade">
+    &lt;div class="slide-number">3 / 3&lt;/div>
+    &lt;img src="https://picsum.photos/id/1039/500/200" style="width: 100%" />
+    &lt;div class="slide-text">Caption Three&lt;/div>
+  &lt;/div>
+
+  &lt;a class="prev" onclick="plusSlides(-1)">&#10094;&lt;/a>
+  &lt;a class="next" onclick="plusSlides(1)">&#10095;&lt;/a>
+&lt;/div>
+
+&lt;div style="text-align: center">
+  &lt;span class="dot" onclick="currentSlide(1)">&lt;/span>
+  &lt;span class="dot" onclick="currentSlide(2)">&lt;/span>
+  &lt;span class="dot" onclick="currentSlide(3)">&lt;/span>
+&lt;/div>
+                     </code>
+                  </pre>
+
+          <pre style="max-width: 70%; background: transparent; margin: auto">
+                    <code class="javascript rounded-lg overflow-scroll h-full w-full">
+var slideIndex = 1;
+    slides(slideIndex);
+                  
+    // Next/previous controls
+    function plusSlides(n) {
+  slides((slideIndex += n));
+    }
+                  
+   // Thumbnail image controls
+ function currentSlide(n) {
+slides((slideIndex = n));
+}
+                  
+function slides(n) {
+var i;
+var slides = document.getElementsByClassName("slides");
+var dots = document.getElementsByClassName("dot");
+if (n > slides.length) {
+slideIndex = 1;
+}
+if (n < 1) {
+slideIndex = slides.length;
+ }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+ }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+ dots[slideIndex - 1].className += " active";
+    }
+       
+                    </code>
+                 </pre>
+
+          <!-- this is the footer of the the SECTION -->
           <div class="page-footer flex justify-between">
             <a
-              href="/pages/image.html"
+              href="/pages/tooltip.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
-              Image
+              Tooltip
             </a>
             <a
-              href="/pages/lists.html"
+              href="/pages/dropdown-select.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
-              Lists
+              Dropdown Select
             </a>
           </div>
         </section>
@@ -502,6 +526,40 @@
       const closeNav = () => {
         document.getElementById("side-navbar").style.width = "0";
       };
+    </script>
+    <script>
+      var slideIndex = 1;
+      slides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        slides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        slides((slideIndex = n));
+      }
+
+      function slides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
     </script>
   </body>
 </html>

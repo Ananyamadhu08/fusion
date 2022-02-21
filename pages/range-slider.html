@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Input</title>
+    <title>Range Slider</title>
     <link href="../css/index.css" rel="stylesheet" />
     <link href="/pages/docs.css" rel="stylesheet" />
     <link href="/pages/night-owl.css" rel="stylesheet" />
@@ -17,6 +17,7 @@
   <body>
     <div class="flex flex-row">
       <!-- header -->
+
       <header>
         <nav
           class="top-nav flex align-items-center justify-between bg-grey-800"
@@ -257,7 +258,7 @@
               <a href="/pages/image.html">Image</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
             >
               <a href="/pages/input.html">Input</a>
             </li>
@@ -302,7 +303,7 @@
               <a href="/pages/dropdown-select.html">Dropdown Select</a>
             </li>
             <li
-              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400"
+              class="p-1 text-lg font-normal cursor-pointer text-hover-indigo-400 text-indigo-400"
             >
               <a href="/pages/range-slider.html">Range Slider</a>
             </li>
@@ -330,119 +331,85 @@
         </nav>
 
         <section class="docs-page p-10 relative mt-3">
-          <h3 class="font-semibold text-xl mb-5">Input</h3>
-          <h5 class="font-normal text-lg mb-5">
-            Input elements are used in Forms. Depending on type of input, the
-            ability to style it varies. You should always use a label for your
-            input elements for accessibility reasons.
-          </h5>
+          <h3 class="font-semibold text-xl mb-5">Range Slider</h3>
 
+          <h5 class="font-normal text-lg mb-5">
+            A range slider is an input field that we can use to select a numeric
+            value within a given range (minimum and maximum values).
+          </h5>
           <h3 class="font-semibold text-xl mb-5">Examples</h3>
 
           <div class="p-5">
-            <h4 class="font-semibold text-xl mb-5 underline">Input</h4>
-
-            <!-- standard input -->
-            <div class="input-container mb-7">
+            <div class="range-slider m-16">
               <input
-                type="text"
-                id="email"
-                class="input input-lime-hover input-blue-focus"
-                autocomplete="off"
-                placeholder=" "
+                type="range"
+                class="range"
+                min="0"
+                max="100"
+                step="0.1"
+                value="0"
               />
-              <label for="email" class="input-label text-grey-700 bg-white"
-                >input outlined</label
-              >
+
+              <div class="track bg-grey-200">
+                <div class="track-inner bg-cyan-500"></div>
+              </div>
+
+              <div class="thumb thumb-circle bg-grey-400"></div>
             </div>
-
-            <!-- filled input -->
-            <div class="input-container mb-7">
-              <input
-                type="text"
-                id="email"
-                class="input input-grey-fill-light input-lime-hover input-blue-focus"
-                autocomplete="off"
-                placeholder=" "
-              />
-              <label for="email" class="input-label text-black bg-grey-200"
-                >input filled</label
-              >
-            </div>
-
-            <!-- error input -->
-            <div class="input-container mb-7">
-              <input
-                type="text"
-                id="email"
-                class="input input-red input-red-focus"
-                autocomplete="off"
-                placeholder=" "
-              />
-              <label for="email" class="input-label text-red-500 bg-white"
-                >input error</label
-              >
-              <small class="error text-red-500 text-sm">error message</small>
-            </div>
-            <pre style="max-width: 70%; background: transparent; margin: auto">
-                <code class="html rounded-lg overflow-scroll h-full w-full">
-
-&lt;div class="input-container mb-7">
-  &lt;input
-    type="text"
-    id="email"
-    class="input input-lime-hover input-blue-focus"
-    autocomplete="off"
-    placeholder=" "
-  />
-  &lt;label for="email" class="input-label text-grey-700 bg-white"
-    >input outlined&lt;/label
-  >
-&lt;/div>
-
-&lt;div class="input-container mb-7">
-  &lt;input
-    type="text"
-    id="email"
-    class="input input-grey-fill-light input-lime-hover input-blue-focus"
-    autocomplete="off"
-    placeholder=" "
-  />
-  &lt;label for="email" class="input-label text-black bg-grey-200"
-    >input filled&lt;/label
-  >
-&lt;/div>
-
-&lt;div class="input-container mb-7">
-  &lt;input
-    type="text"
-    id="email"
-    class="input input-red input-red-focus"
-    autocomplete="off"
-    placeholder=" "
-  />
-  &lt;label for="email" class="input-label text-red-500 bg-white"
-    >input error&lt;/label
-  >
-  &lt;small class="error text-red-500 text-sm">error message&lt;/small>
-&lt;/div>
-
-                </code>
-             </pre>
           </div>
 
+          <pre style="max-width: 70%; background: transparent; margin: auto">
+                     <code class="html rounded-lg overflow-scroll h-full w-full">
+    &lt;div class="range-slider m-16">
+    &lt;input
+      type="range"
+      class="range"
+      min="0"
+      max="100"
+      step="0.1"
+      value="0"
+    />
+
+    &lt;div class="track bg-grey-200">
+      &lt;div class="track-inner bg-cyan-500">&lt;/div>
+    &lt;/div>
+
+    &lt;div class="thumb thumb-circle bg-grey-400">&lt;/div>
+  &lt;/div>
+                     </code>
+                  </pre>
+
+          <pre style="max-width: 70%; background: transparent; margin: auto">
+                    <code class="javascript rounded-lg overflow-scroll h-full w-full">
+    const range = document.querySelector(".range");
+    const thumb = document.querySelector(".thumb");
+    const track = document.querySelector(".track-inner");
+                  
+    const updateSlider = (value) => {
+  thumb.style.left = `${value}%`;
+  thumb.style.transform = `translate(-${value}%, -50%)`;
+  track.style.width = `${value}%`;
+    };
+                  
+    range.oninput = (e) => updateSlider(e.target.value);
+                  
+    updateSlider(50);
+                    </code>
+                 </pre>
+
+          <!-- this is the footer of the the SECTION -->
           <div class="page-footer flex justify-between">
             <a
-              href="/pages/image.html"
+              href="/pages/dropdown-select.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
-              Image
+              Dropdown Select
             </a>
             <a
-              href="/pages/lists.html"
+              href="/pages/grid-system.html"
               class="btn btn-text-underline text-hover-indigo-500"
             >
-              Lists
+              Grid System
             </a>
           </div>
         </section>
@@ -502,6 +469,21 @@
       const closeNav = () => {
         document.getElementById("side-navbar").style.width = "0";
       };
+    </script>
+    <script>
+      const range = document.querySelector(".range");
+      const thumb = document.querySelector(".thumb");
+      const track = document.querySelector(".track-inner");
+
+      const updateSlider = (value) => {
+        thumb.style.left = `${value}%`;
+        thumb.style.transform = `translate(-${value}%, -50%)`;
+        track.style.width = `${value}%`;
+      };
+
+      range.oninput = (e) => updateSlider(e.target.value);
+
+      updateSlider(50);
     </script>
   </body>
 </html>
