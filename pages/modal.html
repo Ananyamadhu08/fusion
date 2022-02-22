@@ -375,10 +375,37 @@
 
           <pre style="max-width: 70%; background: transparent; margin: auto">
                    <code class="html rounded-lg overflow-scroll h-full w-full">
-&lt;img class="img-responsive img-round" src="https://picsum.photos/400/400" alt="random-img">
-
+  &lt;button id="modal-btn" class="btn btn-square-solid bg-indigo-600">
+  open modal
+  &lt;/button>
                    </code>
                 </pre>
+
+          <pre style="max-width: 70%; background: transparent; margin: auto">
+                  <code class="javascript rounded-lg overflow-scroll h-full w-full">
+  var modal = document.querySelector("#modal");
+
+  var modalBtn = document.querySelector("#modal-btn");
+              
+  var closeBtn = document.querySelector(".modal-close-btn");
+  console.log(closeBtn);
+              
+  modalBtn.onclick = function () {
+  modal.style.display = "block";
+  };
+              
+  closeBtn.onclick = function () {
+  modal.style.display = "none";
+  };
+              
+  window.onclick = function (event) {
+  if (event.target == modal) {
+  modal.style.display = "none";
+  }
+  };
+
+                  </code>
+               </pre>
 
           <div class="page-footer flex justify-between">
             <a
