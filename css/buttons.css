@@ -1,6 +1,5 @@
 .btn {
   font-size: 1rem;
-  font-weight: lighter;
   width: max-content;
   height: max-content;
   padding: 0.7rem 1rem;
@@ -13,6 +12,7 @@
 
 .btn-square-solid {
   border-radius: 0.5rem;
+  border: none;
 }
 
 .btn-square-outlined {
@@ -23,6 +23,7 @@
 
 .btn-rounded-solid {
   border-radius: 5rem;
+  border: none;
 }
 
 .btn-rounded-outlined {
@@ -45,12 +46,12 @@
 }
 
 .btn-square-icon-text {
-  border: 0.5px solid var(--slate-200);
+  border: none;
   border-radius: 0.5rem;
 }
 
 .btn-rounded-icon-text {
-  border: 0.5px solid var(--slate-200);
+  border: none;
   border-radius: 5rem;
 }
 
@@ -62,7 +63,6 @@
 /* button sizes */
 
 .btn-xs {
-  border: 1px;
   padding: 0.2rem 0.4rem;
   font-size: 0.8rem;
 }
