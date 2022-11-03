@@ -1,3 +1,9 @@
+.bg-transparent {
+  background: transparent;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
 /* display */
 
 .block {
